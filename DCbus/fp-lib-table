@@ -1,0 +1,6 @@
+(fp_lib_table
+  (lib (name cree)(type KiCad)(uri "$(KIPRJMOD)/cree.pretty")(options "")(descr ""))
+  (lib (name infineon)(type KiCad)(uri "$(KIPRJMOD)/infineon.pretty")(options "")(descr ""))
+  (lib (name wurth)(type KiCad)(uri "$(KIPRJMOD)/wurth.pretty")(options "")(descr ""))
+  (lib (name Capacitors_film)(type KiCad)(uri "$(KIPRJMOD)\\Capacitors_film.pretty")(options "")(descr ""))
+)

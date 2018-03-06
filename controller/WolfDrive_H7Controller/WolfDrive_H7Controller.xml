@@ -1,0 +1,4164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>C:/Users/eexjb5/Dropbox/Uni/PhD/PCBs/WolfDrive/WolfDrive_H7Controller/WolfDrive_H7Controller/WolfDrive_H7Controller.sch</source>
+    <date>26/02/2018 10:41:18</date>
+    <tool>Eeschema 4.0.7</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Bike_3ph_IV_sensor</title>
+        <company>University of Nottingham</company>
+        <rev>2</rev>
+        <date/>
+        <source>WolfDrive_H7Controller.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C44">
+      <value>10u, 10v</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A1772DE</tstamp>
+    </comp>
+    <comp ref="C27">
+      <value>100n</value>
+      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A1772E3</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value>22u, 16V</value>
+      <footprint>Capacitors_SMD:C_1210</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A1772E8</tstamp>
+    </comp>
+    <comp ref="FI2">
+      <value>NFE61P</value>
+      <footprint>DriveParts:EMI_Filter_murata</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_EMI_FILTER-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A17730D</tstamp>
+    </comp>
+    <comp ref="C63">
+      <value>47n</value>
+      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A177345</tstamp>
+    </comp>
+    <comp ref="R32">
+      <value>DNP</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A177346</tstamp>
+    </comp>
+    <comp ref="R36">
+      <value>DNP</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A177348</tstamp>
+    </comp>
+    <comp ref="C59">
+      <value>47n</value>
+      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A177349</tstamp>
+    </comp>
+    <comp ref="R38">
+      <value>0R</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A17734A</tstamp>
+    </comp>
+    <comp ref="R37">
+      <value>DNP</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A17734B</tstamp>
+    </comp>
+    <comp ref="R30">
+      <value>DNP</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A177353</tstamp>
+    </comp>
+    <comp ref="R29">
+      <value>DNP</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A177354</tstamp>
+    </comp>
+    <comp ref="C45">
+      <value>10u, 6.3v</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A177356</tstamp>
+    </comp>
+    <comp ref="D6">
+      <value>3.3V</value>
+      <footprint>Diodes_SMD:D_SOD-523</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_ZENER-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A17735D</tstamp>
+    </comp>
+    <comp ref="C28">
+      <value>100n</value>
+      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A17739F</tstamp>
+    </comp>
+    <comp ref="C30">
+      <value>10n</value>
+      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A1773A0</tstamp>
+    </comp>
+    <comp ref="C29">
+      <value>1u</value>
+      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A1773A1</tstamp>
+    </comp>
+    <comp ref="L14">
+      <value>10uH</value>
+      <footprint>Inductors_NEOSID:Neosid_Inductor_SM-NE30_SMD1210</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_INDUCTOR_SMALL-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A1773FD</tstamp>
+    </comp>
+    <comp ref="L15">
+      <value>10uH</value>
+      <footprint>Inductors_NEOSID:Neosid_Inductor_SM-NE30_SMD1210</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_INDUCTOR_SMALL-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A1773FE</tstamp>
+    </comp>
+    <comp ref="C21">
+      <value>1n</value>
+      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A17741C</tstamp>
+    </comp>
+    <comp ref="OPT11">
+      <value>AFBR-26x</value>
+      <footprint>DriveParts:HFBR-xx2xZ</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_AFBR-26x-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A1C2AC3</tstamp>
+    </comp>
+    <comp ref="C79">
+      <value>10u</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A1C2AC9</tstamp>
+    </comp>
+    <comp ref="C75">
+      <value>10u</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A1C2ACF</tstamp>
+    </comp>
+    <comp ref="L17">
+      <value>1uH</value>
+      <footprint>w_smd_inductors:inductor_smd_0603</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_INDUCTOR_SMALL-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A1C2AD5</tstamp>
+    </comp>
+    <comp ref="C80">
+      <value>100n</value>
+      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A1C2ADB</tstamp>
+    </comp>
+    <comp ref="I7">
+      <value>DS90LV027A</value>
+      <footprint>Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_DS90LV027A-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A1CF9D8</tstamp>
+    </comp>
+    <comp ref="C76">
+      <value>100n</value>
+      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A1CF9E6</tstamp>
+    </comp>
+    <comp ref="I1">
+      <value>DS90LV027A</value>
+      <footprint>SMD_Packages:SOIC-8-N</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_DS90LV027A-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A1D84B8</tstamp>
+    </comp>
+    <comp ref="C8">
+      <value>100n</value>
+      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A1D84C6</tstamp>
+    </comp>
+    <comp ref="I3">
+      <value>DS90LV028A</value>
+      <footprint>SMD_Packages:SOIC-8-N</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_DS9637A-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A1DC78D</tstamp>
+    </comp>
+    <comp ref="R8">
+      <value>250</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A1DC799</tstamp>
+    </comp>
+    <comp ref="C35">
+      <value>100n</value>
+      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A1DC7AF</tstamp>
+    </comp>
+    <comp ref="CON1">
+      <value>SD_Card</value>
+      <footprint>Connectors:SD_Card_Receptacle</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:conn_SD_Card-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A1EA6DF</tstamp>
+    </comp>
+    <comp ref="I4">
+      <value>DS90LV028A</value>
+      <footprint>Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_DS9637A-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A22E927</tstamp>
+    </comp>
+    <comp ref="R19">
+      <value>240</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A22E92D</tstamp>
+    </comp>
+    <comp ref="R18">
+      <value>240</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A22E933</tstamp>
+    </comp>
+    <comp ref="C56">
+      <value>100n</value>
+      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A22E949</tstamp>
+    </comp>
+    <comp ref="C37">
+      <value>10u</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A257501</tstamp>
+    </comp>
+    <comp ref="C32">
+      <value>10u</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A257507</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>4k7</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A25750D</tstamp>
+    </comp>
+    <comp ref="L11">
+      <value>1uH</value>
+      <footprint>w_smd_inductors:inductor_smd_0603</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_INDUCTOR_SMALL-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A257519</tstamp>
+    </comp>
+    <comp ref="OPT7">
+      <value>AFBR-1634Z</value>
+      <footprint>DriveParts:HFBR-xx2xZ</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_AFBR-1634Z-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A25751F</tstamp>
+    </comp>
+    <comp ref="C41">
+      <value>100n</value>
+      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A257525</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>4k7</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A257556</tstamp>
+    </comp>
+    <comp ref="OPT10">
+      <value>AFBR-26x</value>
+      <footprint>DriveParts:HFBR-xx2xZ</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_AFBR-26x-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A257595</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>4k7</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A259417</tstamp>
+    </comp>
+    <comp ref="C38">
+      <value>10u</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A2BACCD</tstamp>
+    </comp>
+    <comp ref="C33">
+      <value>10u</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A2BACD3</tstamp>
+    </comp>
+    <comp ref="L12">
+      <value>1uH</value>
+      <footprint>w_smd_inductors:inductor_smd_0603</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_INDUCTOR_SMALL-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A2BACDF</tstamp>
+    </comp>
+    <comp ref="OPT8">
+      <value>AFBR-1634Z</value>
+      <footprint>DriveParts:HFBR-xx2xZ</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_AFBR-1634Z-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A2BACE5</tstamp>
+    </comp>
+    <comp ref="C42">
+      <value>100n</value>
+      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A2BACEB</tstamp>
+    </comp>
+    <comp ref="C39">
+      <value>10u</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A2BAF29</tstamp>
+    </comp>
+    <comp ref="C34">
+      <value>10u</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A2BAF2F</tstamp>
+    </comp>
+    <comp ref="L13">
+      <value>1uH</value>
+      <footprint>w_smd_inductors:inductor_smd_0603</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_INDUCTOR_SMALL-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A2BAF3B</tstamp>
+    </comp>
+    <comp ref="OPT9">
+      <value>AFBR-1634Z</value>
+      <footprint>DriveParts:HFBR-xx2xZ</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_AFBR-1634Z-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A2BAF41</tstamp>
+    </comp>
+    <comp ref="C43">
+      <value>100n</value>
+      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A2BAF47</tstamp>
+    </comp>
+    <comp ref="C36">
+      <value>10u</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A2BC9A1</tstamp>
+    </comp>
+    <comp ref="C31">
+      <value>10u</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A2BC9A7</tstamp>
+    </comp>
+    <comp ref="L10">
+      <value>1uH</value>
+      <footprint>w_smd_inductors:inductor_smd_0603</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_INDUCTOR_SMALL-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A2BC9AD</tstamp>
+    </comp>
+    <comp ref="C40">
+      <value>100n</value>
+      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A2BC9B3</tstamp>
+    </comp>
+    <comp ref="C15">
+      <value>10u</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A2C4B4E</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>10u</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A2C4B54</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>4k7</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A2C4B5A</tstamp>
+    </comp>
+    <comp ref="L6">
+      <value>1uH</value>
+      <footprint>w_smd_inductors:inductor_smd_0603</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_INDUCTOR_SMALL-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A2C4B66</tstamp>
+    </comp>
+    <comp ref="OPT1">
+      <value>AFBR-1634Z</value>
+      <footprint>DriveParts:HFBR-xx2xZ</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_AFBR-1634Z-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A2C4B6C</tstamp>
+    </comp>
+    <comp ref="C22">
+      <value>100n</value>
+      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A2C4B72</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>4k7</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A2C4B97</tstamp>
+    </comp>
+    <comp ref="OPT3">
+      <value>AFBR-26x</value>
+      <footprint>DriveParts:HFBR-xx2xZ</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_AFBR-26x-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A2C4BA4</tstamp>
+    </comp>
+    <comp ref="C16">
+      <value>10u</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A2C4BC1</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>10u</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A2C4BC7</tstamp>
+    </comp>
+    <comp ref="L7">
+      <value>1uH</value>
+      <footprint>w_smd_inductors:inductor_smd_0603</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_INDUCTOR_SMALL-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A2C4BD3</tstamp>
+    </comp>
+    <comp ref="OPT2">
+      <value>AFBR-1634Z</value>
+      <footprint>DriveParts:HFBR-xx2xZ</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_AFBR-1634Z-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A2C4BD9</tstamp>
+    </comp>
+    <comp ref="C23">
+      <value>100n</value>
+      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A2C4BDF</tstamp>
+    </comp>
+    <comp ref="C11">
+      <value>10u</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A2C4C3D</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>10u</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A2C4C43</tstamp>
+    </comp>
+    <comp ref="L2">
+      <value>1uH</value>
+      <footprint>w_smd_inductors:inductor_smd_0603</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_INDUCTOR_SMALL-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A2C4C49</tstamp>
+    </comp>
+    <comp ref="C17">
+      <value>100n</value>
+      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A2C4C4F</tstamp>
+    </comp>
+    <comp ref="OPT4">
+      <value>AFBR-26x</value>
+      <footprint>DriveParts:HFBR-xx2xZ</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_AFBR-26x-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A2D1E5E</tstamp>
+    </comp>
+    <comp ref="C12">
+      <value>10u</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A2D1E70</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>10u</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A2D1E76</tstamp>
+    </comp>
+    <comp ref="L3">
+      <value>1uH</value>
+      <footprint>w_smd_inductors:inductor_smd_0603</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_INDUCTOR_SMALL-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A2D1E7C</tstamp>
+    </comp>
+    <comp ref="C18">
+      <value>100n</value>
+      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A2D1E82</tstamp>
+    </comp>
+    <comp ref="OPT5">
+      <value>AFBR-26x</value>
+      <footprint>DriveParts:HFBR-xx2xZ</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_AFBR-26x-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A2D2A9C</tstamp>
+    </comp>
+    <comp ref="C13">
+      <value>10u</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A2D2AAE</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>10u</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A2D2AB4</tstamp>
+    </comp>
+    <comp ref="L4">
+      <value>1uH</value>
+      <footprint>w_smd_inductors:inductor_smd_0603</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_INDUCTOR_SMALL-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A2D2ABA</tstamp>
+    </comp>
+    <comp ref="C19">
+      <value>100n</value>
+      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A2D2AC0</tstamp>
+    </comp>
+    <comp ref="OPT6">
+      <value>AFBR-26x</value>
+      <footprint>DriveParts:HFBR-xx2xZ</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_AFBR-26x-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A2D2ADC</tstamp>
+    </comp>
+    <comp ref="C14">
+      <value>10u</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A2D2AEE</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>10u</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A2D2AF4</tstamp>
+    </comp>
+    <comp ref="L5">
+      <value>1uH</value>
+      <footprint>w_smd_inductors:inductor_smd_0603</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_INDUCTOR_SMALL-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A2D2AFA</tstamp>
+    </comp>
+    <comp ref="C20">
+      <value>100n</value>
+      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A2D2B00</tstamp>
+    </comp>
+    <comp ref="R51">
+      <value>0</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A3D8051</tstamp>
+    </comp>
+    <comp ref="FB6">
+      <value>FILTER</value>
+      <footprint>w_smd_inductors:inductor_smd_0805</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_FILTER-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A407BE9</tstamp>
+    </comp>
+    <comp ref="FB7">
+      <value>FILTER</value>
+      <footprint>w_smd_inductors:inductor_smd_0805</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_FILTER-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A40848B</tstamp>
+    </comp>
+    <comp ref="FB8">
+      <value>FILTER</value>
+      <footprint>w_smd_inductors:inductor_smd_0805</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_FILTER-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A408651</tstamp>
+    </comp>
+    <comp ref="FB9">
+      <value>FILTER</value>
+      <footprint>w_smd_inductors:inductor_smd_0805</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_FILTER-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A40963A</tstamp>
+    </comp>
+    <comp ref="FB10">
+      <value>FILTER</value>
+      <footprint>w_smd_inductors:inductor_smd_0805</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_FILTER-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A409822</tstamp>
+    </comp>
+    <comp ref="FB11">
+      <value>FILTER</value>
+      <footprint>w_smd_inductors:inductor_smd_0805</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_FILTER-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A4099FD</tstamp>
+    </comp>
+    <comp ref="R24">
+      <value>47k</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A40C93F</tstamp>
+    </comp>
+    <comp ref="R25">
+      <value>47k</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A410846</tstamp>
+    </comp>
+    <comp ref="R26">
+      <value>47k</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A410A22</tstamp>
+    </comp>
+    <comp ref="R27">
+      <value>47k</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A410C01</tstamp>
+    </comp>
+    <comp ref="R28">
+      <value>47k</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A410DEF</tstamp>
+    </comp>
+    <comp ref="R31">
+      <value>47k</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A410FD4</tstamp>
+    </comp>
+    <comp ref="C73">
+      <value>100n</value>
+      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A419387</tstamp>
+    </comp>
+    <comp ref="C74">
+      <value>10u</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A4195CC</tstamp>
+    </comp>
+    <comp ref="C71">
+      <value>100n</value>
+      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A41F2D4</tstamp>
+    </comp>
+    <comp ref="U5">
+      <value>ISO7221</value>
+      <footprint>Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:interface_ADuM1201CR-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A430FD1</tstamp>
+    </comp>
+    <comp ref="C53">
+      <value>100n</value>
+      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A432672</tstamp>
+    </comp>
+    <comp ref="C55">
+      <value>100n</value>
+      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A43554A</tstamp>
+    </comp>
+    <comp ref="U4">
+      <value>LTV-356T</value>
+      <footprint>Housings_DIP:DIP-6_W7.62mm_SMD</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_LTV-356T-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A4B1D15</tstamp>
+    </comp>
+    <comp ref="R13">
+      <value>1k</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A4B1D1B</tstamp>
+    </comp>
+    <comp ref="P7">
+      <value>CONN_01X02</value>
+      <footprint>Connectors_Terminal_Blocks:TerminalBlock_Pheonix_PT-3.5mm_2pol</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_CONN_01X02-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A4B1D23</tstamp>
+    </comp>
+    <comp ref="R10">
+      <value>4k7</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A4B1D2E</tstamp>
+    </comp>
+    <comp ref="I2">
+      <value>DS90LV027A</value>
+      <footprint>SMD_Packages:SOIC-8-N</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_DS90LV027A-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A4DAB81</tstamp>
+    </comp>
+    <comp ref="C9">
+      <value>100n</value>
+      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A4DAB8F</tstamp>
+    </comp>
+    <comp ref="R45">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A595581</tstamp>
+    </comp>
+    <comp ref="R46">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A59763B</tstamp>
+    </comp>
+    <comp ref="U10">
+      <value>74LS136</value>
+      <footprint>Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_74LS136-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A59DC0F</tstamp>
+    </comp>
+    <comp ref="R47">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A5B054B</tstamp>
+    </comp>
+    <comp ref="R48">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A5B0551</tstamp>
+    </comp>
+    <comp ref="R43">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A5BA9B5</tstamp>
+    </comp>
+    <comp ref="R41">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A5D1EFC</tstamp>
+    </comp>
+    <comp ref="R42">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A5D215E</tstamp>
+    </comp>
+    <comp ref="R49">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A5EFE04</tstamp>
+    </comp>
+    <comp ref="R50">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A5EFE0A</tstamp>
+    </comp>
+    <comp ref="R44">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A5EFE28</tstamp>
+    </comp>
+    <comp ref="C81">
+      <value>100n</value>
+      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A6787D4</tstamp>
+    </comp>
+    <comp ref="U9">
+      <value>CD4044B</value>
+      <footprint>Housings_SOIC:SOIC-16_3.9x9.9mm_Pitch1.27mm</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_CD4044B-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A6814BD</tstamp>
+    </comp>
+    <comp ref="R54">
+      <value>47</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A69B4C6</tstamp>
+    </comp>
+    <comp ref="D7">
+      <value>Led_Small</value>
+      <footprint>LEDs:LED_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_Led_Small-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A6A84AE</tstamp>
+    </comp>
+    <comp ref="Q2">
+      <value>Q_NMOS_DGS</value>
+      <footprint>w_smd_trans:sot23</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_Q_NMOS_DGS-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A6BDBF7</tstamp>
+    </comp>
+    <comp ref="R39">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A6C5B97</tstamp>
+    </comp>
+    <comp ref="R40">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A6CDB80</tstamp>
+    </comp>
+    <comp ref="FB12">
+      <value>FILTER</value>
+      <footprint>w_smd_inductors:inductor_smd_0805</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_FILTER-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A6D69E3</tstamp>
+    </comp>
+    <comp ref="FI4">
+      <value>NFE61P</value>
+      <footprint>DriveParts:EMI_Filter_murata</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_EMI_FILTER-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A6F9C91</tstamp>
+    </comp>
+    <comp ref="I5">
+      <value>DS90LV028A</value>
+      <footprint>Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_DS9637A-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A794FB7</tstamp>
+    </comp>
+    <comp ref="R21">
+      <value>240</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A794FBD</tstamp>
+    </comp>
+    <comp ref="R20">
+      <value>240</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A794FC3</tstamp>
+    </comp>
+    <comp ref="C57">
+      <value>100n</value>
+      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A794FD3</tstamp>
+    </comp>
+    <comp ref="P10">
+      <value>GATE_IO_A</value>
+      <footprint>Connectors:IDC_Header_Straight_16pins</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_CONN_02X08-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A794FF7</tstamp>
+    </comp>
+    <comp ref="R52">
+      <value>0</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A795058</tstamp>
+    </comp>
+    <comp ref="FB13">
+      <value>FILTER</value>
+      <footprint>w_smd_inductors:inductor_smd_0805</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_FILTER-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A795074</tstamp>
+    </comp>
+    <comp ref="C62">
+      <value>10u</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A795405</tstamp>
+    </comp>
+    <comp ref="I6">
+      <value>DS90LV028A</value>
+      <footprint>Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_DS9637A-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A795428</tstamp>
+    </comp>
+    <comp ref="R23">
+      <value>240</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A79542E</tstamp>
+    </comp>
+    <comp ref="R22">
+      <value>240</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A795434</tstamp>
+    </comp>
+    <comp ref="C58">
+      <value>100n</value>
+      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A795444</tstamp>
+    </comp>
+    <comp ref="P11">
+      <value>GATE_IO_A</value>
+      <footprint>Connectors:IDC_Header_Straight_16pins</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_CONN_02X08-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A795468</tstamp>
+    </comp>
+    <comp ref="R35">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A79547A</tstamp>
+    </comp>
+    <comp ref="U8">
+      <value>LM339</value>
+      <footprint>Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:linear_LM339-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A795483</tstamp>
+    </comp>
+    <comp ref="R53">
+      <value>0</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A7954C9</tstamp>
+    </comp>
+    <comp ref="FB14">
+      <value>FILTER</value>
+      <footprint>w_smd_inductors:inductor_smd_0805</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_FILTER-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A7954E5</tstamp>
+    </comp>
+    <comp ref="CN7">
+      <value>CONN_02X10</value>
+      <footprint>Socket_Strips:Socket_Strip_Straight_2x10_Pitch2.54mm</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_CONN_02X10-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A895150</tstamp>
+    </comp>
+    <comp ref="CN10">
+      <value>CONN_02X17</value>
+      <footprint>Socket_Strips:Socket_Strip_Straight_2x17_Pitch2.54mm</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_CONN_02X17-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A8964E7</tstamp>
+    </comp>
+    <comp ref="CN8">
+      <value>CONN_02X08</value>
+      <footprint>Socket_Strips:Socket_Strip_Straight_2x08_Pitch2.54mm</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_CONN_02X08-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A896F25</tstamp>
+    </comp>
+    <comp ref="CN9">
+      <value>CONN_02X15</value>
+      <footprint>Socket_Strips:Socket_Strip_Straight_2x15_Pitch2.54mm</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_CONN_02X15-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A8975AC</tstamp>
+    </comp>
+    <comp ref="D5">
+      <value>3.3V</value>
+      <footprint>Diodes_SMD:D_SOD-523</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_ZENER-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A7A6A8C</tstamp>
+    </comp>
+    <comp ref="C61">
+      <value>10u</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A7B6266</tstamp>
+    </comp>
+    <comp ref="R34">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A7B626C</tstamp>
+    </comp>
+    <comp ref="D4">
+      <value>3.3V</value>
+      <footprint>Diodes_SMD:D_SOD-523</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_ZENER-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A7B62A2</tstamp>
+    </comp>
+    <comp ref="C60">
+      <value>10u</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A7B6D4C</tstamp>
+    </comp>
+    <comp ref="R33">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A7B6D52</tstamp>
+    </comp>
+    <comp ref="C67">
+      <value>100n</value>
+      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A7B6D60</tstamp>
+    </comp>
+    <comp ref="D3">
+      <value>3.3V</value>
+      <footprint>Diodes_SMD:D_SOD-523</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_ZENER-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A7B6D88</tstamp>
+    </comp>
+    <comp ref="C64">
+      <value>100n</value>
+      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A80262D</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>?</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A810CAB</tstamp>
+    </comp>
+    <comp ref="C25">
+      <value>1u</value>
+      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A8281B5</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>?</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A82882A</tstamp>
+    </comp>
+    <comp ref="C72">
+      <value>1n</value>
+      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A87E27A</tstamp>
+    </comp>
+    <comp ref="L16">
+      <value>1uH</value>
+      <footprint>w_smd_inductors:inductor_smd_0603</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_INDUCTOR_SMALL-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A8840EA</tstamp>
+    </comp>
+    <comp ref="C70">
+      <value>10u</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A88D2B0</tstamp>
+    </comp>
+    <comp ref="R16">
+      <value>DNP</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A898FA6</tstamp>
+    </comp>
+    <comp ref="R17">
+      <value>DNP</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A8BEACC</tstamp>
+    </comp>
+    <comp ref="R15">
+      <value>DNP</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A8C404A</tstamp>
+    </comp>
+    <comp ref="R14">
+      <value>240</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A7EE922</tstamp>
+    </comp>
+    <comp ref="C54">
+      <value>4u7</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AE50D2C</tstamp>
+    </comp>
+    <comp ref="C51">
+      <value>100n</value>
+      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B43445F</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>SP0503BAHT</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-143</footprint>
+      <datasheet>http://www.littelfuse.com/~/media/files/littelfuse/technical%20resources/documents/data%20sheets/sp05xxba.pdf</datasheet>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:ESD_Protection_SP0503BAHT-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D752724</tstamp>
+    </comp>
+    <comp ref="C82">
+      <value>100n</value>
+      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61BD23F9</tstamp>
+    </comp>
+    <comp ref="P9">
+      <value>GATE_IO_A</value>
+      <footprint>Connectors:IDC_Header_Straight_16pins</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_CONN_02X08-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A306CA5</tstamp>
+    </comp>
+    <comp ref="U3">
+      <value>MCP101-315D</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23_Handsoldering</footprint>
+      <datasheet>http://ww1.microchip.com/downloads/en/DeviceDoc/11187f.pdf</datasheet>
+      <libsource lib="WolfDrive_H7Controller-cache" part="Power_Management:MCP101-315D"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B29C790</tstamp>
+    </comp>
+    <comp ref="C83">
+      <value>100n</value>
+      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B2A1EDF</tstamp>
+    </comp>
+    <comp ref="C78">
+      <value>47n</value>
+      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C39987F</tstamp>
+    </comp>
+    <comp ref="R12">
+      <value>DNP</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C399886</tstamp>
+    </comp>
+    <comp ref="R57">
+      <value>DNP</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C39988C</tstamp>
+    </comp>
+    <comp ref="C77">
+      <value>47n</value>
+      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C399892</tstamp>
+    </comp>
+    <comp ref="R59">
+      <value>0R</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C399898</tstamp>
+    </comp>
+    <comp ref="R58">
+      <value>DNP</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C39989E</tstamp>
+    </comp>
+    <comp ref="R11">
+      <value>DNP</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C3998B0</tstamp>
+    </comp>
+    <comp ref="R9">
+      <value>DNP</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C3998B6</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>3.3V</value>
+      <footprint>Diodes_SMD:D_SOD-523</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_ZENER-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C3998BC</tstamp>
+    </comp>
+    <comp ref="FI5">
+      <value>NFE61P</value>
+      <footprint>DriveParts:EMI_Filter_murata</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_EMI_FILTER-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C3998CF</tstamp>
+    </comp>
+    <comp ref="U7">
+      <value>OPA2340</value>
+      <footprint>Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/opa4340.pdf</datasheet>
+      <libsource lib="WolfDrive_H7Controller-cache" part="linear:OPA2340"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C54C5B4</tstamp>
+    </comp>
+    <comp ref="J13">
+      <value>Regen</value>
+      <footprint>DriveParts:Test_Point</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="conn:TEST_1P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CDB0F42</tstamp>
+    </comp>
+    <comp ref="J8">
+      <value>12V</value>
+      <footprint>DriveParts:Test_Point</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="conn:TEST_1P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CDB5A7E</tstamp>
+    </comp>
+    <comp ref="J12">
+      <value>5V</value>
+      <footprint>DriveParts:Test_Point</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="conn:TEST_1P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CDBFFB1</tstamp>
+    </comp>
+    <comp ref="J10">
+      <value>GND</value>
+      <footprint>DriveParts:Test_Point</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="conn:TEST_1P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CDC0263</tstamp>
+    </comp>
+    <comp ref="J9">
+      <value>GND</value>
+      <footprint>DriveParts:Test_Point</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="conn:TEST_1P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CDC06D7</tstamp>
+    </comp>
+    <comp ref="J11">
+      <value>GND</value>
+      <footprint>DriveParts:Test_Point</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="conn:TEST_1P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CDC090F</tstamp>
+    </comp>
+    <comp ref="D14">
+      <value>Led_Small</value>
+      <footprint>LEDs:LED_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_Led_Small-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CDCCB20</tstamp>
+    </comp>
+    <comp ref="D15">
+      <value>Led_Small</value>
+      <footprint>LEDs:LED_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_Led_Small-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CDCCD2E</tstamp>
+    </comp>
+    <comp ref="D16">
+      <value>Led_Small</value>
+      <footprint>LEDs:LED_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_Led_Small-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CDCCF3E</tstamp>
+    </comp>
+    <comp ref="D11">
+      <value>~PWM1</value>
+      <footprint>LEDs:LED_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_Led_Small-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CDCDF18</tstamp>
+    </comp>
+    <comp ref="R63">
+      <value>100</value>
+      <footprint>LEDs:LED_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="device:R_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CDD4EFA</tstamp>
+    </comp>
+    <comp ref="D8">
+      <value>PWM1</value>
+      <footprint>LEDs:LED_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_Led_Small-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CEAFE4B</tstamp>
+    </comp>
+    <comp ref="R60">
+      <value>100</value>
+      <footprint>LEDs:LED_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="device:R_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CEB005D</tstamp>
+    </comp>
+    <comp ref="J15">
+      <value>PWM1</value>
+      <footprint>DriveParts:Test_Point</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="conn:TEST_1P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D643508</tstamp>
+    </comp>
+    <comp ref="J18">
+      <value>~PWM1</value>
+      <footprint>DriveParts:Test_Point</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="conn:TEST_1P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D71E22F</tstamp>
+    </comp>
+    <comp ref="I8">
+      <value>DS90LV027A</value>
+      <footprint>Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_DS90LV027A-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DB6AA66</tstamp>
+    </comp>
+    <comp ref="C87">
+      <value>100n</value>
+      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DB6AA6C</tstamp>
+    </comp>
+    <comp ref="D12">
+      <value>~PWM2</value>
+      <footprint>LEDs:LED_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_Led_Small-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DB6AA85</tstamp>
+    </comp>
+    <comp ref="R64">
+      <value>100</value>
+      <footprint>LEDs:LED_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="device:R_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DB6AA8B</tstamp>
+    </comp>
+    <comp ref="D9">
+      <value>PWM2</value>
+      <footprint>LEDs:LED_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_Led_Small-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DB6AA91</tstamp>
+    </comp>
+    <comp ref="R61">
+      <value>100</value>
+      <footprint>LEDs:LED_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="device:R_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DB6AA97</tstamp>
+    </comp>
+    <comp ref="J16">
+      <value>PWM2</value>
+      <footprint>DriveParts:Test_Point</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="conn:TEST_1P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DB6AAA5</tstamp>
+    </comp>
+    <comp ref="J19">
+      <value>~PWM2</value>
+      <footprint>DriveParts:Test_Point</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="conn:TEST_1P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DB6AAAB</tstamp>
+    </comp>
+    <comp ref="I9">
+      <value>DS90LV027A</value>
+      <footprint>Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_DS90LV027A-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DD22A1C</tstamp>
+    </comp>
+    <comp ref="C88">
+      <value>100n</value>
+      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DD22A22</tstamp>
+    </comp>
+    <comp ref="D13">
+      <value>~PWM3</value>
+      <footprint>LEDs:LED_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_Led_Small-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DD22A3B</tstamp>
+    </comp>
+    <comp ref="R65">
+      <value>100</value>
+      <footprint>LEDs:LED_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="device:R_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DD22A41</tstamp>
+    </comp>
+    <comp ref="D10">
+      <value>PWM3</value>
+      <footprint>LEDs:LED_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_Led_Small-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DD22A47</tstamp>
+    </comp>
+    <comp ref="R62">
+      <value>100</value>
+      <footprint>LEDs:LED_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="device:R_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DD22A4D</tstamp>
+    </comp>
+    <comp ref="J17">
+      <value>PWM3</value>
+      <footprint>DriveParts:Test_Point</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="conn:TEST_1P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DD22A5B</tstamp>
+    </comp>
+    <comp ref="J20">
+      <value>~PWM3</value>
+      <footprint>DriveParts:Test_Point</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="conn:TEST_1P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DD22A61</tstamp>
+    </comp>
+    <comp ref="J14">
+      <value>Throttle</value>
+      <footprint>DriveParts:Test_Point</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="conn:TEST_1P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DE14C98</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>QSPI_CLK</value>
+      <footprint>DriveParts:Test_Point</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="conn:TEST_1P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DE2127F</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>QSPI_NCS</value>
+      <footprint>DriveParts:Test_Point</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="conn:TEST_1P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DE232A6</tstamp>
+    </comp>
+    <comp ref="J4">
+      <value>QSPI_IO0</value>
+      <footprint>DriveParts:Test_Point</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="conn:TEST_1P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DE23C8E</tstamp>
+    </comp>
+    <comp ref="J5">
+      <value>QSPI_IO1</value>
+      <footprint>DriveParts:Test_Point</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="conn:TEST_1P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DE25BA2</tstamp>
+    </comp>
+    <comp ref="J6">
+      <value>QSPI_IO2</value>
+      <footprint>DriveParts:Test_Point</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="conn:TEST_1P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DE25E0E</tstamp>
+    </comp>
+    <comp ref="J7">
+      <value>QSPI_IO3</value>
+      <footprint>DriveParts:Test_Point</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="conn:TEST_1P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DE27523</tstamp>
+    </comp>
+    <comp ref="J25">
+      <value>Overtemp</value>
+      <footprint>DriveParts:Test_Point</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="conn:TEST_1P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E1C87AB</tstamp>
+    </comp>
+    <comp ref="J21">
+      <value>OCV</value>
+      <footprint>DriveParts:Test_Point</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="conn:TEST_1P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E1CBB31</tstamp>
+    </comp>
+    <comp ref="J26">
+      <value>PWM1</value>
+      <footprint>DriveParts:Test_Point</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="conn:TEST_1P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E1CE489</tstamp>
+    </comp>
+    <comp ref="J22">
+      <value>~F_C</value>
+      <footprint>DriveParts:Test_Point</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="conn:TEST_1P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E5812C8</tstamp>
+    </comp>
+    <comp ref="J23">
+      <value>~F_B</value>
+      <footprint>DriveParts:Test_Point</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="conn:TEST_1P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F6CB64E</tstamp>
+    </comp>
+    <comp ref="J24">
+      <value>~F_A</value>
+      <footprint>DriveParts:Test_Point</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="conn:TEST_1P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F6CB894</tstamp>
+    </comp>
+    <comp ref="J27">
+      <value>Conn_01x04_Female</value>
+      <footprint>Connectors_Terminal_Blocks:TerminalBlock_Pheonix_PT-3.5mm_4pol</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="conn:Conn_01x04_Female"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F80B08A</tstamp>
+    </comp>
+    <comp ref="L9">
+      <value>10uH</value>
+      <footprint>Inductors_NEOSID:Neosid_Inductor_SM-NE30_SMD1210</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_INDUCTOR_SMALL-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BDBF82C</tstamp>
+    </comp>
+    <comp ref="C84">
+      <value>10u, 6.3v</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BDC07F6</tstamp>
+    </comp>
+    <comp ref="L18">
+      <value>10uH</value>
+      <footprint>Inductors_NEOSID:Neosid_Inductor_SM-NE30_SMD1210</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_INDUCTOR_SMALL-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C72AB1B</tstamp>
+    </comp>
+    <comp ref="C85">
+      <value>10u, 6.3v</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C72ADA7</tstamp>
+    </comp>
+    <comp ref="R66">
+      <value>0</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CA9B85D</tstamp>
+    </comp>
+    <comp ref="J29">
+      <value>Conn_01x04</value>
+      <footprint>Connectors_Phoenix:PhoenixContact_MSTB-GF_04x5.08mm_Angled_ThreadedFlange_MountHole</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="conn:Conn_01x04"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D0EB1AB</tstamp>
+    </comp>
+    <comp ref="R67">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D39FB60</tstamp>
+    </comp>
+    <comp ref="J30">
+      <value>SPI2_SCK</value>
+      <footprint>DriveParts:Test_Point</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="conn:TEST_1P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AC87F4A</tstamp>
+    </comp>
+    <comp ref="J31">
+      <value>SPI2_NSS</value>
+      <footprint>DriveParts:Test_Point</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="conn:TEST_1P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AC88EE1</tstamp>
+    </comp>
+    <comp ref="J32">
+      <value>SPI2_MOSI</value>
+      <footprint>DriveParts:Test_Point</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="conn:TEST_1P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AC8A5D9</tstamp>
+    </comp>
+    <comp ref="J33">
+      <value>SPI2_MISO</value>
+      <footprint>DriveParts:Test_Point</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="conn:TEST_1P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AC8DBFE</tstamp>
+    </comp>
+    <comp ref="J35">
+      <value>3V3</value>
+      <footprint>DriveParts:Test_Point</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="conn:TEST_1P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ACC706B</tstamp>
+    </comp>
+    <comp ref="J34">
+      <value>PS-DIS</value>
+      <footprint>DriveParts:Test_Point</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="conn:TEST_1P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ACC9E3F</tstamp>
+    </comp>
+    <comp ref="J36">
+      <value>GND</value>
+      <footprint>DriveParts:Test_Point</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="conn:TEST_1P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ACD5D35</tstamp>
+    </comp>
+    <comp ref="J37">
+      <value>GND</value>
+      <footprint>DriveParts:Test_Point</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="conn:TEST_1P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ACD5F91</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>LM1117-5.0</value>
+      <footprint>TO_SOT_Packages_SMD:TO-263-3_TabPin2</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/lm1117.pdf</datasheet>
+      <libsource lib="WolfDrive_H7Controller-cache" part="regul:LM1117-5.0"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A9CD4E3</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>LM1117-3.3</value>
+      <footprint>TO_SOT_Packages_SMD:TO-263-3_TabPin2</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/lm1117.pdf</datasheet>
+      <libsource lib="WolfDrive_H7Controller-cache" part="regul:LM1117-3.3"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ABAF8E5</tstamp>
+    </comp>
+    <comp ref="FL1">
+      <value>Wurth_744273501</value>
+      <footprint>DriveParts:WE_SL5_HR_CommonMode_filter</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="device:EMI_Filter_CommonMode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AE9439E</tstamp>
+    </comp>
+    <comp ref="U11">
+      <value>FT232RL</value>
+      <footprint>Housings_SSOP:SSOP-28_5.3x10.2mm_Pitch0.65mm</footprint>
+      <datasheet>http://www.ftdichip.com/Products/ICs/FT232RL.htm</datasheet>
+      <libsource lib="WolfDrive_H7Controller-cache" part="ftdi:FT232RL"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D8DA974</tstamp>
+    </comp>
+    <comp ref="L1">
+      <value>BLM18PG121SN1D</value>
+      <footprint>w_smd_inductors:inductor_smd_0603</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="device:Ferrite_Bead"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D8F2F51</tstamp>
+    </comp>
+    <comp ref="C10">
+      <value>10n</value>
+      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DFC19A1</tstamp>
+    </comp>
+    <comp ref="C24">
+      <value>100n</value>
+      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DFC1F2D</tstamp>
+    </comp>
+    <comp ref="R55">
+      <value>240</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60BA6A57</tstamp>
+    </comp>
+    <comp ref="D18">
+      <value>RX</value>
+      <footprint>LEDs:LED_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_Led_Small-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6101C167</tstamp>
+    </comp>
+    <comp ref="D17">
+      <value>TX</value>
+      <footprint>LEDs:LED_0603_HandSoldering</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_Led_Small-RESCUE-WolfDrive_H7Controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61022E94</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>USB_OTG</value>
+      <footprint>Connectors:USB_Mini-B</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="conn:USB_OTG"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61F98E4F</tstamp>
+    </comp>
+    <comp ref="MK2">
+      <value>Mounting_Hole_PAD</value>
+      <footprint>Mounting_Holes:MountingHole_4.3mm_M4_Pad_Via</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="mechanical:Mounting_Hole_PAD"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ABB2EA0</tstamp>
+    </comp>
+    <comp ref="MK3">
+      <value>Mounting_Hole_PAD</value>
+      <footprint>Mounting_Holes:MountingHole_4.3mm_M4_Pad_Via</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="mechanical:Mounting_Hole_PAD"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AC9CB41</tstamp>
+    </comp>
+    <comp ref="MK4">
+      <value>Mounting_Hole_PAD</value>
+      <footprint>Mounting_Holes:MountingHole_4.3mm_M4_Pad_Via</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="mechanical:Mounting_Hole_PAD"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AC9D10D</tstamp>
+    </comp>
+    <comp ref="MK1">
+      <value>Mounting_Hole_PAD</value>
+      <footprint>Mounting_Holes:MountingHole_4.3mm_M4_Pad_Via</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="mechanical:Mounting_Hole_PAD"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AD858DA</tstamp>
+    </comp>
+    <comp ref="MK5">
+      <value>Mounting_Hole</value>
+      <footprint>Mounting_Holes:MountingHole_3.2mm_M3</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="mechanical:Mounting_Hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AD8B045</tstamp>
+    </comp>
+    <comp ref="MK6">
+      <value>Mounting_Hole</value>
+      <footprint>Mounting_Holes:MountingHole_3.2mm_M3</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="mechanical:Mounting_Hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AD8E7F7</tstamp>
+    </comp>
+    <comp ref="MK7">
+      <value>Mounting_Hole</value>
+      <footprint>Mounting_Holes:MountingHole_3.2mm_M3</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="mechanical:Mounting_Hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AD8EA45</tstamp>
+    </comp>
+    <comp ref="MK8">
+      <value>Mounting_Hole</value>
+      <footprint>Mounting_Holes:MountingHole_3.2mm_M3</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="mechanical:Mounting_Hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AD8ECAD</tstamp>
+    </comp>
+    <comp ref="MK9">
+      <value>Mounting_Hole</value>
+      <footprint>Mounting_Holes:MountingHole_3.2mm_M3</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="mechanical:Mounting_Hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AE783B7</tstamp>
+    </comp>
+    <comp ref="J38">
+      <value>AGND</value>
+      <footprint>DriveParts:Test_Point</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="conn:TEST_1P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AE8DA18</tstamp>
+    </comp>
+    <comp ref="J39">
+      <value>SP1_MISO</value>
+      <footprint>DriveParts:Test_Point</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="conn:TEST_1P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A9E1FDD</tstamp>
+    </comp>
+    <comp ref="J40">
+      <value>SP1_SCK</value>
+      <footprint>DriveParts:Test_Point</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="conn:TEST_1P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A9EFCC2</tstamp>
+    </comp>
+    <comp ref="J41">
+      <value>SP1_NSS</value>
+      <footprint>DriveParts:Test_Point</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="conn:TEST_1P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A9F170C</tstamp>
+    </comp>
+    <comp ref="J42">
+      <value>SP1_MOSI</value>
+      <footprint>DriveParts:Test_Point</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="conn:TEST_1P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A9F2C71</tstamp>
+    </comp>
+    <comp ref="J43">
+      <value>DB15_Female_HighDensity_MountingHoles</value>
+      <footprint>DriveParts:DB_15F-VGA-mountingholes</footprint>
+      <libsource lib="WolfDrive_H7Controller-cache" part="conn:DB15_Female_HighDensity_MountingHoles"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A9F6865</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="WolfDrive_H7Controller-cache" part="Power_Management:MCP101-315D">
+      <aliases>
+        <alias>MCP101-300D</alias>
+        <alias>MCP101-315D</alias>
+        <alias>MCP101-450D</alias>
+        <alias>MCP101-460D</alias>
+        <alias>MCP101-475D</alias>
+        <alias>MCP101-485D</alias>
+      </aliases>
+      <footprints>
+        <fp>SOT-23*</fp>
+        <fp>TO-92*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">Power_Management:MCP101-315D</field>
+      </fields>
+      <pins>
+        <pin num="1" name="RST" type="output"/>
+        <pin num="2" name="VDD" type="power_in"/>
+        <pin num="3" name="VSS" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:ESD_Protection_SP0503BAHT-RESCUE-WolfDrive_H7Controller">
+      <footprints>
+        <fp>SOT?143*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">WolfDrive_H7Controller-rescue:ESD_Protection_SP0503BAHT-RESCUE-WolfDrive_H7Controller</field>
+        <field name="Footprint">TO_SOT_Packages_SMD:SOT-143</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="input"/>
+        <pin num="2" name="K" type="input"/>
+        <pin num="3" name="K" type="input"/>
+        <pin num="4" name="K" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_74LS136-RESCUE-WolfDrive_H7Controller">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_74LS136-RESCUE-WolfDrive_H7Controller</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="input"/>
+        <pin num="2" name="~" type="input"/>
+        <pin num="3" name="~" type="openCol"/>
+        <pin num="4" name="~" type="input"/>
+        <pin num="5" name="~" type="input"/>
+        <pin num="6" name="~" type="openCol"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="~" type="input"/>
+        <pin num="9" name="~" type="input"/>
+        <pin num="11" name="~" type="input"/>
+        <pin num="12" name="~" type="input"/>
+        <pin num="13" name="~" type="input"/>
+        <pin num="14" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_AFBR-1634Z-RESCUE-WolfDrive_H7Controller">
+      <fields>
+        <field name="Reference">OPT</field>
+        <field name="Value">WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_AFBR-1634Z-RESCUE-WolfDrive_H7Controller</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Vcc" type="power_in"/>
+        <pin num="2" name="NC" type="NotConnected"/>
+        <pin num="3" name="VEE" type="power_in"/>
+        <pin num="4" name="Data_in" type="input"/>
+        <pin num="5" name="Gnd" type="power_in"/>
+        <pin num="8" name="Gnd" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_AFBR-26x-RESCUE-WolfDrive_H7Controller">
+      <fields>
+        <field name="Reference">OPT</field>
+        <field name="Value">WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_AFBR-26x-RESCUE-WolfDrive_H7Controller</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Data_Out" type="output"/>
+        <pin num="2" name="Vee" type="power_in"/>
+        <pin num="3" name="Vcc" type="power_in"/>
+        <pin num="4" name="NC" type="NotConnected"/>
+        <pin num="5" name="Gnd" type="power_in"/>
+        <pin num="8" name="Gnd" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_CD4044B-RESCUE-WolfDrive_H7Controller">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_CD4044B-RESCUE-WolfDrive_H7Controller</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Q3" type="output"/>
+        <pin num="2" name="Q0" type="output"/>
+        <pin num="3" name="R1" type="input"/>
+        <pin num="4" name="S1" type="input"/>
+        <pin num="5" name="Enable" type="input"/>
+        <pin num="6" name="S2" type="input"/>
+        <pin num="7" name="R1" type="input"/>
+        <pin num="8" name="GND" type="power_in"/>
+        <pin num="9" name="Q1" type="output"/>
+        <pin num="10" name="Q2" type="output"/>
+        <pin num="11" name="R2" type="input"/>
+        <pin num="12" name="S3" type="input"/>
+        <pin num="14" name="S4" type="input"/>
+        <pin num="15" name="R3" type="input"/>
+        <pin num="16" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_CONN_01X02-RESCUE-WolfDrive_H7Controller">
+      <footprints>
+        <fp>Pin_Header_Straight_1X02</fp>
+        <fp>Pin_Header_Angled_1X02</fp>
+        <fp>Socket_Strip_Straight_1X02</fp>
+        <fp>Socket_Strip_Angled_1X02</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_CONN_01X02-RESCUE-WolfDrive_H7Controller</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_CONN_02X08-RESCUE-WolfDrive_H7Controller">
+      <footprints>
+        <fp>Pin_Header_Straight_2X08</fp>
+        <fp>Pin_Header_Angled_2X08</fp>
+        <fp>Socket_Strip_Straight_2X08</fp>
+        <fp>Socket_Strip_Angled_2X08</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_CONN_02X08-RESCUE-WolfDrive_H7Controller</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+        <pin num="4" name="P4" type="passive"/>
+        <pin num="5" name="P5" type="passive"/>
+        <pin num="6" name="P6" type="passive"/>
+        <pin num="7" name="P7" type="passive"/>
+        <pin num="8" name="P8" type="passive"/>
+        <pin num="9" name="P9" type="passive"/>
+        <pin num="10" name="P10" type="passive"/>
+        <pin num="11" name="P11" type="passive"/>
+        <pin num="12" name="P12" type="passive"/>
+        <pin num="13" name="P13" type="passive"/>
+        <pin num="14" name="P14" type="passive"/>
+        <pin num="15" name="P15" type="passive"/>
+        <pin num="16" name="P16" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_CONN_02X10-RESCUE-WolfDrive_H7Controller">
+      <footprints>
+        <fp>Pin_Header_Straight_2X10</fp>
+        <fp>Pin_Header_Angled_2X10</fp>
+        <fp>Socket_Strip_Straight_2X10</fp>
+        <fp>Socket_Strip_Angled_2X10</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_CONN_02X10-RESCUE-WolfDrive_H7Controller</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+        <pin num="4" name="P4" type="passive"/>
+        <pin num="5" name="P5" type="passive"/>
+        <pin num="6" name="P6" type="passive"/>
+        <pin num="7" name="P7" type="passive"/>
+        <pin num="8" name="P8" type="passive"/>
+        <pin num="9" name="P9" type="passive"/>
+        <pin num="10" name="P10" type="passive"/>
+        <pin num="11" name="P11" type="passive"/>
+        <pin num="12" name="P12" type="passive"/>
+        <pin num="13" name="P13" type="passive"/>
+        <pin num="14" name="P14" type="passive"/>
+        <pin num="15" name="P15" type="passive"/>
+        <pin num="16" name="P16" type="passive"/>
+        <pin num="17" name="P17" type="passive"/>
+        <pin num="18" name="P18" type="passive"/>
+        <pin num="19" name="P19" type="passive"/>
+        <pin num="20" name="P20" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_CONN_02X15-RESCUE-WolfDrive_H7Controller">
+      <footprints>
+        <fp>Pin_Header_Straight_2X15</fp>
+        <fp>Pin_Header_Angled_2X15</fp>
+        <fp>Socket_Strip_Straight_2X15</fp>
+        <fp>Socket_Strip_Angled_2X15</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_CONN_02X15-RESCUE-WolfDrive_H7Controller</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+        <pin num="4" name="P4" type="passive"/>
+        <pin num="5" name="P5" type="passive"/>
+        <pin num="6" name="P6" type="passive"/>
+        <pin num="7" name="P7" type="passive"/>
+        <pin num="8" name="P8" type="passive"/>
+        <pin num="9" name="P9" type="passive"/>
+        <pin num="10" name="P10" type="passive"/>
+        <pin num="11" name="P11" type="passive"/>
+        <pin num="12" name="P12" type="passive"/>
+        <pin num="13" name="P13" type="passive"/>
+        <pin num="14" name="P14" type="passive"/>
+        <pin num="15" name="P15" type="passive"/>
+        <pin num="16" name="P16" type="passive"/>
+        <pin num="17" name="P17" type="passive"/>
+        <pin num="18" name="P18" type="passive"/>
+        <pin num="19" name="P19" type="passive"/>
+        <pin num="20" name="P20" type="passive"/>
+        <pin num="21" name="P21" type="passive"/>
+        <pin num="22" name="P22" type="passive"/>
+        <pin num="23" name="P23" type="passive"/>
+        <pin num="24" name="P24" type="passive"/>
+        <pin num="25" name="P25" type="passive"/>
+        <pin num="26" name="P26" type="passive"/>
+        <pin num="27" name="P27" type="passive"/>
+        <pin num="28" name="P28" type="passive"/>
+        <pin num="29" name="P29" type="passive"/>
+        <pin num="30" name="P30" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_CONN_02X17-RESCUE-WolfDrive_H7Controller">
+      <footprints>
+        <fp>Pin_Header_Straight_2X17</fp>
+        <fp>Pin_Header_Angled_2X17</fp>
+        <fp>Socket_Strip_Straight_2X17</fp>
+        <fp>Socket_Strip_Angled_2X17</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_CONN_02X17-RESCUE-WolfDrive_H7Controller</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+        <pin num="4" name="P4" type="passive"/>
+        <pin num="5" name="P5" type="passive"/>
+        <pin num="6" name="P6" type="passive"/>
+        <pin num="7" name="P7" type="passive"/>
+        <pin num="8" name="P8" type="passive"/>
+        <pin num="9" name="P9" type="passive"/>
+        <pin num="10" name="P10" type="passive"/>
+        <pin num="11" name="P11" type="passive"/>
+        <pin num="12" name="P12" type="passive"/>
+        <pin num="13" name="P13" type="passive"/>
+        <pin num="14" name="P14" type="passive"/>
+        <pin num="15" name="P15" type="passive"/>
+        <pin num="16" name="P16" type="passive"/>
+        <pin num="17" name="P17" type="passive"/>
+        <pin num="18" name="P18" type="passive"/>
+        <pin num="19" name="P19" type="passive"/>
+        <pin num="20" name="P20" type="passive"/>
+        <pin num="21" name="P21" type="passive"/>
+        <pin num="22" name="P22" type="passive"/>
+        <pin num="23" name="P23" type="passive"/>
+        <pin num="24" name="P24" type="passive"/>
+        <pin num="25" name="P25" type="passive"/>
+        <pin num="26" name="P26" type="passive"/>
+        <pin num="27" name="P27" type="passive"/>
+        <pin num="28" name="P28" type="passive"/>
+        <pin num="29" name="P29" type="passive"/>
+        <pin num="30" name="P30" type="passive"/>
+        <pin num="31" name="P31" type="passive"/>
+        <pin num="32" name="P32" type="passive"/>
+        <pin num="33" name="P33" type="passive"/>
+        <pin num="34" name="P34" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_DS90LV027A-RESCUE-WolfDrive_H7Controller">
+      <fields>
+        <field name="Reference">I</field>
+        <field name="Value">WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_DS90LV027A-RESCUE-WolfDrive_H7Controller</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VCC" type="power_in"/>
+        <pin num="2" name="DI1" type="input"/>
+        <pin num="3" name="DI2" type="input"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="DO-" type="output"/>
+        <pin num="6" name="DO+" type="output"/>
+        <pin num="7" name="DO+" type="output"/>
+        <pin num="8" name="D0-" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_DS9637A-RESCUE-WolfDrive_H7Controller">
+      <fields>
+        <field name="Reference">I</field>
+        <field name="Value">WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_DS9637A-RESCUE-WolfDrive_H7Controller</field>
+      </fields>
+      <pins>
+        <pin num="1" name="R-" type="input"/>
+        <pin num="2" name="R+" type="input"/>
+        <pin num="3" name="R+" type="input"/>
+        <pin num="4" name="R-" type="input"/>
+        <pin num="5" name="GND" type="power_in"/>
+        <pin num="6" name="Ro2" type="output"/>
+        <pin num="7" name="Ro1" type="output"/>
+        <pin num="8" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_EMI_FILTER-RESCUE-WolfDrive_H7Controller">
+      <fields>
+        <field name="Reference">FI</field>
+        <field name="Value">WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_EMI_FILTER-RESCUE-WolfDrive_H7Controller</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VI" type="passive"/>
+        <pin num="2" name="GND" type="passive"/>
+        <pin num="3" name="VO" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_FILTER-RESCUE-WolfDrive_H7Controller">
+      <fields>
+        <field name="Reference">FB</field>
+        <field name="Value">WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_FILTER-RESCUE-WolfDrive_H7Controller</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_INDUCTOR_SMALL-RESCUE-WolfDrive_H7Controller">
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_INDUCTOR_SMALL-RESCUE-WolfDrive_H7Controller</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="input"/>
+        <pin num="2" name="2" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_LTV-356T-RESCUE-WolfDrive_H7Controller">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_LTV-356T-RESCUE-WolfDrive_H7Controller</field>
+        <field name="Footprint">MFSOP-6</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="3" name="~" type="passive"/>
+        <pin num="4" name="~" type="passive"/>
+        <pin num="6" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_Led_Small-RESCUE-WolfDrive_H7Controller">
+      <footprints>
+        <fp>CP*</fp>
+        <fp>SM*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_Led_Small-RESCUE-WolfDrive_H7Controller</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_ZENER-RESCUE-WolfDrive_H7Controller">
+      <footprints>
+        <fp>D?</fp>
+        <fp>SO*</fp>
+        <fp>SM*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_ZENER-RESCUE-WolfDrive_H7Controller</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:conn_SD_Card-RESCUE-WolfDrive_H7Controller">
+      <footprints>
+        <fp>SD_Card_Receptacle</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">WolfDrive_H7Controller-rescue:conn_SD_Card-RESCUE-WolfDrive_H7Controller</field>
+        <field name="Footprint">10067847-001</field>
+      </fields>
+      <pins>
+        <pin num="1" name="CD/DAT3" type="input"/>
+        <pin num="2" name="CMD" type="input"/>
+        <pin num="3" name="VSS" type="input"/>
+        <pin num="4" name="VDD" type="input"/>
+        <pin num="5" name="CLK" type="input"/>
+        <pin num="6" name="VSS" type="input"/>
+        <pin num="7" name="DAT0" type="input"/>
+        <pin num="8" name="DAT1" type="input"/>
+        <pin num="9" name="DAT2" type="input"/>
+        <pin num="10" name="CARD_DETECT" type="input"/>
+        <pin num="11" name="WRITE_PROTECT" type="input"/>
+        <pin num="12" name="SHELL1" type="input"/>
+        <pin num="13" name="SHELL2" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller">
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_Q_NMOS_DGS-RESCUE-WolfDrive_H7Controller">
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">WolfDrive_H7Controller-rescue:device_Q_NMOS_DGS-RESCUE-WolfDrive_H7Controller</field>
+      </fields>
+      <pins>
+        <pin num="1" name="D" type="passive"/>
+        <pin num="2" name="G" type="input"/>
+        <pin num="3" name="S" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller">
+      <footprints>
+        <fp>R_*</fp>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:interface_ADuM1201CR-RESCUE-WolfDrive_H7Controller">
+      <footprints>
+        <fp>SO*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">WolfDrive_H7Controller-rescue:interface_ADuM1201CR-RESCUE-WolfDrive_H7Controller</field>
+        <field name="Footprint">Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VDD1" type="power_in"/>
+        <pin num="2" name="VOA" type="output"/>
+        <pin num="3" name="VIB" type="input"/>
+        <pin num="4" name="GND1" type="power_in"/>
+        <pin num="5" name="GND2" type="power_in"/>
+        <pin num="6" name="VOB" type="output"/>
+        <pin num="7" name="VIA" type="input"/>
+        <pin num="8" name="VDD2" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="WolfDrive_H7Controller-cache" part="WolfDrive_H7Controller-rescue:linear_LM339-RESCUE-WolfDrive_H7Controller">
+      <footprints>
+        <fp>SOIC*3.9x8.7mm*Pitch1.27mm*</fp>
+        <fp>DIP*W7.62mm*</fp>
+        <fp>TSSOP*4.4x5mm*Pitch0.65mm*</fp>
+        <fp>SSOP*5.3x6.2mm*Pitch0.5mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">WolfDrive_H7Controller-rescue:linear_LM339-RESCUE-WolfDrive_H7Controller</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="openCol"/>
+        <pin num="2" name="~" type="openCol"/>
+        <pin num="3" name="V+" type="power_in"/>
+        <pin num="4" name="-" type="input"/>
+        <pin num="5" name="+" type="input"/>
+        <pin num="6" name="-" type="input"/>
+        <pin num="7" name="+" type="input"/>
+        <pin num="8" name="-" type="input"/>
+        <pin num="9" name="+" type="input"/>
+        <pin num="10" name="-" type="input"/>
+        <pin num="11" name="+" type="input"/>
+        <pin num="12" name="V-" type="power_in"/>
+        <pin num="13" name="~" type="openCol"/>
+        <pin num="14" name="~" type="openCol"/>
+      </pins>
+    </libpart>
+    <libpart lib="WolfDrive_H7Controller-cache" part="conn:Conn_01x04">
+      <footprints>
+        <fp>Connector*:*_??x*mm*</fp>
+        <fp>Connector*:*1x??x*mm*</fp>
+        <fp>Pin?Header?Straight?1X*</fp>
+        <fp>Pin?Header?Angled?1X*</fp>
+        <fp>Socket?Strip?Straight?1X*</fp>
+        <fp>Socket?Strip?Angled?1X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">conn:Conn_01x04</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="WolfDrive_H7Controller-cache" part="conn:Conn_01x04_Female">
+      <footprints>
+        <fp>Connector*:*_??x*mm*</fp>
+        <fp>Connector*:*1x??x*mm*</fp>
+        <fp>Socket?Strip?Straight?1X*</fp>
+        <fp>Socket?Strip?Angled?1X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">conn:Conn_01x04_Female</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="WolfDrive_H7Controller-cache" part="conn:DB15_Female_HighDensity_MountingHoles">
+      <footprints>
+        <fp>DB*F*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">conn:DB15_Female_HighDensity_MountingHoles</field>
+      </fields>
+      <pins>
+        <pin num="0" name="~" type="passive"/>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+        <pin num="3" name="~" type="passive"/>
+        <pin num="4" name="~" type="passive"/>
+        <pin num="5" name="~" type="passive"/>
+        <pin num="6" name="~" type="passive"/>
+        <pin num="7" name="~" type="passive"/>
+        <pin num="8" name="~" type="passive"/>
+        <pin num="9" name="~" type="passive"/>
+        <pin num="10" name="~" type="passive"/>
+        <pin num="11" name="~" type="passive"/>
+        <pin num="12" name="~" type="passive"/>
+        <pin num="13" name="~" type="passive"/>
+        <pin num="14" name="~" type="passive"/>
+        <pin num="15" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="WolfDrive_H7Controller-cache" part="conn:TEST_1P">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">conn:TEST_1P</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="WolfDrive_H7Controller-cache" part="conn:USB_OTG">
+      <footprints>
+        <fp>USB*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">conn:USB_OTG</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VBUS" type="power_in"/>
+        <pin num="2" name="D-" type="passive"/>
+        <pin num="3" name="D+" type="passive"/>
+        <pin num="4" name="ID" type="passive"/>
+        <pin num="5" name="GND" type="power_in"/>
+        <pin num="6" name="Shield" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="WolfDrive_H7Controller-cache" part="device:EMI_Filter_CommonMode">
+      <aliases>
+        <alias>EMI_Filter_CommonMode</alias>
+      </aliases>
+      <footprints>
+        <fp>L_*</fp>
+        <fp>L_CommonMode*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">FL</field>
+        <field name="Value">device:EMI_Filter_CommonMode</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="WolfDrive_H7Controller-cache" part="device:Ferrite_Bead">
+      <footprints>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+        <fp>*Ferrite*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">device:Ferrite_Bead</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="WolfDrive_H7Controller-cache" part="device:R_Small">
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">device:R_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="WolfDrive_H7Controller-cache" part="ftdi:FT232RL">
+      <footprints>
+        <fp>SSOP*5.3x10.2mm*Pitch0.65mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ftdi:FT232RL</field>
+        <field name="Footprint">Housings_SSOP:SSOP-28_5.3x10.2mm_Pitch0.65mm</field>
+      </fields>
+      <pins>
+        <pin num="1" name="TXD" type="output"/>
+        <pin num="2" name="DTR" type="output"/>
+        <pin num="3" name="RTS" type="output"/>
+        <pin num="4" name="VCCIO" type="input"/>
+        <pin num="5" name="RXD" type="input"/>
+        <pin num="6" name="RI" type="input"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="9" name="DCR" type="input"/>
+        <pin num="10" name="DCD" type="input"/>
+        <pin num="11" name="CTS" type="input"/>
+        <pin num="12" name="CBUS4" type="BiDi"/>
+        <pin num="13" name="CBUS2" type="BiDi"/>
+        <pin num="14" name="CBUS3" type="BiDi"/>
+        <pin num="15" name="USBD+" type="BiDi"/>
+        <pin num="16" name="USBD-" type="BiDi"/>
+        <pin num="17" name="3V3OUT" type="input"/>
+        <pin num="18" name="GND" type="power_in"/>
+        <pin num="19" name="~RESET~" type="input"/>
+        <pin num="20" name="VCC" type="power_in"/>
+        <pin num="21" name="GND" type="power_in"/>
+        <pin num="22" name="CBUS1" type="output"/>
+        <pin num="23" name="CBUS0" type="BiDi"/>
+        <pin num="25" name="AGND" type="power_in"/>
+        <pin num="26" name="TEST" type="power_in"/>
+        <pin num="27" name="OSCI" type="input"/>
+        <pin num="28" name="OSCO" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="WolfDrive_H7Controller-cache" part="linear:OPA2340">
+      <aliases>
+        <alias>LM358</alias>
+        <alias>AD8620</alias>
+        <alias>LMC6062</alias>
+        <alias>LMC6082</alias>
+        <alias>TL062</alias>
+        <alias>TL072</alias>
+        <alias>TL082</alias>
+        <alias>NE5532</alias>
+        <alias>SA5532</alias>
+        <alias>RC4558</alias>
+        <alias>RC4560</alias>
+        <alias>RC4580</alias>
+        <alias>LMV358</alias>
+        <alias>TS912</alias>
+        <alias>TSV912IDT</alias>
+        <alias>TSV912IST</alias>
+        <alias>TLC272</alias>
+        <alias>TLC277</alias>
+        <alias>MCP602</alias>
+        <alias>OPA2134</alias>
+        <alias>OPA2340</alias>
+        <alias>OPA2376xxD</alias>
+        <alias>OPA2376xxDGK</alias>
+        <alias>MC33078</alias>
+        <alias>MC33178</alias>
+        <alias>LM4562</alias>
+        <alias>OP249</alias>
+        <alias>OP275</alias>
+        <alias>ADA4075-2</alias>
+        <alias>MCP6002-xP</alias>
+        <alias>MCP6002-xSN</alias>
+        <alias>MCP6002-xMS</alias>
+        <alias>LM7332</alias>
+        <alias>OPA2333xxD</alias>
+        <alias>OPA2333xxDGK</alias>
+        <alias>LMC6482</alias>
+        <alias>LT1492</alias>
+        <alias>LTC6081xMS8</alias>
+        <alias>LM6172</alias>
+        <alias>MCP6L92</alias>
+        <alias>NJM2043</alias>
+        <alias>NJM2114</alias>
+        <alias>NJM4556A</alias>
+        <alias>NJM4558</alias>
+        <alias>NJM4559</alias>
+        <alias>NJM4560</alias>
+        <alias>NJM4580</alias>
+        <alias>NJM5532</alias>
+        <alias>ADA4807-2ARM</alias>
+        <alias>OPA2691</alias>
+      </aliases>
+      <footprints>
+        <fp>SOIC*3.9x4.9mm*Pitch1.27mm*</fp>
+        <fp>DIP*W7.62mm*</fp>
+        <fp>TO*99*</fp>
+        <fp>OnSemi*Micro8*</fp>
+        <fp>TSSOP*3x3mm*Pitch0.65mm*</fp>
+        <fp>TSSOP*4.4x3mm*Pitch0.65mm*</fp>
+        <fp>MSOP*3x3mm*Pitch0.65mm*</fp>
+        <fp>SSOP*3.9x4.9mm*Pitch0.635mm*</fp>
+        <fp>LFCSP*2x2mm*Pitch0.5mm*</fp>
+        <fp>*SIP*</fp>
+        <fp>SOIC*5.3x6.2mm*Pitch1.27mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">linear:OPA2340</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="output"/>
+        <pin num="2" name="-" type="input"/>
+        <pin num="3" name="+" type="input"/>
+        <pin num="4" name="V-" type="power_in"/>
+        <pin num="5" name="+" type="input"/>
+        <pin num="6" name="-" type="input"/>
+        <pin num="7" name="~" type="output"/>
+        <pin num="8" name="V+" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="WolfDrive_H7Controller-cache" part="mechanical:Mounting_Hole">
+      <footprints>
+        <fp>Mounting?Hole*</fp>
+        <fp>Hole*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">MK</field>
+        <field name="Value">mechanical:Mounting_Hole</field>
+      </fields>
+    </libpart>
+    <libpart lib="WolfDrive_H7Controller-cache" part="mechanical:Mounting_Hole_PAD">
+      <footprints>
+        <fp>Mounting?Hole*</fp>
+        <fp>Hole*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">MK</field>
+        <field name="Value">mechanical:Mounting_Hole_PAD</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="WolfDrive_H7Controller-cache" part="regul:LM1117-3.3">
+      <aliases>
+        <alias>LM1117-2.5</alias>
+        <alias>LM1117-3.3</alias>
+        <alias>LM1117-5.0</alias>
+        <alias>TLV1117-15</alias>
+        <alias>TLV1117-18</alias>
+        <alias>TLV1117-25</alias>
+        <alias>TLV1117-33</alias>
+        <alias>TLV1117-50</alias>
+      </aliases>
+      <footprints>
+        <fp>SOT?223*</fp>
+        <fp>TO?263*</fp>
+        <fp>TO?252*</fp>
+        <fp>TO?220*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">regul:LM1117-3.3</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="VO" type="power_out"/>
+        <pin num="3" name="VI" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="WolfDrive_H7Controller-cache" part="regul:LM1117-5.0">
+      <footprints>
+        <fp>SOT?223*</fp>
+        <fp>TO?263*</fp>
+        <fp>TO?252*</fp>
+        <fp>TO?220*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">regul:LM1117-5.0</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="VO" type="power_out"/>
+        <pin num="3" name="VI" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="WolfDrive_H7Controller-cache">
+      <uri>C:\Users\eexjb5\Dropbox\Uni\PhD\PCBs\WolfDrive\WolfDrive_H7Controller\WolfDrive_H7Controller\WolfDrive_H7Controller-cache.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/SDMMC1_CMD_PD2">
+      <node ref="CN8" pin="12"/>
+      <node ref="R26" pin="2"/>
+      <node ref="FB8" pin="1"/>
+    </net>
+    <net code="2" name="/SDMMC1_D1_PC9">
+      <node ref="R31" pin="2"/>
+      <node ref="FB11" pin="1"/>
+      <node ref="CN8" pin="4"/>
+    </net>
+    <net code="3" name="/SDMMC1_D0_PC8">
+      <node ref="FB10" pin="1"/>
+      <node ref="R28" pin="2"/>
+      <node ref="CN8" pin="2"/>
+    </net>
+    <net code="4" name="/SDMMC1_CK_PC12">
+      <node ref="R27" pin="2"/>
+      <node ref="FB9" pin="1"/>
+      <node ref="CN8" pin="10"/>
+    </net>
+    <net code="5" name="/SDMMC1_D3_PC11">
+      <node ref="CN8" pin="8"/>
+      <node ref="R25" pin="2"/>
+      <node ref="FB7" pin="1"/>
+    </net>
+    <net code="6" name="/SDMMC1_D2_PC10">
+      <node ref="R24" pin="2"/>
+      <node ref="FB6" pin="1"/>
+      <node ref="CN8" pin="6"/>
+    </net>
+    <net code="7" name="Net-(R13-Pad2)">
+      <node ref="U4" pin="1"/>
+      <node ref="R13" pin="2"/>
+    </net>
+    <net code="8" name="Net-(P7-Pad1)">
+      <node ref="P7" pin="1"/>
+      <node ref="R13" pin="1"/>
+    </net>
+    <net code="9" name="Net-(P7-Pad2)">
+      <node ref="U4" pin="3"/>
+      <node ref="P7" pin="2"/>
+    </net>
+    <net code="10" name="/GPIO_EXTI3_PG3">
+      <node ref="R10" pin="1"/>
+      <node ref="CN8" pin="16"/>
+      <node ref="U4" pin="6"/>
+    </net>
+    <net code="11" name="/USART6_TX_PG14">
+      <node ref="U5" pin="2"/>
+      <node ref="CN10" pin="14"/>
+    </net>
+    <net code="12" name="/USART6_RX_PG9">
+      <node ref="U5" pin="3"/>
+      <node ref="CN10" pin="16"/>
+    </net>
+    <net code="13" name="Net-(C13-Pad2)">
+      <node ref="L4" pin="1"/>
+      <node ref="OPT5" pin="3"/>
+      <node ref="C13" pin="2"/>
+      <node ref="C19" pin="2"/>
+    </net>
+    <net code="14" name="Net-(CON1-Pad1)">
+      <node ref="CON1" pin="1"/>
+      <node ref="FB7" pin="2"/>
+    </net>
+    <net code="15" name="Net-(FB12-Pad1)">
+      <node ref="I4" pin="7"/>
+      <node ref="FB12" pin="1"/>
+    </net>
+    <net code="16" name="Net-(P9-Pad15)">
+      <node ref="R51" pin="1"/>
+      <node ref="P9" pin="15"/>
+    </net>
+    <net code="17" name="Net-(CON1-Pad9)">
+      <node ref="CON1" pin="9"/>
+      <node ref="FB6" pin="2"/>
+    </net>
+    <net code="18" name="Net-(CON1-Pad2)">
+      <node ref="FB8" pin="2"/>
+      <node ref="CON1" pin="2"/>
+    </net>
+    <net code="19" name="Net-(CON1-Pad5)">
+      <node ref="CON1" pin="5"/>
+      <node ref="FB9" pin="2"/>
+    </net>
+    <net code="20" name="Net-(CON1-Pad7)">
+      <node ref="FB10" pin="2"/>
+      <node ref="CON1" pin="7"/>
+    </net>
+    <net code="21" name="Net-(CON1-Pad8)">
+      <node ref="FB11" pin="2"/>
+      <node ref="CON1" pin="8"/>
+    </net>
+    <net code="22" name="Net-(C14-Pad2)">
+      <node ref="OPT6" pin="3"/>
+      <node ref="C20" pin="2"/>
+      <node ref="L5" pin="1"/>
+      <node ref="C14" pin="2"/>
+    </net>
+    <net code="23" name="/PWMA_LS+">
+      <node ref="I7" pin="6"/>
+      <node ref="P9" pin="5"/>
+    </net>
+    <net code="24" name="/PWMA_LS-">
+      <node ref="P9" pin="6"/>
+      <node ref="I7" pin="5"/>
+    </net>
+    <net code="25" name="/PWMB_HS-">
+      <node ref="I8" pin="8"/>
+      <node ref="P10" pin="4"/>
+    </net>
+    <net code="26" name="/PWMB_HS+">
+      <node ref="P10" pin="3"/>
+      <node ref="I8" pin="7"/>
+    </net>
+    <net code="27" name="/PWMB_LS+">
+      <node ref="P10" pin="5"/>
+      <node ref="I8" pin="6"/>
+    </net>
+    <net code="28" name="Net-(D16-Pad2)">
+      <node ref="D16" pin="2"/>
+      <node ref="U9" pin="1"/>
+    </net>
+    <net code="29" name="/GPIO_OUTPUT_PF15">
+      <node ref="CN10" pin="12"/>
+      <node ref="R39" pin="1"/>
+      <node ref="Q2" pin="2"/>
+    </net>
+    <net code="30" name="/PWMB_LS-">
+      <node ref="P10" pin="6"/>
+      <node ref="I8" pin="5"/>
+    </net>
+    <net code="31" name="/~Fault_C-">
+      <node ref="R22" pin="2"/>
+      <node ref="I6" pin="1"/>
+      <node ref="P11" pin="8"/>
+    </net>
+    <net code="32" name="/~Fault_C+">
+      <node ref="I6" pin="2"/>
+      <node ref="R22" pin="1"/>
+      <node ref="P11" pin="7"/>
+    </net>
+    <net code="33" name="/RTD_C+">
+      <node ref="I6" pin="3"/>
+      <node ref="R23" pin="2"/>
+      <node ref="P11" pin="9"/>
+    </net>
+    <net code="34" name="/PWMC_HS-">
+      <node ref="I9" pin="8"/>
+      <node ref="P11" pin="4"/>
+    </net>
+    <net code="35" name="/PWMC_HS+">
+      <node ref="I9" pin="7"/>
+      <node ref="P11" pin="3"/>
+    </net>
+    <net code="36" name="/PWMC_LS+">
+      <node ref="I9" pin="6"/>
+      <node ref="P11" pin="5"/>
+    </net>
+    <net code="37" name="/PWMC_LS-">
+      <node ref="P11" pin="6"/>
+      <node ref="I9" pin="5"/>
+    </net>
+    <net code="38" name="Net-(I6-Pad6)">
+      <node ref="I6" pin="6"/>
+      <node ref="R35" pin="1"/>
+    </net>
+    <net code="39" name="Net-(FB13-Pad1)">
+      <node ref="I5" pin="7"/>
+      <node ref="FB13" pin="1"/>
+    </net>
+    <net code="40" name="Net-(P10-Pad15)">
+      <node ref="R52" pin="1"/>
+      <node ref="P10" pin="15"/>
+    </net>
+    <net code="41" name="/RTD_C-">
+      <node ref="P11" pin="10"/>
+      <node ref="R23" pin="1"/>
+      <node ref="I6" pin="4"/>
+    </net>
+    <net code="42" name="/~Fault_OCV">
+      <node ref="J21" pin="1"/>
+      <node ref="OPT11" pin="1"/>
+      <node ref="U9" pin="14"/>
+      <node ref="R41" pin="1"/>
+      <node ref="U10" pin="1"/>
+    </net>
+    <net code="43" name="/OverTemp_trip">
+      <node ref="J25" pin="1"/>
+      <node ref="U8" pin="1"/>
+      <node ref="R43" pin="2"/>
+      <node ref="U8" pin="2"/>
+      <node ref="U8" pin="13"/>
+      <node ref="U10" pin="4"/>
+    </net>
+    <net code="44" name="/GPIO_EXTI13_PF13">
+      <node ref="R42" pin="1"/>
+      <node ref="CN10" pin="2"/>
+      <node ref="R41" pin="2"/>
+    </net>
+    <net code="45" name="Net-(R45-Pad2)">
+      <node ref="U10" pin="2"/>
+      <node ref="R46" pin="1"/>
+      <node ref="R45" pin="2"/>
+    </net>
+    <net code="46" name="/SPI1_SCK_PA5">
+      <node ref="J40" pin="1"/>
+      <node ref="CN7" pin="10"/>
+      <node ref="I1" pin="2"/>
+      <node ref="J43" pin="11"/>
+    </net>
+    <net code="47" name="/SP1_MOSI_PB5">
+      <node ref="J42" pin="1"/>
+      <node ref="I2" pin="3"/>
+      <node ref="CN7" pin="13"/>
+      <node ref="J43" pin="13"/>
+    </net>
+    <net code="48" name="Net-(I3-Pad7)">
+      <node ref="I3" pin="7"/>
+      <node ref="R66" pin="2"/>
+    </net>
+    <net code="49" name="Net-(R49-Pad2)">
+      <node ref="U10" pin="9"/>
+      <node ref="R50" pin="1"/>
+      <node ref="R49" pin="2"/>
+    </net>
+    <net code="50" name="Net-(R47-Pad2)">
+      <node ref="R48" pin="1"/>
+      <node ref="R47" pin="2"/>
+      <node ref="U10" pin="5"/>
+    </net>
+    <net code="51" name="Net-(D7-Pad2)">
+      <node ref="D7" pin="2"/>
+      <node ref="U9" pin="2"/>
+    </net>
+    <net code="52" name="Net-(D14-Pad2)">
+      <node ref="U9" pin="9"/>
+      <node ref="D14" pin="2"/>
+    </net>
+    <net code="53" name="Net-(D15-Pad2)">
+      <node ref="U9" pin="10"/>
+      <node ref="D15" pin="2"/>
+    </net>
+    <net code="54" name="/GPIO_EXTI14_PF14">
+      <node ref="CN10" pin="8"/>
+      <node ref="R54" pin="1"/>
+      <node ref="D7" pin="1"/>
+      <node ref="D15" pin="1"/>
+      <node ref="D14" pin="1"/>
+      <node ref="D16" pin="1"/>
+    </net>
+    <net code="55" name="/GPIO_Output_PG0">
+      <node ref="CN9" pin="29"/>
+      <node ref="R44" pin="2"/>
+    </net>
+    <net code="56" name="Net-(Q2-Pad1)">
+      <node ref="U9" pin="15"/>
+      <node ref="U9" pin="3"/>
+      <node ref="U9" pin="7"/>
+      <node ref="U9" pin="11"/>
+      <node ref="Q2" pin="1"/>
+      <node ref="R40" pin="2"/>
+    </net>
+    <net code="57" name="/SP1_MISO+">
+      <node ref="J43" pin="2"/>
+      <node ref="R8" pin="1"/>
+      <node ref="I3" pin="2"/>
+    </net>
+    <net code="58" name="Net-(C37-Pad2)">
+      <node ref="L11" pin="1"/>
+      <node ref="C37" pin="2"/>
+      <node ref="OPT7" pin="1"/>
+      <node ref="C41" pin="2"/>
+    </net>
+    <net code="59" name="Net-(C59-Pad2)">
+      <node ref="R32" pin="1"/>
+      <node ref="C59" pin="2"/>
+      <node ref="R36" pin="2"/>
+    </net>
+    <net code="60" name="Net-(I5-Pad6)">
+      <node ref="I5" pin="6"/>
+      <node ref="R34" pin="1"/>
+    </net>
+    <net code="61" name="/ADC2_INP5_PB1">
+      <node ref="R38" pin="1"/>
+      <node ref="U7" pin="7"/>
+      <node ref="J14" pin="1"/>
+      <node ref="D6" pin="1"/>
+      <node ref="CN10" pin="7"/>
+    </net>
+    <net code="62" name="Net-(C59-Pad1)">
+      <node ref="R38" pin="2"/>
+      <node ref="C59" pin="1"/>
+      <node ref="U7" pin="6"/>
+      <node ref="R37" pin="2"/>
+    </net>
+    <net code="63" name="Net-(C63-Pad1)">
+      <node ref="C63" pin="1"/>
+      <node ref="U7" pin="5"/>
+      <node ref="R36" pin="1"/>
+    </net>
+    <net code="64" name="/QUADSPI_CLK_PB2">
+      <node ref="CN10" pin="15"/>
+      <node ref="OPT1" pin="4"/>
+      <node ref="R1" pin="2"/>
+      <node ref="J2" pin="1"/>
+    </net>
+    <net code="65" name="/QUADSPI_BK1_NCS_PB10">
+      <node ref="OPT2" pin="4"/>
+      <node ref="R2" pin="2"/>
+      <node ref="J3" pin="1"/>
+      <node ref="CN10" pin="32"/>
+    </net>
+    <net code="66" name="Net-(C15-Pad2)">
+      <node ref="L6" pin="1"/>
+      <node ref="OPT1" pin="1"/>
+      <node ref="C22" pin="2"/>
+      <node ref="C15" pin="2"/>
+    </net>
+    <net code="67" name="Net-(C12-Pad2)">
+      <node ref="OPT4" pin="3"/>
+      <node ref="C12" pin="2"/>
+      <node ref="L3" pin="1"/>
+      <node ref="C18" pin="2"/>
+    </net>
+    <net code="68" name="Net-(C11-Pad2)">
+      <node ref="C11" pin="2"/>
+      <node ref="OPT3" pin="3"/>
+      <node ref="C17" pin="2"/>
+      <node ref="L2" pin="1"/>
+    </net>
+    <net code="69" name="Net-(C16-Pad2)">
+      <node ref="C23" pin="2"/>
+      <node ref="OPT2" pin="1"/>
+      <node ref="L7" pin="1"/>
+      <node ref="C16" pin="2"/>
+    </net>
+    <net code="70" name="Net-(C38-Pad2)">
+      <node ref="C42" pin="2"/>
+      <node ref="OPT8" pin="1"/>
+      <node ref="L12" pin="1"/>
+      <node ref="C38" pin="2"/>
+    </net>
+    <net code="71" name="/SPI2_SCK_PD3">
+      <node ref="CN9" pin="10"/>
+      <node ref="J30" pin="1"/>
+      <node ref="OPT7" pin="4"/>
+      <node ref="R5" pin="2"/>
+    </net>
+    <net code="72" name="Net-(C36-Pad2)">
+      <node ref="OPT10" pin="3"/>
+      <node ref="L10" pin="1"/>
+      <node ref="C36" pin="2"/>
+      <node ref="C40" pin="2"/>
+    </net>
+    <net code="73" name="Net-(C39-Pad2)">
+      <node ref="C39" pin="2"/>
+      <node ref="OPT9" pin="1"/>
+      <node ref="L13" pin="1"/>
+      <node ref="C43" pin="2"/>
+    </net>
+    <net code="74" name="Net-(C27-Pad1)">
+      <node ref="C27" pin="1"/>
+      <node ref="U1" pin="3"/>
+      <node ref="L14" pin="2"/>
+    </net>
+    <net code="75" name="Net-(C29-Pad1)">
+      <node ref="FI2" pin="3"/>
+      <node ref="L14" pin="1"/>
+      <node ref="C29" pin="1"/>
+      <node ref="L15" pin="1"/>
+      <node ref="C30" pin="1"/>
+    </net>
+    <net code="76" name="Net-(C28-Pad1)">
+      <node ref="U2" pin="3"/>
+      <node ref="L15" pin="2"/>
+      <node ref="C28" pin="1"/>
+    </net>
+    <net code="77" name="Net-(U11-Pad2)">
+      <node ref="U11" pin="2"/>
+    </net>
+    <net code="78" name="Net-(U11-Pad3)">
+      <node ref="U11" pin="3"/>
+    </net>
+    <net code="79" name="+12V">
+      <node ref="J8" pin="1"/>
+      <node ref="P10" pin="1"/>
+      <node ref="C21" pin="1"/>
+      <node ref="C7" pin="1"/>
+      <node ref="FL1" pin="2"/>
+      <node ref="FI2" pin="1"/>
+      <node ref="R15" pin="1"/>
+      <node ref="P11" pin="1"/>
+      <node ref="P9" pin="1"/>
+    </net>
+    <net code="80" name="Net-(C84-Pad1)">
+      <node ref="J43" pin="6"/>
+      <node ref="C84" pin="1"/>
+      <node ref="L9" pin="2"/>
+    </net>
+    <net code="81" name="Net-(C85-Pad1)">
+      <node ref="J43" pin="15"/>
+      <node ref="C85" pin="1"/>
+      <node ref="L18" pin="1"/>
+    </net>
+    <net code="82" name="+3V3">
+      <node ref="R16" pin="1"/>
+      <node ref="L13" pin="2"/>
+      <node ref="C31" pin="2"/>
+      <node ref="C34" pin="2"/>
+      <node ref="J35" pin="1"/>
+      <node ref="I2" pin="1"/>
+      <node ref="R10" pin="2"/>
+      <node ref="C33" pin="2"/>
+      <node ref="L6" pin="2"/>
+      <node ref="C9" pin="2"/>
+      <node ref="C53" pin="2"/>
+      <node ref="U5" pin="1"/>
+      <node ref="R28" pin="1"/>
+      <node ref="R27" pin="1"/>
+      <node ref="L12" pin="2"/>
+      <node ref="L10" pin="2"/>
+      <node ref="R24" pin="1"/>
+      <node ref="U3" pin="2"/>
+      <node ref="C1" pin="2"/>
+      <node ref="C6" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="I1" pin="1"/>
+      <node ref="L2" pin="2"/>
+      <node ref="L4" pin="2"/>
+      <node ref="C73" pin="2"/>
+      <node ref="R25" pin="1"/>
+      <node ref="R26" pin="1"/>
+      <node ref="C3" pin="2"/>
+      <node ref="C74" pin="2"/>
+      <node ref="C5" pin="2"/>
+      <node ref="L11" pin="2"/>
+      <node ref="C4" pin="2"/>
+      <node ref="C32" pin="2"/>
+      <node ref="C8" pin="2"/>
+      <node ref="L5" pin="2"/>
+      <node ref="C45" pin="1"/>
+      <node ref="R31" pin="1"/>
+      <node ref="I3" pin="8"/>
+      <node ref="C83" pin="1"/>
+      <node ref="L3" pin="2"/>
+      <node ref="C35" pin="2"/>
+      <node ref="CON1" pin="4"/>
+      <node ref="L7" pin="2"/>
+      <node ref="U2" pin="2"/>
+      <node ref="L18" pin="2"/>
+    </net>
+    <net code="83" name="Net-(C75-Pad2)">
+      <node ref="C75" pin="2"/>
+      <node ref="C80" pin="2"/>
+      <node ref="OPT11" pin="3"/>
+      <node ref="L17" pin="2"/>
+    </net>
+    <net code="84" name="/SP1_MISO_PA6">
+      <node ref="J43" pin="14"/>
+      <node ref="R66" pin="1"/>
+      <node ref="J39" pin="1"/>
+      <node ref="CN7" pin="12"/>
+    </net>
+    <net code="85" name="Net-(FL1-Pad3)">
+      <node ref="J29" pin="1"/>
+      <node ref="J29" pin="2"/>
+      <node ref="FL1" pin="3"/>
+    </net>
+    <net code="86" name="Net-(FL1-Pad1)">
+      <node ref="J29" pin="4"/>
+      <node ref="J29" pin="3"/>
+      <node ref="FL1" pin="1"/>
+    </net>
+    <net code="87" name="/SP2_MISO_PC2">
+      <node ref="CN10" pin="9"/>
+      <node ref="J33" pin="1"/>
+      <node ref="OPT10" pin="1"/>
+    </net>
+    <net code="88" name="Net-(U11-Pad28)">
+      <node ref="U11" pin="28"/>
+    </net>
+    <net code="89" name="Net-(U11-Pad26)">
+      <node ref="U11" pin="26"/>
+    </net>
+    <net code="90" name="Net-(U11-Pad12)">
+      <node ref="U11" pin="12"/>
+    </net>
+    <net code="91" name="Net-(U11-Pad14)">
+      <node ref="U11" pin="14"/>
+    </net>
+    <net code="92" name="Net-(U11-Pad13)">
+      <node ref="U11" pin="13"/>
+    </net>
+    <net code="93" name="Net-(U11-Pad6)">
+      <node ref="U11" pin="6"/>
+    </net>
+    <net code="94" name="Net-(U11-Pad10)">
+      <node ref="U11" pin="10"/>
+    </net>
+    <net code="95" name="Net-(U11-Pad9)">
+      <node ref="U11" pin="9"/>
+    </net>
+    <net code="96" name="Net-(U11-Pad27)">
+      <node ref="U11" pin="27"/>
+    </net>
+    <net code="97" name="Net-(U11-Pad11)">
+      <node ref="U11" pin="11"/>
+    </net>
+    <net code="98" name="Net-(J1-Pad4)">
+      <node ref="J1" pin="4"/>
+    </net>
+    <net code="99" name="Net-(D18-Pad1)">
+      <node ref="U11" pin="22"/>
+      <node ref="D18" pin="1"/>
+    </net>
+    <net code="100" name="Net-(U11-Pad5)">
+      <node ref="U5" pin="6"/>
+      <node ref="U11" pin="5"/>
+    </net>
+    <net code="101" name="Net-(D17-Pad2)">
+      <node ref="D17" pin="2"/>
+      <node ref="R55" pin="1"/>
+    </net>
+    <net code="102" name="Net-(D17-Pad1)">
+      <node ref="D17" pin="1"/>
+      <node ref="U11" pin="23"/>
+    </net>
+    <net code="103" name="Net-(D18-Pad2)">
+      <node ref="D18" pin="2"/>
+      <node ref="R14" pin="1"/>
+    </net>
+    <net code="104" name="Net-(U11-Pad19)">
+      <node ref="U11" pin="19"/>
+    </net>
+    <net code="105" name="/SP1_MISO-">
+      <node ref="I3" pin="1"/>
+      <node ref="R8" pin="2"/>
+      <node ref="J43" pin="7"/>
+    </net>
+    <net code="106" name="/SP1_MOSI+">
+      <node ref="J43" pin="3"/>
+      <node ref="I2" pin="6"/>
+    </net>
+    <net code="107" name="/SP1_MOSI-">
+      <node ref="I2" pin="5"/>
+      <node ref="J43" pin="8"/>
+    </net>
+    <net code="108" name="/SPI1_NSS-">
+      <node ref="I1" pin="5"/>
+      <node ref="J43" pin="9"/>
+    </net>
+    <net code="109" name="/SPI1_SCK-">
+      <node ref="J43" pin="10"/>
+      <node ref="I1" pin="8"/>
+    </net>
+    <net code="110" name="/SPI1_NSS_PA15">
+      <node ref="CN7" pin="9"/>
+      <node ref="J43" pin="12"/>
+      <node ref="I1" pin="3"/>
+      <node ref="J41" pin="1"/>
+    </net>
+    <net code="111" name="Net-(U11-Pad1)">
+      <node ref="U5" pin="7"/>
+      <node ref="U11" pin="1"/>
+    </net>
+    <net code="112" name="Net-(D1-Pad3)">
+      <node ref="D1" pin="3"/>
+      <node ref="J1" pin="2"/>
+      <node ref="U11" pin="16"/>
+    </net>
+    <net code="113" name="Net-(D1-Pad4)">
+      <node ref="D1" pin="4"/>
+      <node ref="J1" pin="3"/>
+      <node ref="U11" pin="15"/>
+    </net>
+    <net code="114" name="Net-(C24-Pad1)">
+      <node ref="U11" pin="17"/>
+      <node ref="C24" pin="1"/>
+    </net>
+    <net code="115" name="Net-(C10-Pad1)">
+      <node ref="J1" pin="1"/>
+      <node ref="C10" pin="1"/>
+      <node ref="D1" pin="2"/>
+      <node ref="L1" pin="2"/>
+    </net>
+    <net code="116" name="Net-(C77-Pad1)">
+      <node ref="R58" pin="2"/>
+      <node ref="C77" pin="1"/>
+      <node ref="U7" pin="2"/>
+      <node ref="R59" pin="2"/>
+    </net>
+    <net code="117" name="Net-(C78-Pad1)">
+      <node ref="C78" pin="1"/>
+      <node ref="U7" pin="3"/>
+      <node ref="R57" pin="1"/>
+    </net>
+    <net code="118" name="Net-(C77-Pad2)">
+      <node ref="R57" pin="2"/>
+      <node ref="C77" pin="2"/>
+      <node ref="R12" pin="1"/>
+    </net>
+    <net code="119" name="Net-(FI5-Pad3)">
+      <node ref="FI5" pin="3"/>
+      <node ref="R12" pin="2"/>
+      <node ref="R11" pin="2"/>
+      <node ref="R9" pin="1"/>
+    </net>
+    <net code="120" name="AGND">
+      <node ref="C78" pin="2"/>
+      <node ref="J27" pin="1"/>
+      <node ref="U7" pin="4"/>
+      <node ref="C72" pin="2"/>
+      <node ref="D2" pin="2"/>
+      <node ref="R58" pin="1"/>
+      <node ref="R11" pin="1"/>
+      <node ref="C70" pin="2"/>
+      <node ref="FI5" pin="2"/>
+      <node ref="R30" pin="1"/>
+      <node ref="R37" pin="1"/>
+      <node ref="FI4" pin="2"/>
+      <node ref="C71" pin="1"/>
+      <node ref="J38" pin="1"/>
+      <node ref="CN10" pin="3"/>
+      <node ref="D6" pin="2"/>
+      <node ref="C63" pin="2"/>
+    </net>
+    <net code="121" name="Net-(D11-Pad2)">
+      <node ref="D11" pin="2"/>
+      <node ref="R63" pin="2"/>
+    </net>
+    <net code="122" name="/Regen_In">
+      <node ref="FI5" pin="1"/>
+      <node ref="J27" pin="3"/>
+    </net>
+    <net code="123" name="Net-(P11-Pad15)">
+      <node ref="R53" pin="1"/>
+      <node ref="P11" pin="15"/>
+    </net>
+    <net code="124" name="Net-(FB14-Pad1)">
+      <node ref="FB14" pin="1"/>
+      <node ref="I6" pin="7"/>
+    </net>
+    <net code="125" name="Net-(FI4-Pad1)">
+      <node ref="J27" pin="2"/>
+      <node ref="FI4" pin="1"/>
+    </net>
+    <net code="126" name="Net-(FI4-Pad3)">
+      <node ref="R32" pin="2"/>
+      <node ref="R29" pin="1"/>
+      <node ref="R30" pin="2"/>
+      <node ref="FI4" pin="3"/>
+    </net>
+    <net code="127" name="Net-(CN10-Pad30)">
+      <node ref="CN10" pin="30"/>
+    </net>
+    <net code="128" name="Net-(CN10-Pad34)">
+      <node ref="CN10" pin="34"/>
+    </net>
+    <net code="129" name="Net-(D8-Pad2)">
+      <node ref="R60" pin="2"/>
+      <node ref="D8" pin="2"/>
+    </net>
+    <net code="130" name="Net-(CN10-Pad28)">
+      <node ref="CN10" pin="28"/>
+    </net>
+    <net code="131" name="Net-(CN10-Pad20)">
+      <node ref="CN10" pin="20"/>
+    </net>
+    <net code="132" name="Net-(CN9-Pad30)">
+      <node ref="CN9" pin="30"/>
+    </net>
+    <net code="133" name="Net-(CN7-Pad20)">
+      <node ref="CN7" pin="20"/>
+    </net>
+    <net code="134" name="Net-(CN8-Pad14)">
+      <node ref="CN8" pin="14"/>
+    </net>
+    <net code="135" name="/QUADSPI_BK1_IO1_PD12">
+      <node ref="CN10" pin="21"/>
+      <node ref="OPT4" pin="1"/>
+      <node ref="J5" pin="1"/>
+    </net>
+    <net code="136" name="/QUADSPI_BK1_IO2_PE2">
+      <node ref="CN10" pin="25"/>
+      <node ref="OPT5" pin="1"/>
+      <node ref="J6" pin="1"/>
+    </net>
+    <net code="137" name="Net-(D13-Pad2)">
+      <node ref="D13" pin="2"/>
+      <node ref="R65" pin="2"/>
+    </net>
+    <net code="138" name="Net-(D10-Pad2)">
+      <node ref="R62" pin="2"/>
+      <node ref="D10" pin="2"/>
+    </net>
+    <net code="139" name="/~Fault_Gate_B">
+      <node ref="FB13" pin="2"/>
+      <node ref="J23" pin="1"/>
+      <node ref="U9" pin="6"/>
+    </net>
+    <net code="140" name="/QUADSPI_BK1_IO0_PD11">
+      <node ref="CN10" pin="23"/>
+      <node ref="OPT3" pin="1"/>
+      <node ref="J4" pin="1"/>
+    </net>
+    <net code="141" name="/QUADSPI_BK1_IO3_PD13">
+      <node ref="OPT6" pin="1"/>
+      <node ref="J7" pin="1"/>
+      <node ref="CN10" pin="19"/>
+    </net>
+    <net code="142" name="/~Fault_Gate_C">
+      <node ref="U9" pin="12"/>
+      <node ref="J22" pin="1"/>
+      <node ref="FB14" pin="2"/>
+    </net>
+    <net code="143" name="/TMR1_CH1N_PE8">
+      <node ref="I7" pin="3"/>
+      <node ref="CN10" pin="18"/>
+      <node ref="J18" pin="1"/>
+      <node ref="R63" pin="1"/>
+    </net>
+    <net code="144" name="/TMR1_CH1_PE9">
+      <node ref="CN10" pin="4"/>
+      <node ref="R60" pin="1"/>
+      <node ref="J15" pin="1"/>
+      <node ref="I7" pin="2"/>
+    </net>
+    <net code="145" name="Net-(D12-Pad2)">
+      <node ref="D12" pin="2"/>
+      <node ref="R64" pin="2"/>
+    </net>
+    <net code="146" name="Net-(D9-Pad2)">
+      <node ref="D9" pin="2"/>
+      <node ref="R61" pin="2"/>
+    </net>
+    <net code="147" name="Net-(CON1-Pad10)">
+      <node ref="CON1" pin="10"/>
+    </net>
+    <net code="148" name="Net-(CON1-Pad11)">
+      <node ref="CON1" pin="11"/>
+    </net>
+    <net code="149" name="Net-(OPT5-Pad4)">
+      <node ref="OPT5" pin="4"/>
+    </net>
+    <net code="150" name="Net-(OPT4-Pad4)">
+      <node ref="OPT4" pin="4"/>
+    </net>
+    <net code="151" name="Net-(OPT6-Pad4)">
+      <node ref="OPT6" pin="4"/>
+    </net>
+    <net code="152" name="DGND">
+      <node ref="R46" pin="2"/>
+      <node ref="P10" pin="16"/>
+      <node ref="P10" pin="12"/>
+      <node ref="P10" pin="14"/>
+      <node ref="CON1" pin="13"/>
+      <node ref="I2" pin="2"/>
+      <node ref="U10" pin="7"/>
+      <node ref="U4" pin="4"/>
+      <node ref="C9" pin="1"/>
+      <node ref="CN7" pin="8"/>
+      <node ref="CN10" pin="5"/>
+      <node ref="U8" pin="12"/>
+      <node ref="R53" pin="2"/>
+      <node ref="I3" pin="5"/>
+      <node ref="C8" pin="1"/>
+      <node ref="I7" pin="4"/>
+      <node ref="CN8" pin="11"/>
+      <node ref="CN8" pin="13"/>
+      <node ref="CN10" pin="22"/>
+      <node ref="C35" pin="1"/>
+      <node ref="C76" pin="1"/>
+      <node ref="CN10" pin="17"/>
+      <node ref="CN10" pin="27"/>
+      <node ref="CN9" pin="9"/>
+      <node ref="CN9" pin="23"/>
+      <node ref="I2" pin="4"/>
+      <node ref="I4" pin="5"/>
+      <node ref="C57" pin="1"/>
+      <node ref="I1" pin="4"/>
+      <node ref="P10" pin="2"/>
+      <node ref="OPT10" pin="2"/>
+      <node ref="C6" pin="1"/>
+      <node ref="C61" pin="2"/>
+      <node ref="OPT2" pin="3"/>
+      <node ref="OPT2" pin="5"/>
+      <node ref="OPT7" pin="5"/>
+      <node ref="OPT7" pin="8"/>
+      <node ref="C41" pin="1"/>
+      <node ref="D5" pin="2"/>
+      <node ref="R6" pin="1"/>
+      <node ref="C60" pin="2"/>
+      <node ref="OPT10" pin="5"/>
+      <node ref="OPT10" pin="8"/>
+      <node ref="R7" pin="1"/>
+      <node ref="R5" pin="1"/>
+      <node ref="C56" pin="1"/>
+      <node ref="C37" pin="1"/>
+      <node ref="C32" pin="1"/>
+      <node ref="D4" pin="2"/>
+      <node ref="C1" pin="1"/>
+      <node ref="OPT2" pin="8"/>
+      <node ref="C17" pin="1"/>
+      <node ref="OPT3" pin="5"/>
+      <node ref="OPT3" pin="8"/>
+      <node ref="C16" pin="1"/>
+      <node ref="C67" pin="1"/>
+      <node ref="OPT8" pin="3"/>
+      <node ref="OPT8" pin="5"/>
+      <node ref="OPT8" pin="8"/>
+      <node ref="C42" pin="1"/>
+      <node ref="C33" pin="1"/>
+      <node ref="R4" pin="1"/>
+      <node ref="D3" pin="2"/>
+      <node ref="C64" pin="2"/>
+      <node ref="C25" pin="2"/>
+      <node ref="C34" pin="1"/>
+      <node ref="OPT7" pin="3"/>
+      <node ref="C39" pin="1"/>
+      <node ref="OPT9" pin="3"/>
+      <node ref="OPT9" pin="5"/>
+      <node ref="OPT9" pin="8"/>
+      <node ref="C43" pin="1"/>
+      <node ref="C38" pin="1"/>
+      <node ref="OPT11" pin="5"/>
+      <node ref="I6" pin="5"/>
+      <node ref="C45" pin="2"/>
+      <node ref="C62" pin="2"/>
+      <node ref="C44" pin="2"/>
+      <node ref="C27" pin="2"/>
+      <node ref="C7" pin="2"/>
+      <node ref="FI2" pin="2"/>
+      <node ref="OPT11" pin="8"/>
+      <node ref="C79" pin="1"/>
+      <node ref="C75" pin="1"/>
+      <node ref="C80" pin="1"/>
+      <node ref="C58" pin="1"/>
+      <node ref="R39" pin="2"/>
+      <node ref="CON1" pin="3"/>
+      <node ref="I5" pin="5"/>
+      <node ref="CON1" pin="6"/>
+      <node ref="P11" pin="2"/>
+      <node ref="CON1" pin="12"/>
+      <node ref="P11" pin="16"/>
+      <node ref="P11" pin="14"/>
+      <node ref="P11" pin="12"/>
+      <node ref="R52" pin="2"/>
+      <node ref="C22" pin="1"/>
+      <node ref="R2" pin="1"/>
+      <node ref="C40" pin="1"/>
+      <node ref="C36" pin="1"/>
+      <node ref="C31" pin="1"/>
+      <node ref="OPT3" pin="2"/>
+      <node ref="OPT1" pin="8"/>
+      <node ref="C15" pin="1"/>
+      <node ref="C5" pin="1"/>
+      <node ref="R1" pin="1"/>
+      <node ref="C23" pin="1"/>
+      <node ref="P9" pin="16"/>
+      <node ref="P9" pin="14"/>
+      <node ref="P9" pin="12"/>
+      <node ref="C11" pin="1"/>
+      <node ref="C21" pin="2"/>
+      <node ref="C28" pin="2"/>
+      <node ref="C82" pin="1"/>
+      <node ref="C30" pin="2"/>
+      <node ref="P9" pin="2"/>
+      <node ref="C29" pin="2"/>
+      <node ref="Q2" pin="3"/>
+      <node ref="OPT11" pin="2"/>
+      <node ref="OPT1" pin="5"/>
+      <node ref="OPT1" pin="3"/>
+      <node ref="J10" pin="1"/>
+      <node ref="J9" pin="1"/>
+      <node ref="J11" pin="1"/>
+      <node ref="D11" pin="1"/>
+      <node ref="D8" pin="1"/>
+      <node ref="D13" pin="1"/>
+      <node ref="D10" pin="1"/>
+      <node ref="C83" pin="2"/>
+      <node ref="U3" pin="3"/>
+      <node ref="C84" pin="2"/>
+      <node ref="U2" pin="1"/>
+      <node ref="J36" pin="1"/>
+      <node ref="J37" pin="1"/>
+      <node ref="C85" pin="2"/>
+      <node ref="FL1" pin="4"/>
+      <node ref="MK1" pin="1"/>
+      <node ref="MK3" pin="1"/>
+      <node ref="MK2" pin="1"/>
+      <node ref="MK4" pin="1"/>
+      <node ref="J43" pin="1"/>
+      <node ref="U1" pin="1"/>
+      <node ref="J43" pin="0"/>
+      <node ref="OPT6" pin="8"/>
+      <node ref="OPT6" pin="5"/>
+      <node ref="C14" pin="1"/>
+      <node ref="C4" pin="1"/>
+      <node ref="C20" pin="1"/>
+      <node ref="R42" pin="2"/>
+      <node ref="R50" pin="2"/>
+      <node ref="OPT5" pin="2"/>
+      <node ref="C74" pin="1"/>
+      <node ref="OPT5" pin="5"/>
+      <node ref="OPT5" pin="8"/>
+      <node ref="C13" pin="1"/>
+      <node ref="C3" pin="1"/>
+      <node ref="C19" pin="1"/>
+      <node ref="OPT6" pin="2"/>
+      <node ref="OPT4" pin="2"/>
+      <node ref="OPT4" pin="5"/>
+      <node ref="OPT4" pin="8"/>
+      <node ref="C12" pin="1"/>
+      <node ref="C2" pin="1"/>
+      <node ref="C18" pin="1"/>
+      <node ref="R54" pin="2"/>
+      <node ref="C81" pin="1"/>
+      <node ref="R48" pin="2"/>
+      <node ref="U9" pin="8"/>
+      <node ref="C73" pin="1"/>
+      <node ref="D9" pin="1"/>
+      <node ref="D12" pin="1"/>
+      <node ref="R51" pin="2"/>
+      <node ref="I9" pin="4"/>
+      <node ref="C88" pin="1"/>
+      <node ref="C53" pin="1"/>
+      <node ref="C87" pin="1"/>
+      <node ref="I8" pin="4"/>
+      <node ref="U5" pin="4"/>
+    </net>
+    <net code="153" name="+5V">
+      <node ref="C44" pin="1"/>
+      <node ref="C58" pin="2"/>
+      <node ref="I5" pin="8"/>
+      <node ref="C82" pin="2"/>
+      <node ref="U8" pin="3"/>
+      <node ref="C57" pin="2"/>
+      <node ref="C67" pin="2"/>
+      <node ref="U1" pin="2"/>
+      <node ref="R40" pin="1"/>
+      <node ref="I6" pin="8"/>
+      <node ref="U10" pin="14"/>
+      <node ref="I4" pin="8"/>
+      <node ref="I7" pin="1"/>
+      <node ref="C87" pin="2"/>
+      <node ref="L17" pin="1"/>
+      <node ref="R43" pin="1"/>
+      <node ref="C79" pin="2"/>
+      <node ref="R44" pin="1"/>
+      <node ref="C76" pin="2"/>
+      <node ref="C56" pin="2"/>
+      <node ref="C88" pin="2"/>
+      <node ref="R47" pin="1"/>
+      <node ref="J12" pin="1"/>
+      <node ref="R49" pin="1"/>
+      <node ref="R45" pin="1"/>
+      <node ref="L9" pin="1"/>
+      <node ref="U9" pin="5"/>
+      <node ref="R3" pin="2"/>
+      <node ref="U9" pin="16"/>
+      <node ref="I8" pin="1"/>
+      <node ref="L16" pin="2"/>
+      <node ref="R17" pin="1"/>
+      <node ref="I9" pin="1"/>
+      <node ref="C81" pin="2"/>
+    </net>
+    <net code="154" name="Net-(I2-Pad7)">
+      <node ref="I2" pin="7"/>
+    </net>
+    <net code="155" name="Net-(I2-Pad8)">
+      <node ref="I2" pin="8"/>
+    </net>
+    <net code="156" name="Net-(I3-Pad4)">
+      <node ref="I3" pin="4"/>
+    </net>
+    <net code="157" name="Net-(I3-Pad3)">
+      <node ref="I3" pin="3"/>
+    </net>
+    <net code="158" name="/SPI1_SCK+">
+      <node ref="J43" pin="5"/>
+      <node ref="I1" pin="7"/>
+    </net>
+    <net code="159" name="Net-(I3-Pad6)">
+      <node ref="I3" pin="6"/>
+    </net>
+    <net code="160" name="/SPI1_NSS+">
+      <node ref="I1" pin="6"/>
+      <node ref="J43" pin="4"/>
+    </net>
+    <net code="161" name="/5V_thr">
+      <node ref="L16" pin="1"/>
+      <node ref="C70" pin="1"/>
+      <node ref="C71" pin="2"/>
+      <node ref="R9" pin="2"/>
+      <node ref="C72" pin="1"/>
+      <node ref="U7" pin="8"/>
+      <node ref="J27" pin="4"/>
+      <node ref="R29" pin="2"/>
+    </net>
+    <net code="162" name="Net-(OPT11-Pad4)">
+      <node ref="OPT11" pin="4"/>
+    </net>
+    <net code="163" name="Net-(OPT1-Pad2)">
+      <node ref="OPT1" pin="2"/>
+    </net>
+    <net code="164" name="Net-(OPT3-Pad4)">
+      <node ref="OPT3" pin="4"/>
+    </net>
+    <net code="165" name="Net-(OPT2-Pad2)">
+      <node ref="OPT2" pin="2"/>
+    </net>
+    <net code="166" name="Net-(OPT10-Pad4)">
+      <node ref="OPT10" pin="4"/>
+    </net>
+    <net code="167" name="Net-(OPT7-Pad2)">
+      <node ref="OPT7" pin="2"/>
+    </net>
+    <net code="168" name="Net-(OPT9-Pad2)">
+      <node ref="OPT9" pin="2"/>
+    </net>
+    <net code="169" name="Net-(OPT8-Pad2)">
+      <node ref="OPT8" pin="2"/>
+    </net>
+    <net code="170" name="Net-(CN8-Pad7)">
+      <node ref="CN8" pin="7"/>
+      <node ref="R16" pin="2"/>
+    </net>
+    <net code="171" name="Net-(C25-Pad1)">
+      <node ref="R4" pin="2"/>
+      <node ref="C25" pin="1"/>
+      <node ref="R67" pin="1"/>
+      <node ref="R3" pin="1"/>
+    </net>
+    <net code="172" name="Net-(C10-Pad2)">
+      <node ref="C24" pin="2"/>
+      <node ref="C51" pin="2"/>
+      <node ref="C54" pin="2"/>
+      <node ref="D1" pin="1"/>
+      <node ref="U5" pin="5"/>
+      <node ref="C55" pin="2"/>
+      <node ref="J1" pin="5"/>
+      <node ref="J1" pin="6"/>
+      <node ref="U11" pin="18"/>
+      <node ref="U11" pin="25"/>
+      <node ref="C10" pin="2"/>
+      <node ref="U11" pin="21"/>
+      <node ref="U11" pin="7"/>
+    </net>
+    <net code="173" name="Net-(CN8-Pad9)">
+      <node ref="R17" pin="2"/>
+      <node ref="CN8" pin="9"/>
+    </net>
+    <net code="174" name="Net-(CN8-Pad1)">
+      <node ref="CN8" pin="1"/>
+    </net>
+    <net code="175" name="Net-(CN8-Pad5)">
+      <node ref="R15" pin="2"/>
+      <node ref="CN8" pin="5"/>
+    </net>
+    <net code="176" name="Net-(I4-Pad6)">
+      <node ref="I4" pin="6"/>
+      <node ref="R33" pin="1"/>
+    </net>
+    <net code="177" name="Net-(C51-Pad1)">
+      <node ref="U11" pin="20"/>
+      <node ref="C55" pin="1"/>
+      <node ref="U5" pin="8"/>
+      <node ref="R14" pin="2"/>
+      <node ref="C54" pin="1"/>
+      <node ref="U11" pin="4"/>
+      <node ref="L1" pin="1"/>
+      <node ref="R55" pin="2"/>
+      <node ref="C51" pin="1"/>
+    </net>
+    <net code="178" name="/ADC1_INP15_PA3">
+      <node ref="D3" pin="1"/>
+      <node ref="R33" pin="2"/>
+      <node ref="C60" pin="1"/>
+      <node ref="CN9" pin="1"/>
+      <node ref="U8" pin="5"/>
+    </net>
+    <net code="179" name="/~PS-Dis">
+      <node ref="P11" pin="11"/>
+      <node ref="U3" pin="1"/>
+      <node ref="P10" pin="11"/>
+      <node ref="P9" pin="11"/>
+      <node ref="J34" pin="1"/>
+    </net>
+    <net code="180" name="Net-(CN9-Pad26)">
+      <node ref="CN9" pin="26"/>
+    </net>
+    <net code="181" name="Net-(CN9-Pad19)">
+      <node ref="CN9" pin="19"/>
+    </net>
+    <net code="182" name="Net-(CN9-Pad21)">
+      <node ref="CN9" pin="21"/>
+    </net>
+    <net code="183" name="Net-(CN9-Pad22)">
+      <node ref="CN9" pin="22"/>
+    </net>
+    <net code="184" name="Net-(CN9-Pad20)">
+      <node ref="CN9" pin="20"/>
+    </net>
+    <net code="185" name="Net-(CN9-Pad18)">
+      <node ref="CN9" pin="18"/>
+    </net>
+    <net code="186" name="Net-(CN9-Pad14)">
+      <node ref="CN9" pin="14"/>
+    </net>
+    <net code="187" name="Net-(CN9-Pad12)">
+      <node ref="CN9" pin="12"/>
+    </net>
+    <net code="188" name="Net-(CN9-Pad24)">
+      <node ref="CN9" pin="24"/>
+    </net>
+    <net code="189" name="Net-(CN9-Pad17)">
+      <node ref="CN9" pin="17"/>
+    </net>
+    <net code="190" name="Net-(CN9-Pad28)">
+      <node ref="CN9" pin="28"/>
+    </net>
+    <net code="191" name="Net-(CN9-Pad25)">
+      <node ref="CN9" pin="25"/>
+    </net>
+    <net code="192" name="Net-(CN9-Pad27)">
+      <node ref="CN9" pin="27"/>
+    </net>
+    <net code="193" name="Net-(CN10-Pad1)">
+      <node ref="CN10" pin="1"/>
+    </net>
+    <net code="194" name="Net-(CN10-Pad11)">
+      <node ref="CN10" pin="11"/>
+    </net>
+    <net code="195" name="Net-(CN10-Pad13)">
+      <node ref="CN10" pin="13"/>
+    </net>
+    <net code="196" name="Net-(CN10-Pad33)">
+      <node ref="CN10" pin="33"/>
+    </net>
+    <net code="197" name="Net-(CN10-Pad31)">
+      <node ref="CN10" pin="31"/>
+    </net>
+    <net code="198" name="Net-(CN10-Pad29)">
+      <node ref="CN10" pin="29"/>
+    </net>
+    <net code="199" name="Net-(CN9-Pad2)">
+      <node ref="CN9" pin="2"/>
+    </net>
+    <net code="200" name="Net-(CN9-Pad4)">
+      <node ref="CN9" pin="4"/>
+    </net>
+    <net code="201" name="Net-(CN9-Pad8)">
+      <node ref="CN9" pin="8"/>
+    </net>
+    <net code="202" name="Net-(CN9-Pad6)">
+      <node ref="CN9" pin="6"/>
+    </net>
+    <net code="203" name="Net-(CN9-Pad7)">
+      <node ref="CN9" pin="7"/>
+    </net>
+    <net code="204" name="Net-(CN9-Pad11)">
+      <node ref="CN9" pin="11"/>
+    </net>
+    <net code="205" name="Net-(CN9-Pad13)">
+      <node ref="CN9" pin="13"/>
+    </net>
+    <net code="206" name="Net-(CN9-Pad15)">
+      <node ref="CN9" pin="15"/>
+    </net>
+    <net code="207" name="/PWMA_HS+">
+      <node ref="I7" pin="7"/>
+      <node ref="P9" pin="3"/>
+    </net>
+    <net code="208" name="/PWMA_HS-">
+      <node ref="I7" pin="8"/>
+      <node ref="P9" pin="4"/>
+    </net>
+    <net code="209" name="/~Fault_A+">
+      <node ref="I4" pin="2"/>
+      <node ref="P9" pin="7"/>
+      <node ref="R18" pin="1"/>
+    </net>
+    <net code="210" name="/~Fault_A-">
+      <node ref="R18" pin="2"/>
+      <node ref="P9" pin="8"/>
+      <node ref="I4" pin="1"/>
+    </net>
+    <net code="211" name="/RTD_A+">
+      <node ref="P9" pin="9"/>
+      <node ref="R19" pin="2"/>
+      <node ref="I4" pin="3"/>
+    </net>
+    <net code="212" name="/RTD_A-">
+      <node ref="P9" pin="10"/>
+      <node ref="R19" pin="1"/>
+      <node ref="I4" pin="4"/>
+    </net>
+    <net code="213" name="Net-(CN7-Pad14)">
+      <node ref="CN7" pin="14"/>
+    </net>
+    <net code="214" name="Net-(CN7-Pad1)">
+      <node ref="CN7" pin="1"/>
+    </net>
+    <net code="215" name="Net-(CN7-Pad2)">
+      <node ref="CN7" pin="2"/>
+    </net>
+    <net code="216" name="Net-(CN7-Pad4)">
+      <node ref="CN7" pin="4"/>
+    </net>
+    <net code="217" name="Net-(CN7-Pad6)">
+      <node ref="CN7" pin="6"/>
+    </net>
+    <net code="218" name="Net-(CN7-Pad5)">
+      <node ref="CN7" pin="5"/>
+    </net>
+    <net code="219" name="Net-(CN7-Pad7)">
+      <node ref="CN7" pin="7"/>
+    </net>
+    <net code="220" name="Net-(CN7-Pad11)">
+      <node ref="CN7" pin="11"/>
+    </net>
+    <net code="221" name="Net-(CN7-Pad15)">
+      <node ref="CN7" pin="15"/>
+    </net>
+    <net code="222" name="Net-(CN7-Pad16)">
+      <node ref="CN7" pin="16"/>
+    </net>
+    <net code="223" name="Net-(CN7-Pad18)">
+      <node ref="CN7" pin="18"/>
+    </net>
+    <net code="224" name="Net-(CN8-Pad3)">
+      <node ref="CN8" pin="3"/>
+    </net>
+    <net code="225" name="Net-(CN8-Pad15)">
+      <node ref="CN8" pin="15"/>
+    </net>
+    <net code="226" name="/~Fault_Gate_A">
+      <node ref="U9" pin="4"/>
+      <node ref="FB12" pin="2"/>
+      <node ref="J24" pin="1"/>
+    </net>
+    <net code="227" name="/~Fault_B-">
+      <node ref="I5" pin="1"/>
+      <node ref="P10" pin="8"/>
+      <node ref="R20" pin="2"/>
+    </net>
+    <net code="228" name="/RTD_B+">
+      <node ref="P10" pin="9"/>
+      <node ref="R21" pin="2"/>
+      <node ref="I5" pin="3"/>
+    </net>
+    <net code="229" name="/RTD_B-">
+      <node ref="I5" pin="4"/>
+      <node ref="R21" pin="1"/>
+      <node ref="P10" pin="10"/>
+    </net>
+    <net code="230" name="/~Fault_B+">
+      <node ref="I5" pin="2"/>
+      <node ref="R20" pin="1"/>
+      <node ref="P10" pin="7"/>
+    </net>
+    <net code="231" name="/TMR1_CH2N_PE10">
+      <node ref="R64" pin="1"/>
+      <node ref="J19" pin="1"/>
+      <node ref="CN10" pin="24"/>
+      <node ref="I8" pin="3"/>
+    </net>
+    <net code="232" name="/TMR1_CH3N_PE12">
+      <node ref="CN10" pin="26"/>
+      <node ref="I9" pin="3"/>
+      <node ref="R65" pin="1"/>
+      <node ref="J20" pin="1"/>
+    </net>
+    <net code="233" name="/PWM_EN">
+      <node ref="U10" pin="6"/>
+      <node ref="J26" pin="1"/>
+      <node ref="U10" pin="8"/>
+      <node ref="P9" pin="13"/>
+      <node ref="U10" pin="3"/>
+      <node ref="P10" pin="13"/>
+      <node ref="CN9" pin="16"/>
+      <node ref="P11" pin="13"/>
+    </net>
+    <net code="234" name="/ADC1_INP10_PC0">
+      <node ref="R34" pin="2"/>
+      <node ref="U8" pin="7"/>
+      <node ref="D4" pin="1"/>
+      <node ref="CN9" pin="3"/>
+      <node ref="C61" pin="1"/>
+    </net>
+    <net code="235" name="/ADC1_INP13_PC3">
+      <node ref="U7" pin="1"/>
+      <node ref="R59" pin="1"/>
+      <node ref="D2" pin="1"/>
+      <node ref="CN9" pin="5"/>
+      <node ref="J13" pin="1"/>
+    </net>
+    <net code="236" name="/RTD_trip_ref">
+      <node ref="U8" pin="6"/>
+      <node ref="U8" pin="10"/>
+      <node ref="U8" pin="4"/>
+      <node ref="C64" pin="1"/>
+      <node ref="R67" pin="2"/>
+    </net>
+    <net code="237" name="/ADC1_INP18_PA4">
+      <node ref="CN7" pin="17"/>
+      <node ref="D5" pin="1"/>
+      <node ref="C62" pin="1"/>
+      <node ref="R35" pin="2"/>
+      <node ref="U8" pin="11"/>
+    </net>
+    <net code="238" name="/SPI2_NSS_PB4">
+      <node ref="R6" pin="2"/>
+      <node ref="OPT8" pin="4"/>
+      <node ref="CN7" pin="19"/>
+      <node ref="J31" pin="1"/>
+    </net>
+    <net code="239" name="/TMR1_CH2_PE11">
+      <node ref="R61" pin="1"/>
+      <node ref="J16" pin="1"/>
+      <node ref="CN10" pin="6"/>
+      <node ref="I8" pin="2"/>
+    </net>
+    <net code="240" name="/TMR1_CH3_PE13">
+      <node ref="J17" pin="1"/>
+      <node ref="CN10" pin="10"/>
+      <node ref="I9" pin="2"/>
+      <node ref="R62" pin="1"/>
+    </net>
+    <net code="241" name="/SP2_MOSI_PB15">
+      <node ref="CN7" pin="3"/>
+      <node ref="OPT9" pin="4"/>
+      <node ref="R7" pin="2"/>
+      <node ref="J32" pin="1"/>
+    </net>
+  </nets>
+</export>

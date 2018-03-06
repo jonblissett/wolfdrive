@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name WolfDrive_H7Aux-rescue)(type Legacy)(uri ${KIPRJMOD}/WolfDrive_H7Aux-rescue.lib)(options "")(descr ""))
+)

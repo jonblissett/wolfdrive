@@ -1,0 +1,844 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# +12V-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue
+#
+DEF +12V-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "+12V-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue" 0 140 50 H V C CNN
+F2 "" 0 0 50 H V C CNN
+F3 "" 0 0 50 H V C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +12V 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# ESD_Protection_SP0503BAHT-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue
+#
+DEF ESD_Protection_SP0503BAHT-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue D 0 40 Y N 1 F N
+F0 "D" 225 100 50 H V L CNN
+F1 "ESD_Protection_SP0503BAHT-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue" 225 25 50 H V L CNN
+F2 "TO_SOT_Packages_SMD:SOT-143" 225 -50 50 H I L CNN
+F3 "" 125 125 50 H I C CNN
+$FPLIST
+ SOT?143*
+$ENDFPLIST
+DRAW
+S -175 100 175 -100 0 1 10 f
+P 2 0 1 0 -100 100 -100 50 N
+P 2 0 1 0 0 -50 0 -100 N
+P 2 0 1 0 0 -50 0 0 N
+P 2 0 1 0 0 100 0 50 N
+P 2 0 1 0 25 50 50 25 N
+P 2 0 1 0 100 100 100 50 N
+P 3 0 1 0 25 50 -25 50 -50 75 N
+P 4 0 1 0 -150 75 -125 50 -75 50 -50 25 N
+P 4 0 1 0 -100 0 -100 -50 100 -50 100 0 N
+P 4 0 1 0 -100 50 -75 0 -125 0 -100 50 F
+P 4 0 1 0 25 0 -25 0 0 50 25 0 F
+P 4 0 1 0 50 75 75 50 125 50 150 25 N
+P 4 0 1 0 100 50 75 0 125 0 100 50 F
+X A 1 0 -200 100 U 50 50 0 0 I
+X K 2 -100 200 100 D 50 50 1 1 I
+X K 3 0 200 100 D 50 50 1 1 I
+X K 4 100 200 100 D 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# WolfDrive_H7Controller-rescue_74LS136-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue
+#
+DEF WolfDrive_H7Controller-rescue_74LS136-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue U 0 30 Y Y 4 F N
+F0 "U" 50 50 50 H V C CNN
+F1 "WolfDrive_H7Controller-rescue_74LS136-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue" 50 -50 50 H V C CNN
+F2 "" 0 0 50 H V C CNN
+F3 "" 0 0 50 H V C CNN
+DRAW
+A -470 0 262 495 -495 0 1 0 N -300 199 -300 -198
+A -396 -2 281 457 -451 0 1 0 N -200 199 -198 -200
+A -2 126 326 -897 -225 0 1 0 N 0 -199 299 2
+A 4 -120 320 906 221 0 1 0 N 2 200 300 0
+P 2 0 1 0 -200 -200 0 -200 N
+P 2 0 1 0 -200 200 0 200 N
+X VCC 14 -200 200 0 U 50 50 0 0 W N
+X GND 7 -200 -200 0 U 50 50 0 0 W N
+X ~ 1 -650 100 420 R 50 50 1 1 I
+X ~ 2 -650 -100 420 R 50 50 1 1 I
+X ~ 3 600 0 300 L 50 50 1 1 C
+X ~ 4 -650 100 420 R 50 50 2 1 I
+X ~ 5 -650 -100 420 R 50 50 2 1 I
+X ~ 6 600 0 300 L 50 50 2 1 C
+X ~ 8 -650 100 420 R 50 50 3 1 I
+X ~ 8 600 0 300 L 50 50 3 1 C
+X ~ 9 -650 -100 420 R 50 50 3 1 I
+X ~ 11 600 0 300 L 50 50 4 1 I
+X ~ 12 -650 100 420 R 50 50 4 1 I
+X ~ 13 -650 -100 420 R 50 50 4 1 I
+ENDDRAW
+ENDDEF
+#
+# WolfDrive_H7Controller-rescue_AFBR-1634Z-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue
+#
+DEF WolfDrive_H7Controller-rescue_AFBR-1634Z-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue OPT 0 40 Y Y 1 F N
+F0 "OPT" 250 300 60 H V C CNN
+F1 "WolfDrive_H7Controller-rescue_AFBR-1634Z-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue" 0 -700 60 H V C CNN
+F2 "" 0 50 60 H V C CNN
+F3 "" 0 50 60 H V C CNN
+DRAW
+S -300 200 300 -300 0 1 0 f
+S 300 100 650 -200 0 1 0 F
+P 2 0 1 0 550 200 650 100 N
+P 2 0 1 0 650 -200 550 -300 N
+X Vcc 1 -500 -200 200 R 50 50 1 1 W
+X NC 2 -500 -50 200 R 50 50 1 1 N
+X VEE 3 200 -500 200 U 50 50 1 1 W
+X Data_in 4 -500 100 200 R 50 50 1 1 I
+X Gnd 5 100 -500 200 U 50 50 1 1 W
+X Gnd 8 0 -500 200 U 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# WolfDrive_H7Controller-rescue_AFBR-26x-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue
+#
+DEF WolfDrive_H7Controller-rescue_AFBR-26x-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue OPT 0 40 Y Y 1 F N
+F0 "OPT" 250 300 60 H V C CNN
+F1 "WolfDrive_H7Controller-rescue_AFBR-26x-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue" -200 -700 60 H V C CNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+DRAW
+S -300 250 300 -250 0 1 0 f
+S 300 150 650 -150 0 1 0 F
+P 2 0 1 0 300 -150 400 -250 N
+P 2 0 1 0 300 150 400 250 N
+X Data_Out 1 -500 0 200 R 50 50 1 1 O
+X Vee 2 50 -450 200 U 50 50 1 1 W
+X Vcc 3 -500 150 200 R 50 50 1 1 W
+X NC 4 -150 -450 200 U 50 50 1 1 N
+X Gnd 5 150 -450 200 U 50 50 1 1 W
+X Gnd 8 250 -450 200 U 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# WolfDrive_H7Controller-rescue_AGND-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue
+#
+DEF WolfDrive_H7Controller-rescue_AGND-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue #PWR 0 10 Y Y 1 F P
+F0 "#PWR" 0 0 40 H I C CNN
+F1 "WolfDrive_H7Controller-rescue_AGND-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue" 0 -70 50 H V C CNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+DRAW
+P 4 0 1 0 -40 0 40 0 0 -40 -40 0 N
+X AGND 1 0 0 0 U 40 40 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# WolfDrive_H7Controller-rescue_CD4044B-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue
+#
+DEF WolfDrive_H7Controller-rescue_CD4044B-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue U 0 10 Y Y 1 F N
+F0 "U" 0 100 50 H V C CNN
+F1 "WolfDrive_H7Controller-rescue_CD4044B-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H V C CNN
+F3 "" 0 0 50 H V C CNN
+DRAW
+S -400 350 400 -850 0 1 0 f
+X VCC 16 0 450 100 D 50 50 0 0 W
+X GND 8 0 -950 100 U 50 50 0 0 W
+X Q3 1 700 -550 300 L 50 50 1 1 O
+X Q2 10 700 -350 300 L 50 50 1 1 O
+X R2 11 -700 -450 300 R 50 50 1 1 I
+X S3 12 -700 50 300 R 50 50 1 1 I
+X S4 14 -700 -50 300 R 50 50 1 1 I
+X R3 15 -700 -550 300 R 50 50 1 1 I
+X Q0 2 700 50 300 L 50 50 1 1 O
+X R1 3 -700 -250 300 R 50 50 1 1 I
+X S1 4 -700 250 300 R 50 50 1 1 I
+X Enable 5 -700 -750 300 R 50 50 1 1 I
+X S2 6 -700 150 300 R 50 50 1 1 I
+X R1 7 -700 -350 300 R 50 50 1 1 I
+X Q1 9 700 -150 300 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# WolfDrive_H7Controller-rescue_CONN_01X02-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue
+#
+DEF WolfDrive_H7Controller-rescue_CONN_01X02-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue P 0 40 Y N 1 F N
+F0 "P" 0 150 50 H V C CNN
+F1 "WolfDrive_H7Controller-rescue_CONN_01X02-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue" 100 0 50 V V C CNN
+F2 "" 0 0 50 H V C CNN
+F3 "" 0 0 50 H V C CNN
+$FPLIST
+ Pin_Header_Straight_1X02
+ Pin_Header_Angled_1X02
+ Socket_Strip_Straight_1X02
+ Socket_Strip_Angled_1X02
+$ENDFPLIST
+DRAW
+S -50 -45 10 -55 0 1 0 N
+S -50 55 10 45 0 1 0 N
+S -50 100 50 -100 0 1 0 N
+X P1 1 -200 50 150 R 50 50 1 1 P
+X P2 2 -200 -50 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# WolfDrive_H7Controller-rescue_CONN_02X08-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue
+#
+DEF WolfDrive_H7Controller-rescue_CONN_02X08-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue P 0 1 Y N 1 F N
+F0 "P" 0 450 50 H V C CNN
+F1 "WolfDrive_H7Controller-rescue_CONN_02X08-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue" 0 0 50 V V C CNN
+F2 "" 0 -1200 50 H V C CNN
+F3 "" 0 -1200 50 H V C CNN
+$FPLIST
+ Pin_Header_Straight_2X08
+ Pin_Header_Angled_2X08
+ Socket_Strip_Straight_2X08
+ Socket_Strip_Angled_2X08
+$ENDFPLIST
+DRAW
+S -100 -345 -50 -355 0 1 0 N
+S -100 -245 -50 -255 0 1 0 N
+S -100 -145 -50 -155 0 1 0 N
+S -100 -45 -50 -55 0 1 0 N
+S -100 55 -50 45 0 1 0 N
+S -100 155 -50 145 0 1 0 N
+S -100 255 -50 245 0 1 0 N
+S -100 355 -50 345 0 1 0 N
+S -100 400 100 -400 0 1 0 N
+S 50 -345 100 -355 0 1 0 N
+S 50 -245 100 -255 0 1 0 N
+S 50 -145 100 -155 0 1 0 N
+S 50 -45 100 -55 0 1 0 N
+S 50 55 100 45 0 1 0 N
+S 50 155 100 145 0 1 0 N
+S 50 255 100 245 0 1 0 N
+S 50 355 100 345 0 1 0 N
+X P1 1 -250 350 150 R 50 50 1 1 P
+X P10 10 250 -50 150 L 50 50 1 1 P
+X P11 11 -250 -150 150 R 50 50 1 1 P
+X P12 12 250 -150 150 L 50 50 1 1 P
+X P13 13 -250 -250 150 R 50 50 1 1 P
+X P14 14 250 -250 150 L 50 50 1 1 P
+X P15 15 -250 -350 150 R 50 50 1 1 P
+X P16 16 250 -350 150 L 50 50 1 1 P
+X P2 2 250 350 150 L 50 50 1 1 P
+X P3 3 -250 250 150 R 50 50 1 1 P
+X P4 4 250 250 150 L 50 50 1 1 P
+X P5 5 -250 150 150 R 50 50 1 1 P
+X P6 6 250 150 150 L 50 50 1 1 P
+X P7 7 -250 50 150 R 50 50 1 1 P
+X P8 8 250 50 150 L 50 50 1 1 P
+X P9 9 -250 -50 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# WolfDrive_H7Controller-rescue_CONN_02X10-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue
+#
+DEF WolfDrive_H7Controller-rescue_CONN_02X10-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue P 0 1 Y N 1 F N
+F0 "P" 0 550 50 H V C CNN
+F1 "WolfDrive_H7Controller-rescue_CONN_02X10-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue" 0 0 50 V V C CNN
+F2 "" 0 -1200 50 H V C CNN
+F3 "" 0 -1200 50 H V C CNN
+$FPLIST
+ Pin_Header_Straight_2X10
+ Pin_Header_Angled_2X10
+ Socket_Strip_Straight_2X10
+ Socket_Strip_Angled_2X10
+$ENDFPLIST
+DRAW
+S -100 -445 -50 -455 0 1 0 N
+S -100 -345 -50 -355 0 1 0 N
+S -100 -245 -50 -255 0 1 0 N
+S -100 -145 -50 -155 0 1 0 N
+S -100 -45 -50 -55 0 1 0 N
+S -100 55 -50 45 0 1 0 N
+S -100 155 -50 145 0 1 0 N
+S -100 255 -50 245 0 1 0 N
+S -100 355 -50 345 0 1 0 N
+S -100 455 -50 445 0 1 0 N
+S -100 500 100 -500 0 1 0 N
+S 50 -445 100 -455 0 1 0 N
+S 50 -345 100 -355 0 1 0 N
+S 50 -245 100 -255 0 1 0 N
+S 50 -145 100 -155 0 1 0 N
+S 50 -45 100 -55 0 1 0 N
+S 50 55 100 45 0 1 0 N
+S 50 155 100 145 0 1 0 N
+S 50 255 100 245 0 1 0 N
+S 50 355 100 345 0 1 0 N
+S 50 455 100 445 0 1 0 N
+X P1 1 -250 450 150 R 50 50 1 1 P
+X P10 10 250 50 150 L 50 50 1 1 P
+X P11 11 -250 -50 150 R 50 50 1 1 P
+X P12 12 250 -50 150 L 50 50 1 1 P
+X P13 13 -250 -150 150 R 50 50 1 1 P
+X P14 14 250 -150 150 L 50 50 1 1 P
+X P15 15 -250 -250 150 R 50 50 1 1 P
+X P16 16 250 -250 150 L 50 50 1 1 P
+X P17 17 -250 -350 150 R 50 50 1 1 P
+X P18 18 250 -350 150 L 50 50 1 1 P
+X P19 19 -250 -450 150 R 50 50 1 1 P
+X P2 2 250 450 150 L 50 50 1 1 P
+X P20 20 250 -450 150 L 50 50 1 1 P
+X P3 3 -250 350 150 R 50 50 1 1 P
+X P4 4 250 350 150 L 50 50 1 1 P
+X P5 5 -250 250 150 R 50 50 1 1 P
+X P6 6 250 250 150 L 50 50 1 1 P
+X P7 7 -250 150 150 R 50 50 1 1 P
+X P8 8 250 150 150 L 50 50 1 1 P
+X P9 9 -250 50 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# WolfDrive_H7Controller-rescue_CONN_02X15-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue
+#
+DEF WolfDrive_H7Controller-rescue_CONN_02X15-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue P 0 1 Y N 1 F N
+F0 "P" 0 800 50 H V C CNN
+F1 "WolfDrive_H7Controller-rescue_CONN_02X15-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue" 0 0 50 V V C CNN
+F2 "" 0 -1150 50 H V C CNN
+F3 "" 0 -1150 50 H V C CNN
+$FPLIST
+ Pin_Header_Straight_2X15
+ Pin_Header_Angled_2X15
+ Socket_Strip_Straight_2X15
+ Socket_Strip_Angled_2X15
+$ENDFPLIST
+DRAW
+S -100 -695 -50 -705 0 1 0 N
+S -100 -595 -50 -605 0 1 0 N
+S -100 -495 -50 -505 0 1 0 N
+S -100 -395 -50 -405 0 1 0 N
+S -100 -295 -50 -305 0 1 0 N
+S -100 -195 -50 -205 0 1 0 N
+S -100 -95 -50 -105 0 1 0 N
+S -100 5 -50 -5 0 1 0 N
+S -100 105 -50 95 0 1 0 N
+S -100 205 -50 195 0 1 0 N
+S -100 305 -50 295 0 1 0 N
+S -100 405 -50 395 0 1 0 N
+S -100 505 -50 495 0 1 0 N
+S -100 605 -50 595 0 1 0 N
+S -100 705 -50 695 0 1 0 N
+S -100 750 100 -750 0 1 0 N
+S 50 -695 100 -705 0 1 0 N
+S 50 -595 100 -605 0 1 0 N
+S 50 -495 100 -505 0 1 0 N
+S 50 -395 100 -405 0 1 0 N
+S 50 -295 100 -305 0 1 0 N
+S 50 -195 100 -205 0 1 0 N
+S 50 -95 100 -105 0 1 0 N
+S 50 5 100 -5 0 1 0 N
+S 50 105 100 95 0 1 0 N
+S 50 205 100 195 0 1 0 N
+S 50 305 100 295 0 1 0 N
+S 50 405 100 395 0 1 0 N
+S 50 505 100 495 0 1 0 N
+S 50 605 100 595 0 1 0 N
+S 50 705 100 695 0 1 0 N
+X P1 1 -250 700 150 R 50 50 1 1 P
+X P10 10 250 300 150 L 50 50 1 1 P
+X P11 11 -250 200 150 R 50 50 1 1 P
+X P12 12 250 200 150 L 50 50 1 1 P
+X P13 13 -250 100 150 R 50 50 1 1 P
+X P14 14 250 100 150 L 50 50 1 1 P
+X P15 15 -250 0 150 R 50 50 1 1 P
+X P16 16 250 0 150 L 50 50 1 1 P
+X P17 17 -250 -100 150 R 50 50 1 1 P
+X P18 18 250 -100 150 L 50 50 1 1 P
+X P19 19 -250 -200 150 R 50 50 1 1 P
+X P2 2 250 700 150 L 50 50 1 1 P
+X P20 20 250 -200 150 L 50 50 1 1 P
+X P21 21 -250 -300 150 R 50 50 1 1 P
+X P22 22 250 -300 150 L 50 50 1 1 P
+X P23 23 -250 -400 150 R 50 50 1 1 P
+X P24 24 250 -400 150 L 50 50 1 1 P
+X P25 25 -250 -500 150 R 50 50 1 1 P
+X P26 26 250 -500 150 L 50 50 1 1 P
+X P27 27 -250 -600 150 R 50 50 1 1 P
+X P28 28 250 -600 150 L 50 50 1 1 P
+X P29 29 -250 -700 150 R 50 50 1 1 P
+X P3 3 -250 600 150 R 50 50 1 1 P
+X P30 30 250 -700 150 L 50 50 1 1 P
+X P4 4 250 600 150 L 50 50 1 1 P
+X P5 5 -250 500 150 R 50 50 1 1 P
+X P6 6 250 500 150 L 50 50 1 1 P
+X P7 7 -250 400 150 R 50 50 1 1 P
+X P8 8 250 400 150 L 50 50 1 1 P
+X P9 9 -250 300 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# WolfDrive_H7Controller-rescue_CONN_02X17-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue
+#
+DEF WolfDrive_H7Controller-rescue_CONN_02X17-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue P 0 1 Y N 1 F N
+F0 "P" 0 900 50 H V C CNN
+F1 "WolfDrive_H7Controller-rescue_CONN_02X17-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue" 0 0 50 V V C CNN
+F2 "" 0 -1100 50 H V C CNN
+F3 "" 0 -1100 50 H V C CNN
+$FPLIST
+ Pin_Header_Straight_2X17
+ Pin_Header_Angled_2X17
+ Socket_Strip_Straight_2X17
+ Socket_Strip_Angled_2X17
+$ENDFPLIST
+DRAW
+S -100 -795 -50 -805 0 1 0 N
+S -100 -695 -50 -705 0 1 0 N
+S -100 -595 -50 -605 0 1 0 N
+S -100 -495 -50 -505 0 1 0 N
+S -100 -395 -50 -405 0 1 0 N
+S -100 -295 -50 -305 0 1 0 N
+S -100 -195 -50 -205 0 1 0 N
+S -100 -95 -50 -105 0 1 0 N
+S -100 5 -50 -5 0 1 0 N
+S -100 105 -50 95 0 1 0 N
+S -100 205 -50 195 0 1 0 N
+S -100 305 -50 295 0 1 0 N
+S -100 405 -50 395 0 1 0 N
+S -100 505 -50 495 0 1 0 N
+S -100 605 -50 595 0 1 0 N
+S -100 705 -50 695 0 1 0 N
+S -100 805 -50 795 0 1 0 N
+S -100 850 100 -850 0 1 0 N
+S 50 -795 100 -805 0 1 0 N
+S 50 -695 100 -705 0 1 0 N
+S 50 -595 100 -605 0 1 0 N
+S 50 -495 100 -505 0 1 0 N
+S 50 -395 100 -405 0 1 0 N
+S 50 -295 100 -305 0 1 0 N
+S 50 -195 100 -205 0 1 0 N
+S 50 -95 100 -105 0 1 0 N
+S 50 5 100 -5 0 1 0 N
+S 50 105 100 95 0 1 0 N
+S 50 205 100 195 0 1 0 N
+S 50 305 100 295 0 1 0 N
+S 50 405 100 395 0 1 0 N
+S 50 505 100 495 0 1 0 N
+S 50 605 100 595 0 1 0 N
+S 50 705 100 695 0 1 0 N
+S 50 805 100 795 0 1 0 N
+X P1 1 -250 800 150 R 50 50 1 1 P
+X P10 10 250 400 150 L 50 50 1 1 P
+X P11 11 -250 300 150 R 50 50 1 1 P
+X P12 12 250 300 150 L 50 50 1 1 P
+X P13 13 -250 200 150 R 50 50 1 1 P
+X P14 14 250 200 150 L 50 50 1 1 P
+X P15 15 -250 100 150 R 50 50 1 1 P
+X P16 16 250 100 150 L 50 50 1 1 P
+X P17 17 -250 0 150 R 50 50 1 1 P
+X P18 18 250 0 150 L 50 50 1 1 P
+X P19 19 -250 -100 150 R 50 50 1 1 P
+X P2 2 250 800 150 L 50 50 1 1 P
+X P20 20 250 -100 150 L 50 50 1 1 P
+X P21 21 -250 -200 150 R 50 50 1 1 P
+X P22 22 250 -200 150 L 50 50 1 1 P
+X P23 23 -250 -300 150 R 50 50 1 1 P
+X P24 24 250 -300 150 L 50 50 1 1 P
+X P25 25 -250 -400 150 R 50 50 1 1 P
+X P26 26 250 -400 150 L 50 50 1 1 P
+X P27 27 -250 -500 150 R 50 50 1 1 P
+X P28 28 250 -500 150 L 50 50 1 1 P
+X P29 29 -250 -600 150 R 50 50 1 1 P
+X P3 3 -250 700 150 R 50 50 1 1 P
+X P30 30 250 -600 150 L 50 50 1 1 P
+X P31 31 -250 -700 150 R 50 50 1 1 P
+X P32 32 250 -700 150 L 50 50 1 1 P
+X P33 33 -250 -800 150 R 50 50 1 1 P
+X P34 34 250 -800 150 L 50 50 1 1 P
+X P4 4 250 700 150 L 50 50 1 1 P
+X P5 5 -250 600 150 R 50 50 1 1 P
+X P6 6 250 600 150 L 50 50 1 1 P
+X P7 7 -250 500 150 R 50 50 1 1 P
+X P8 8 250 500 150 L 50 50 1 1 P
+X P9 9 -250 400 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# WolfDrive_H7Controller-rescue_DGND-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue
+#
+DEF WolfDrive_H7Controller-rescue_DGND-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue #PWR 0 40 Y Y 1 F P
+F0 "#PWR" 0 0 40 H I C CNN
+F1 "WolfDrive_H7Controller-rescue_DGND-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue" 0 -70 40 H V C CNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+DRAW
+P 4 0 1 0 -50 0 0 -50 50 0 -50 0 N
+X DGND 1 0 0 0 U 40 40 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# WolfDrive_H7Controller-rescue_DS90LV027A-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue
+#
+DEF WolfDrive_H7Controller-rescue_DS90LV027A-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue I 0 40 Y Y 1 F N
+F0 "I" 350 500 70 H V C CNN
+F1 "WolfDrive_H7Controller-rescue_DS90LV027A-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue" 350 -500 70 H V C CNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+DRAW
+S -300 400 300 -400 0 1 0 f
+X VCC 1 0 700 300 D 50 50 1 1 W
+X DI1 2 -600 200 300 R 60 60 1 1 I
+X DI2 3 -600 -200 300 R 60 60 1 1 I
+X GND 4 0 -700 300 U 50 50 1 1 W
+X DO- 5 600 -300 300 L 60 60 1 1 O I
+X DO+ 6 600 -100 300 L 60 60 1 1 O
+X DO+ 7 600 100 300 L 60 60 1 1 O
+X D0- 8 600 300 300 L 60 60 1 1 O I
+ENDDRAW
+ENDDEF
+#
+# WolfDrive_H7Controller-rescue_DS9637A-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue
+#
+DEF WolfDrive_H7Controller-rescue_DS9637A-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue I 0 40 Y Y 1 F N
+F0 "I" 350 500 70 H V C CNN
+F1 "WolfDrive_H7Controller-rescue_DS9637A-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue" 350 -500 70 H V C CNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+DRAW
+S -300 400 300 -400 0 1 0 f
+X R- 1 600 300 300 L 60 60 1 1 I I
+X R+ 2 600 100 300 L 60 60 1 1 I
+X R+ 3 600 -100 300 L 60 60 1 1 I I
+X R- 4 600 -300 300 L 60 60 1 1 I
+X GND 5 0 -700 300 U 50 50 1 1 W
+X Ro2 6 -600 -200 300 R 60 60 1 1 O
+X Ro1 7 -600 200 300 R 60 60 1 1 O
+X VCC 8 0 700 300 D 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# WolfDrive_H7Controller-rescue_EMI_FILTER-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue
+#
+DEF WolfDrive_H7Controller-rescue_EMI_FILTER-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue FI 0 40 Y N 1 F N
+F0 "FI" 150 150 50 H V C CNN
+F1 "WolfDrive_H7Controller-rescue_EMI_FILTER-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue" 400 -148 50 H V C CNN
+F2 "" 0 0 50 H V C CNN
+F3 "" 0 0 50 H V C CNN
+DRAW
+A -250 0 50 1 1799 0 1 0 N -200 0 -300 0
+A -150 0 50 1 1799 0 1 0 N -100 0 -200 0
+A -50 0 50 1 1799 0 1 0 N 0 0 -100 0
+A 0 0 0 0 0 0 1 0 N 0 0 0 0
+A 50 0 50 1 1799 0 1 0 N 100 0 0 0
+A 150 0 50 1 1799 0 1 0 N 200 0 100 0
+A 250 0 50 1 1799 0 1 0 N 300 0 200 0
+P 3 0 1 0 -260 -80 260 -80 260 -80 N
+P 5 0 1 0 -260 -40 260 -40 260 -40 260 -40 260 -40 N
+X VI 1 -450 0 150 R 40 40 1 1 P
+X GND 2 0 -250 170 U 40 40 1 1 P
+X VO 3 450 0 150 L 40 40 1 1 P
+ENDDRAW
+ENDDEF
+#
+# WolfDrive_H7Controller-rescue_FILTER-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue
+#
+DEF WolfDrive_H7Controller-rescue_FILTER-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue FB 0 40 Y N 1 F N
+F0 "FB" 0 150 50 H V C CNN
+F1 "WolfDrive_H7Controller-rescue_FILTER-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H V C CNN
+F3 "" 0 0 50 H V C CNN
+DRAW
+A -150 0 50 1 1799 0 1 0 N -100 0 -200 0
+A -50 0 50 1 1799 0 1 0 N 0 0 -100 0
+A 0 0 0 0 0 0 1 0 N 0 0 0 0
+A 50 0 50 1 1799 0 1 0 N 100 0 0 0
+A 150 0 50 1 1799 0 1 0 N 200 0 100 0
+S -225 75 225 -50 0 1 0 N
+X 1 1 -350 0 150 R 40 40 1 1 P
+X 2 2 350 0 150 L 40 40 1 1 P
+ENDDRAW
+ENDDEF
+#
+# WolfDrive_H7Controller-rescue_INDUCTOR_SMALL-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue
+#
+DEF WolfDrive_H7Controller-rescue_INDUCTOR_SMALL-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue L 0 0 N N 1 F N
+F0 "L" 0 100 50 H V C CNN
+F1 "WolfDrive_H7Controller-rescue_INDUCTOR_SMALL-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue" 0 -50 50 H V C CNN
+F2 "" 0 0 50 H V C CNN
+F3 "" 0 0 50 H V C CNN
+DRAW
+A -150 0 50 1 1799 0 1 0 N -100 0 -200 0
+A -50 0 50 1 1799 0 1 0 N 0 0 -100 0
+A 50 0 50 1 1799 0 1 0 N 100 0 0 0
+A 150 0 50 1 1799 0 1 0 N 200 0 100 0
+X 1 1 -250 0 50 R 30 30 1 1 I
+X 2 2 250 0 50 L 30 30 1 1 I
+ENDDRAW
+ENDDEF
+#
+# WolfDrive_H7Controller-rescue_LTV-356T-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue
+#
+DEF WolfDrive_H7Controller-rescue_LTV-356T-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue U 0 40 Y Y 1 F N
+F0 "U" -210 190 50 H V L CNN
+F1 "WolfDrive_H7Controller-rescue_LTV-356T-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue" 0 200 50 H V L CNN
+F2 "MFSOP-6" -200 -200 50 H V L CIN
+F3 "" 0 0 50 H V L CNN
+DRAW
+S -200 150 200 -150 0 1 10 f
+P 2 0 1 10 -125 -25 -75 -25 N
+P 2 0 1 0 100 25 175 100 N
+P 2 0 1 0 175 -100 100 -25 F
+P 2 0 1 0 175 -100 200 -100 N
+P 2 0 1 0 175 100 200 100 N
+P 3 0 1 0 -200 100 -100 100 -100 25 N
+P 3 0 1 0 -100 -25 -100 -100 -200 -100 N
+P 3 0 1 20 100 75 100 -75 100 -75 N
+P 4 0 1 10 -100 -25 -125 25 -75 25 -100 -25 F
+P 4 0 1 0 -20 10 1 30 1 10 31 40 N
+P 4 0 1 0 31 40 11 30 21 20 31 40 N
+P 5 0 1 0 120 -65 140 -45 160 -85 120 -65 120 -65 F
+P 7 0 1 0 -20 -30 1 -10 1 -30 31 0 11 -10 21 -20 31 0 N
+X ~ 1 -300 100 100 R 50 50 1 1 P
+X ~ 3 -300 -100 100 R 50 50 1 1 P
+X ~ 4 300 -100 100 L 50 50 1 1 P
+X ~ 6 300 100 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# WolfDrive_H7Controller-rescue_Led_Small-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue
+#
+DEF WolfDrive_H7Controller-rescue_Led_Small-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue D 0 10 N N 1 F N
+F0 "D" -50 125 50 H V L CNN
+F1 "WolfDrive_H7Controller-rescue_Led_Small-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue" -175 -100 50 H V L CNN
+F2 "" 0 0 50 V V C CNN
+F3 "" 0 0 50 V V C CNN
+$FPLIST
+ CP*
+ SM*
+$ENDFPLIST
+DRAW
+P 2 0 1 0 -30 -40 -30 40 N
+P 4 0 1 0 30 -40 -30 0 30 40 30 -40 F
+P 5 0 1 0 0 30 -20 50 -10 50 -20 50 -20 40 N
+P 5 0 1 0 20 50 0 70 10 70 0 70 0 60 N
+X K 1 -100 0 70 R 40 40 1 1 P
+X A 2 100 0 70 L 40 40 1 1 P
+ENDDRAW
+ENDDEF
+#
+# WolfDrive_H7Controller-rescue_ZENER-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue
+#
+DEF WolfDrive_H7Controller-rescue_ZENER-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "WolfDrive_H7Controller-rescue_ZENER-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H V C CNN
+F3 "" 0 0 50 H V C CNN
+$FPLIST
+ D?
+ SO*
+ SM*
+$ENDFPLIST
+DRAW
+P 5 0 1 8 -70 50 -50 30 -50 -30 -30 -50 -30 -50 N
+P 5 0 1 0 -50 0 50 50 50 -50 -50 0 -50 0 F
+X K 1 -200 0 150 R 50 50 1 1 P
+X A 2 200 0 150 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# conn_SD_Card-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue
+#
+DEF conn_SD_Card-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue J 0 40 Y Y 1 F N
+F0 "J" -650 550 50 H V C CNN
+F1 "conn_SD_Card-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue" 600 -550 50 H V C CNN
+F2 "10067847-001" 200 350 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ SD_Card_Receptacle
+$ENDFPLIST
+DRAW
+S -350 -375 -250 -425 0 1 0 F
+S -350 -275 -250 -325 0 1 0 F
+S -350 -175 -250 -225 0 1 0 F
+S -350 -75 -250 -125 0 1 0 F
+S -350 25 -250 -25 0 1 0 F
+S -350 125 -250 75 0 1 0 F
+S -350 225 -250 175 0 1 0 F
+S -350 325 -250 275 0 1 0 F
+S -300 425 -200 375 0 1 0 F
+P 6 0 1 0 -400 350 -300 450 800 450 800 -450 -400 -450 -400 350 f
+P 6 0 1 0 650 450 650 500 -800 500 -800 -500 650 -500 650 -450 N
+X CD/DAT3 1 -900 300 100 R 50 50 1 1 I
+X CARD_DETECT 10 900 200 100 L 50 50 1 1 I
+X WRITE_PROTECT 11 900 100 100 L 50 50 1 1 I
+X SHELL1 12 900 -100 100 L 50 50 1 1 I
+X SHELL2 13 900 -200 100 L 50 50 1 1 I
+X CMD 2 -900 200 100 R 50 50 1 1 I
+X VSS 3 -900 100 100 R 50 50 1 1 I
+X VDD 4 -900 0 100 R 50 50 1 1 I
+X CLK 5 -900 -100 100 R 50 50 1 1 I
+X VSS 6 -900 -200 100 R 50 50 1 1 I
+X DAT0 7 -900 -300 100 R 50 50 1 1 I
+X DAT1 8 -900 -400 100 R 50 50 1 1 I
+X DAT2 9 -900 400 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# device_C-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue
+#
+DEF device_C-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue C 0 10 N Y 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "device_C-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue" 25 -100 50 H V L CNN
+F2 "" 38 -150 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 20 -80 -30 80 -30 N
+P 2 0 1 20 -80 30 80 30 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# device_Q_NMOS_DGS-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue
+#
+DEF device_Q_NMOS_DGS-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue Q 0 0 Y N 1 F N
+F0 "Q" 200 50 50 H V L CNN
+F1 "device_Q_NMOS_DGS-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue" 200 -50 50 H V L CNN
+F2 "" 200 100 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C 65 0 111 0 1 10 N
+C 100 -70 11 0 1 0 F
+C 100 70 11 0 1 0 F
+P 2 0 1 0 2 0 10 0 N
+P 2 0 1 0 30 -70 100 -70 N
+P 2 0 1 10 30 -50 30 -90 N
+P 2 0 1 0 30 0 100 0 N
+P 2 0 1 10 30 20 30 -20 N
+P 2 0 1 0 30 70 100 70 N
+P 2 0 1 10 30 90 30 50 N
+P 2 0 1 0 100 -70 100 -100 N
+P 2 0 1 0 100 -70 100 0 N
+P 2 0 1 0 100 100 100 70 N
+P 3 0 1 10 10 75 10 -75 10 -75 N
+P 4 0 1 0 40 0 80 15 80 -15 40 0 F
+P 4 0 1 0 100 -70 130 -70 130 70 100 70 N
+P 4 0 1 0 110 20 115 15 145 15 150 10 N
+P 4 0 1 0 130 15 115 -10 145 -10 130 15 N
+X D 1 100 200 100 D 50 50 1 1 P
+X G 2 -200 0 200 R 50 50 1 1 I
+X S 3 100 -200 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# device_R-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue
+#
+DEF device_R-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue R 0 0 N Y 1 F N
+F0 "R" 80 0 50 V V C CNN
+F1 "device_R-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue" 0 0 50 V V C CNN
+F2 "" -70 0 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+ R_*
+$ENDFPLIST
+DRAW
+S -40 -100 40 100 0 1 10 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# interface_ADuM1201CR-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue
+#
+DEF interface_ADuM1201CR-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue U 0 40 Y Y 1 F N
+F0 "U" -350 400 50 H V L CNN
+F1 "interface_ADuM1201CR-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue" 0 400 50 H V L CNN
+F2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" 0 0 50 H I C CIN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ SO*
+$ENDFPLIST
+DRAW
+S -350 350 350 -350 0 1 10 f
+X VDD1 1 -450 250 100 R 50 50 1 1 W
+X VOA 2 -450 100 100 R 50 50 1 1 O
+X VIB 3 -450 -100 100 R 50 50 1 1 I
+X GND1 4 -450 -250 100 R 50 50 1 1 W
+X GND2 5 450 -250 100 L 50 50 1 1 W
+X VOB 6 450 -100 100 L 50 50 1 1 O
+X VIA 7 450 100 100 L 50 50 1 1 I
+X VDD2 8 450 250 100 L 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# linear_LM339-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue
+#
+DEF linear_LM339-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue U 0 20 Y Y 4 F N
+F0 "U" 0 200 50 H V L CNN
+F1 "linear_LM339-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue" 0 -200 50 H V L CNN
+F2 "" -50 100 50 H I C CNN
+F3 "" 50 200 50 H I C CNN
+$FPLIST
+ SOIC*3.9x8.7mm*Pitch1.27mm*
+ DIP*W7.62mm*
+ TSSOP*4.4x5mm*Pitch0.65mm*
+ SSOP*5.3x6.2mm*Pitch0.5mm*
+$ENDFPLIST
+DRAW
+P 4 0 1 10 -200 200 200 0 -200 -200 -200 200 f
+X V- 12 -100 -300 150 U 50 50 0 1 W
+X V+ 3 -100 300 150 D 50 50 0 1 W
+X ~ 2 300 0 100 L 50 50 1 1 C
+X - 4 -300 -100 100 R 50 50 1 1 I
+X + 5 -300 100 100 R 50 50 1 1 I
+X ~ 1 300 0 100 L 50 50 2 1 C
+X - 6 -300 -100 100 R 50 50 2 1 I
+X + 7 -300 100 100 R 50 50 2 1 I
+X - 10 -300 -100 100 R 50 50 3 1 I
+X + 11 -300 100 100 R 50 50 3 1 I
+X ~ 13 300 0 100 L 50 50 3 1 C
+X ~ 14 300 0 100 L 50 50 4 1 C
+X - 8 -300 -100 100 R 50 50 4 1 I
+X + 9 -300 100 100 R 50 50 4 1 I
+ENDDRAW
+ENDDEF
+#
+# power_+3.3V-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue
+#
+DEF power_+3.3V-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_+3.3V-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +3V3 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_+5V-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue
+#
+DEF power_+5V-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_+5V-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +5V 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_PWR_FLAG-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue
+#
+DEF power_PWR_FLAG-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue #FLG 0 0 N N 1 F P
+F0 "#FLG" 0 75 50 H I C CNN
+F1 "power_PWR_FLAG-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue" 0 150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 50 -40 75 0 100 40 75 0 50 N
+X pwr 1 0 0 0 U 50 50 0 0 w
+ENDDRAW
+ENDDEF
+#
+#End Library

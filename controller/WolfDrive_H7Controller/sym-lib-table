@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name WolfDrive_H7Controller-rescue)(type Legacy)(uri ${KIPRJMOD}/WolfDrive_H7Controller-rescue.lib)(options "")(descr ""))
+  (lib (name DriveSymbols)(type Legacy)(uri /home/jpb/Dropbox/Uni/PhD/PCBs/WolfDrive/DriveSymbols.lib)(options "")(descr ""))
+)

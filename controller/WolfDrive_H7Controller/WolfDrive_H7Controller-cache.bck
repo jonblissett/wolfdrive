@@ -1,0 +1,13 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP CD4043B
+D 4 bits Latch
+K TTL DFF Latch
+$ENDCMP
+#
+$CMP CD4044B
+D 4 bits Latch
+K TTL DFF Latch
+$ENDCMP
+#
+#End Doc Library
