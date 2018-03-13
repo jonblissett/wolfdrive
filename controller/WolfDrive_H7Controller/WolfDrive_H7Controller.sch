@@ -6513,7 +6513,7 @@ Connection ~ 10650 2650
 Wire Wire Line
 	10950 4750 10950 4800
 Wire Wire Line
-	8550 4800 10550 4800
+	8550 4800 9950 4800
 Connection ~ 10950 4800
 Wire Wire Line
 	10850 4750 10850 4800
@@ -6659,7 +6659,6 @@ Connection ~ 11700 2650
 NoConn ~ 9950 3750
 NoConn ~ 9950 3950
 NoConn ~ 9950 4150
-NoConn ~ 9950 4450
 NoConn ~ 11550 4450
 NoConn ~ 11550 4350
 NoConn ~ 11550 4250
@@ -7483,4 +7482,9 @@ Wire Wire Line
 	3325 2100 3725 2100
 Wire Wire Line
 	2675 2100 2900 2100
+Wire Wire Line
+	9950 4450 9950 4800
+Connection ~ 9950 4800
+Wire Wire Line
+	9950 4800 10550 4800
 $EndSCHEMATC
