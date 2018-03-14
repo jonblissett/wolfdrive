@@ -1,3 +1,3 @@
 (fp_lib_table
-  (lib (name DriveParts)(type KiCad)(uri /home/jpb/Dropbox/Uni/PhD/PCBs/WolfDrive/DriveParts.pretty)(options "")(descr ""))
+  (lib (name DriveParts)(type KiCad)(uri /home/jpb/Dropbox/Uni/PhD/PCBs/WolfDrive/wolfdrive/DriveParts.pretty)(options "")(descr ""))
 )
