@@ -3653,8 +3653,6 @@ Wire Wire Line
 	2450 1950 2450 2100
 Connection ~ 2450 1550
 Wire Wire Line
-	2325 1550 2450 1550
-Wire Wire Line
 	1075 1850 1150 1850
 Wire Wire Line
 	19375 8425 19575 8425
@@ -4453,8 +4451,6 @@ Wire Notes Line
 	475  5300 12200 5300
 Wire Wire Line
 	4275 2000 4275 2100
-Wire Wire Line
-	2325 2100 2450 2100
 Wire Wire Line
 	6150 2625 6350 2625
 Wire Wire Line
@@ -5576,10 +5572,6 @@ F 3 "~" H 875 1850 50  0001 C CNN
 	1    875  1850
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	1075 1950 1150 1950
-Wire Wire Line
-	1150 1850 1150 1950
 Text Notes 21575 2400 0    50   ~ 0
 SHB11-PBPC-D08-ST-BK
 $Comp
@@ -5758,24 +5750,15 @@ Wire Wire Line
 $Comp
 L Device:EMI_Filter_CommonMode FL1
 U 1 1 5AE9439E
-P 2100 1850
-F 0 "FL1" H 2100 2219 50  0000 C CNN
-F 1 "Wurth_744273501" H 2100 2128 50  0000 C CNN
-F 2 "DriveParts:WE_SL5_HR_CommonMode_filter" H 2100 2037 50  0000 C CNN
-F 3 "~" V 2100 1890 50  0000 C CNN
-	1    2100 1850
+P 1450 1850
+F 0 "FL1" H 1450 2219 50  0000 C CNN
+F 1 "Wurth_744273501" H 1450 2128 50  0000 C CNN
+F 2 "DriveParts:WE_SL5_HR_CommonMode_filter" H 1450 2037 50  0000 C CNN
+F 3 "~" V 1450 1890 50  0000 C CNN
+	1    1450 1850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2325 1550 2325 1750
-Wire Wire Line
-	2325 1750 2300 1750
-Wire Wire Line
-	2300 1950 2325 1950
-Wire Wire Line
-	2325 1950 2325 2100
 Connection ~ 2450 2100
-Connection ~ 1150 1950
 Wire Wire Line
 	1075 1750 1150 1750
 Wire Wire Line
@@ -6729,14 +6712,6 @@ Wire Wire Line
 Connection ~ 9950 4800
 Wire Wire Line
 	9950 4800 10550 4800
-Text Notes -3000 1125 0    50   ~ 0
-Protection diodes D1-D3 on over-temperature trips incorrect value and not required (DNP).\nMOSFET Q2 footprint pinout incorrect.\nCD4044B pinout incorrect - actually pinout for CD4043B so need to invert all fault inputs.\nFootprint for DB15 vertical instead of right angle?\nConnectors CN7-CNCN10 mirrored - connections to STM32 board do not match.
-Text Notes -3025 1450 0    50   ~ 0
-Pin 26 (TEST) on FT232RL should be connected to GND -> short to pin 25.\nDevice does not enumerate unless D1 (SP0503BAHT) is not populated.
-Text Notes -4400 1925 0    50   ~ 0
-Seems to be due to following comment in DS90LV028a datasheet:\n"The receiver also supports open, shorted and terminated (100 Ω) input fail-safe. The receiver output is HIGH for all fail-safe conditions."
-Text Notes -3450 2725 0    50   ~ 0
-DS90LV028A are rated for 3.3V supply, but schematic has 5V connected!\n\n @jonblissett\n  Owner\njonblissett commented 8 hours ago\nCan use DS90C401 instead - 5V compatible part, but for new version use DS90LV027AQ-Q1 and supply with 3.3V.\n\nWhole 5V supply may no longer be required?
 $Comp
 L WolfDrive_H7Controller-rescue:power_+3.3V-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue #PWR0107
 U 1 1 5AB75FE4
@@ -8043,17 +8018,6 @@ Wire Wire Line
 Connection ~ 21350 12250
 Wire Wire Line
 	21350 12250 21500 12250
-$Comp
-L WolfDrive_H7Controller-rescue:power_+3.3V-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue #PWR0191
-U 1 1 61BC542C
-P 2900 4250
-F 0 "#PWR0191" H 2900 4100 50  0001 C CNN
-F 1 "+3.3V" H 2900 4390 50  0000 C CNN
-F 2 "" H 2900 4250 60  0000 C CNN
-F 3 "" H 2900 4250 60  0000 C CNN
-	1    2900 4250
-	1    0    0    -1  
-$EndComp
 Connection ~ 6750 2625
 Wire Wire Line
 	5850 2100 6350 2100
@@ -8763,41 +8727,92 @@ F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 1450 9800 50  0001 C CNN
 	1    1450 9800
 	1    0    0    -1  
 $EndComp
+Text Notes -3025 1450 0    50   ~ 0
+Pin 26 (TEST) on FT232RL should be connected to GND -> short to pin 25.\nDevice does not enumerate unless D1 (SP0503BAHT) is not populated.
+Text Notes -4600 1925 0    50   ~ 0
+Seems to be due to following comment in DS90LV028a datasheet:\n"The receiver also supports open, shorted and terminated (100 Ω) input fail-safe. The receiver output is HIGH for all fail-safe conditions."
+Text Notes -3000 1125 0    50   ~ 0
+Protection diodes D1-D3 on over-temperature trips incorrect value and not required (DNP).\nMOSFET Q2 footprint pinout incorrect.\nCD4044B pinout incorrect - actually pinout for CD4043B so need to invert all fault inputs.\nFootprint for DB15 vertical instead of right angle?\nConnectors CN7-CNCN10 mirrored - connections to STM32 board do not match.
+Text Notes -3650 2725 0    50   ~ 0
+DS90LV028A are rated for 3.3V supply, but schematic has 5V connected!\n\n @jonblissett\n  Owner\njonblissett commented 8 hours ago\nCan use DS90C401 instead - 5V compatible part, but for new version use DS90LV027AQ-Q1 and supply with 3.3V.\n\nWhole 5V supply may no longer be required?
 Wire Wire Line
-	1900 1750 1900 1650
+	1150 1850 1150 1950
+Connection ~ 1150 1950
+Wire Wire Line
+	1075 1950 1150 1950
+Wire Wire Line
+	1250 1750 1250 1650
+Connection ~ 1150 1650
 $Comp
 L Diode:1.5KExxA D25
 U 1 1 5B0319FA
-P 1700 1800
-F 0 "D25" V 1654 1879 50  0000 L CNN
-F 1 "1.5KExxA" V 1745 1879 50  0000 L CNN
-F 2 "Diode_SMD:D_SMB-SMC_Universal_Handsoldering" H 1700 1600 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/88301/15ke.pdf" H 1650 1800 50  0001 C CNN
-	1    1700 1800
+P 1800 1850
+F 0 "D25" V 1754 1929 50  0000 L CNN
+F 1 "1.5KExxA" V 1845 1929 50  0000 L CNN
+F 2 "Diode_SMD:D_SMB-SMC_Universal_Handsoldering" H 1800 1650 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/88301/15ke.pdf" H 1750 1850 50  0001 C CNN
+	1    1800 1850
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1150 1950 1700 1950
+	1150 1950 1250 1950
 Wire Wire Line
-	1700 1650 1900 1650
-Connection ~ 1700 1950
-Wire Wire Line
-	1700 1950 1900 1950
+	1150 1650 1250 1650
 $Comp
 L Device:Polyfuse F1
-U 1 1 5B3954F5
-P 1450 1650
-F 0 "F1" V 1225 1650 50  0000 C CNN
-F 1 "Polyfuse" V 1316 1650 50  0000 C CNN
-F 2 "" H 1500 1450 50  0001 L CNN
-F 3 "~" H 1450 1650 50  0001 C CNN
-	1    1450 1650
+U 1 1 5D0A55F3
+P 2150 1550
+F 0 "F1" V 1925 1550 50  0000 C CNN
+F 1 "Polyfuse" V 2016 1550 50  0000 C CNN
+F 2 "Fuse:Fuse_1812_4532Metric_Pad1.24x3.50mm_HandSolder" H 2200 1350 50  0001 L CNN
+F 3 "~" H 2150 1550 50  0001 C CNN
+	1    2150 1550
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1300 1650 1150 1650
-Connection ~ 1150 1650
+	2300 1550 2450 1550
 Wire Wire Line
-	1600 1650 1700 1650
-Connection ~ 1700 1650
+	2000 1550 1800 1550
+Wire Wire Line
+	1800 1550 1800 1700
+Wire Wire Line
+	1650 1750 1700 1750
+Wire Wire Line
+	1700 1750 1700 1550
+Wire Wire Line
+	1700 1550 1800 1550
+Connection ~ 1800 1550
+Wire Wire Line
+	1650 1950 1700 1950
+Wire Wire Line
+	1700 1950 1700 2100
+Wire Wire Line
+	1700 2100 1800 2100
+Wire Wire Line
+	1800 2000 1800 2100
+Connection ~ 1800 2100
+Wire Wire Line
+	1800 2100 2450 2100
+$Comp
+L WolfDrive_H7Controller-rescue:power_+3.3V-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue #PWR0191
+U 1 1 61BC542C
+P 2200 4250
+F 0 "#PWR0191" H 2200 4100 50  0001 C CNN
+F 1 "+3.3V" H 2200 4390 50  0000 C CNN
+F 2 "" H 2200 4250 60  0000 C CNN
+F 3 "" H 2200 4250 60  0000 C CNN
+	1    2200 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_FILTER-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue FB1
+U 1 1 5D76AC8F
+P 2550 4250
+F 0 "FB1" H 2550 4400 50  0000 C CNN
+F 1 "FILTER" H 2550 4150 50  0000 C CNN
+F 2 "w_smd_inductors:inductor_smd_0805" H 2550 4250 50  0001 C CNN
+F 3 "" H 2550 4250 50  0000 C CNN
+	1    2550 4250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
