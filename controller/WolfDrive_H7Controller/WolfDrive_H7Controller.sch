@@ -17,12 +17,12 @@ $EndDescr
 $Comp
 L WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue C44
 U 1 1 5A1772DE
-P 5650 1800
-F 0 "C44" H 5650 1900 40  0000 L CNN
-F 1 "10u, 10v" H 5656 1715 40  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 5688 1650 30  0001 C CNN
-F 3 "" H 5650 1800 60  0000 C CNN
-	1    5650 1800
+P 6350 1800
+F 0 "C44" H 6350 1900 40  0000 L CNN
+F 1 "10u, 10v" H 6356 1715 40  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 6388 1650 30  0001 C CNN
+F 3 "" H 6350 1800 60  0000 C CNN
+	1    6350 1800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -703,7 +703,7 @@ Data out
 Text Label 5050 15025 2    60   ~ 0
 SP2_MISO_PC2
 Text Notes 950  4300 0    236  ~ 0
-PCB stackup:\n- LVDS signals\n- GROUND\n- POWER\n- TTL
+PCB stackup:\n- LVDS signals\n- GROUND\n- SUPPLY\n- TTL
 $Comp
 L WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue C38
 U 1 1 5A2BACCD
@@ -2589,7 +2589,7 @@ F 3 "" H 10150 12475 60  0000 C CNN
 $EndComp
 Text Notes 7175 925  0    157  ~ 0
 Supply
-Text Label 4700 4350 0    60   ~ 0
+Text Label 3700 4650 0    60   ~ 0
 RTD_trip_ref
 $Comp
 L Connector_Generic:Conn_02x10_Odd_Even CN7
@@ -2858,67 +2858,67 @@ OverTemp_trip
 $Comp
 L WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue C64
 U 1 1 5A80262D
-P 4650 4500
-F 0 "C64" H 4650 4600 40  0000 L CNN
-F 1 "100n" H 4656 4415 40  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4688 4350 30  0001 C CNN
-F 3 "" H 4650 4500 60  0000 C CNN
-	1    4650 4500
+P 3650 4800
+F 0 "C64" H 3650 4900 40  0000 L CNN
+F 1 "100n" H 3656 4715 40  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3688 4650 30  0001 C CNN
+F 3 "" H 3650 4800 60  0000 C CNN
+	1    3650 4800
 	1    0    0    -1  
 $EndComp
 $Comp
 L WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_DGND-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue #PWR092
 U 1 1 5A80A2FB
-P 4650 4650
-F 0 "#PWR092" H 4650 4650 40  0001 C CNN
-F 1 "DGND" H 4650 4580 40  0000 C CNN
-F 2 "" H 4650 4650 60  0000 C CNN
-F 3 "" H 4650 4650 60  0000 C CNN
-	1    4650 4650
+P 3650 4950
+F 0 "#PWR092" H 3650 4950 40  0001 C CNN
+F 1 "DGND" H 3650 4880 40  0000 C CNN
+F 2 "" H 3650 4950 60  0000 C CNN
+F 3 "" H 3650 4950 60  0000 C CNN
+	1    3650 4950
 	-1   0    0    -1  
 $EndComp
 $Comp
 L WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue R4
 U 1 1 5A810CAB
-P 3900 4550
-F 0 "R4" V 4000 4550 40  0000 C CNN
-F 1 "?" V 3900 4550 40  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 3830 4550 30  0001 C CNN
-F 3 "" H 3900 4550 30  0000 C CNN
-	1    3900 4550
+P 2900 4850
+F 0 "R4" V 3000 4850 40  0000 C CNN
+F 1 "?" V 2900 4850 40  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 2830 4850 30  0001 C CNN
+F 3 "" H 2900 4850 30  0000 C CNN
+	1    2900 4850
 	-1   0    0    1   
 $EndComp
 $Comp
 L WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue C25
 U 1 1 5A8281B5
-P 4100 4550
-F 0 "C25" H 4100 4650 40  0000 L CNN
-F 1 "1u" H 4106 4465 40  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4138 4400 30  0001 C CNN
-F 3 "" H 4100 4550 60  0000 C CNN
-	1    4100 4550
+P 3100 4850
+F 0 "C25" H 3100 4950 40  0000 L CNN
+F 1 "1u" H 3106 4765 40  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3138 4700 30  0001 C CNN
+F 3 "" H 3100 4850 60  0000 C CNN
+	1    3100 4850
 	1    0    0    -1  
 $EndComp
 $Comp
 L WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue R3
 U 1 1 5A82882A
-P 3900 4150
-F 0 "R3" V 4000 4150 40  0000 C CNN
-F 1 "?" V 3900 4150 40  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 3830 4150 30  0001 C CNN
-F 3 "" H 3900 4150 30  0000 C CNN
-	1    3900 4150
+P 2900 4450
+F 0 "R3" V 3000 4450 40  0000 C CNN
+F 1 "?" V 2900 4450 40  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 2830 4450 30  0001 C CNN
+F 3 "" H 2900 4450 30  0000 C CNN
+	1    2900 4450
 	-1   0    0    1   
 $EndComp
 $Comp
 L WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_DGND-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue #PWR093
 U 1 1 5A82AE32
-P 3900 4800
-F 0 "#PWR093" H 3900 4800 40  0001 C CNN
-F 1 "DGND" H 3900 4730 40  0000 C CNN
-F 2 "" H 3900 4800 60  0000 C CNN
-F 3 "" H 3900 4800 60  0000 C CNN
-	1    3900 4800
+P 2900 5100
+F 0 "#PWR093" H 2900 5100 40  0001 C CNN
+F 1 "DGND" H 2900 5030 40  0000 C CNN
+F 2 "" H 2900 5100 60  0000 C CNN
+F 3 "" H 2900 5100 60  0000 C CNN
+	1    2900 5100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -3452,10 +3452,10 @@ Text Label 21425 3975 2    59   ~ 0
 ~PS-Dis
 Text Label 21425 6075 2    59   ~ 0
 ~PS-Dis
-Text Label 6125 4700 0    59   ~ 0
+Text Label 5225 4750 0    59   ~ 0
 ~PS-Dis
 Wire Wire Line
-	1550 1650 1475 1650
+	1150 1650 1075 1650
 Wire Wire Line
 	2450 1500 2450 1550
 Connection ~ 15925 8975
@@ -3483,7 +3483,7 @@ Wire Wire Line
 Wire Wire Line
 	9250 2650 9300 2650
 Wire Wire Line
-	3900 3950 3900 4000
+	2900 4250 2900 4300
 Connection ~ 16450 7800
 Wire Wire Line
 	16675 7800 16675 7750
@@ -3504,27 +3504,27 @@ Wire Wire Line
 	15675 7400 15775 7400
 Wire Wire Line
 	16450 7400 16450 7450
-Connection ~ 3900 4750
+Connection ~ 2900 5050
 Wire Wire Line
-	4100 4750 4100 4700
+	3100 5050 3100 5000
 Wire Wire Line
-	3900 4750 4100 4750
+	2900 5050 3100 5050
 Wire Wire Line
-	3900 4700 3900 4750
-Connection ~ 4100 4350
-Connection ~ 3900 4350
+	2900 5000 2900 5050
+Connection ~ 3100 4650
+Connection ~ 2900 4650
 Wire Wire Line
-	4100 4350 4100 4400
+	3100 4650 3100 4700
 Wire Wire Line
-	3900 4350 4100 4350
+	2900 4650 3100 4650
 Wire Wire Line
-	3900 4300 3900 4350
+	2900 4600 2900 4650
 Wire Wire Line
 	14550 2100 14650 2100
 Wire Wire Line
 	14950 2100 15050 2100
 Wire Wire Line
-	4600 4350 4650 4350
+	3600 4650 3650 4650
 Wire Wire Line
 	16000 1900 15950 1900
 Wire Wire Line
@@ -3565,7 +3565,6 @@ Wire Wire Line
 Wire Wire Line
 	4175 1550 4275 1550
 Connection ~ 4275 1550
-Connection ~ 5850 2100
 Wire Wire Line
 	5400 2100 5400 1950
 Wire Wire Line
@@ -3656,7 +3655,7 @@ Connection ~ 2450 1550
 Wire Wire Line
 	2325 1550 2450 1550
 Wire Wire Line
-	1475 1850 1550 1850
+	1075 1850 1150 1850
 Wire Wire Line
 	19375 8425 19575 8425
 Wire Wire Line
@@ -4479,63 +4478,63 @@ $EndComp
 $Comp
 L Power_Supervisor:MCP101-315D U3
 U 1 1 5B29C790
-P 5825 4700
-F 0 "U3" H 5595 4746 50  0000 R CNN
-F 1 "MCP101-315D" H 5595 4655 50  0000 R CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 5425 4850 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/11187f.pdf" H 5525 4950 50  0001 C CNN
-	1    5825 4700
+P 4925 4750
+F 0 "U3" H 4695 4796 50  0000 R CNN
+F 1 "MCP101-315D" H 4695 4705 50  0000 R CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 4525 4900 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/11187f.pdf" H 4625 5000 50  0001 C CNN
+	1    4925 4750
 	1    0    0    -1  
 $EndComp
 $Comp
 L WolfDrive_H7Controller-rescue:power_+3.3V-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue #PWR0131
 U 1 1 5B29EDB9
-P 5725 4200
-F 0 "#PWR0131" H 5725 4050 50  0001 C CNN
-F 1 "+3.3V" H 5725 4340 50  0000 C CNN
-F 2 "" H 5725 4200 60  0000 C CNN
-F 3 "" H 5725 4200 60  0000 C CNN
-	1    5725 4200
+P 4825 4250
+F 0 "#PWR0131" H 4825 4100 50  0001 C CNN
+F 1 "+3.3V" H 4825 4390 50  0000 C CNN
+F 2 "" H 4825 4250 60  0000 C CNN
+F 3 "" H 4825 4250 60  0000 C CNN
+	1    4825 4250
 	1    0    0    -1  
 $EndComp
 $Comp
 L WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_DGND-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue #PWR0132
 U 1 1 5B29F697
-P 5725 5100
-F 0 "#PWR0132" H 5725 5100 40  0001 C CNN
-F 1 "DGND" H 5725 5030 40  0000 C CNN
-F 2 "" H 5725 5100 60  0000 C CNN
-F 3 "" H 5725 5100 60  0000 C CNN
-	1    5725 5100
+P 4825 5150
+F 0 "#PWR0132" H 4825 5150 40  0001 C CNN
+F 1 "DGND" H 4825 5080 40  0000 C CNN
+F 2 "" H 4825 5150 60  0000 C CNN
+F 3 "" H 4825 5150 60  0000 C CNN
+	1    4825 5150
 	1    0    0    -1  
 $EndComp
 $Comp
 L WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue C83
 U 1 1 5B2A1EDF
-P 5400 4450
-F 0 "C83" H 5400 4550 40  0000 L CNN
-F 1 "100n" H 5406 4365 40  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5438 4300 30  0001 C CNN
-F 3 "" H 5400 4450 60  0000 C CNN
-	1    5400 4450
+P 4500 4500
+F 0 "C83" H 4500 4600 40  0000 L CNN
+F 1 "100n" H 4506 4415 40  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4538 4350 30  0001 C CNN
+F 3 "" H 4500 4500 60  0000 C CNN
+	1    4500 4500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5725 4200 5725 4250
+	4825 4250 4825 4300
 Wire Wire Line
-	5725 4250 5400 4250
+	4825 4300 4500 4300
 Wire Wire Line
-	5400 4250 5400 4300
-Connection ~ 5725 4250
+	4500 4300 4500 4350
+Connection ~ 4825 4300
 $Comp
 L WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_DGND-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue #PWR0133
 U 1 1 5B8DB789
-P 5400 4600
-F 0 "#PWR0133" H 5400 4600 40  0001 C CNN
-F 1 "DGND" H 5400 4530 40  0000 C CNN
-F 2 "" H 5400 4600 60  0000 C CNN
-F 3 "" H 5400 4600 60  0000 C CNN
-	1    5400 4600
+P 4500 4650
+F 0 "#PWR0133" H 4500 4650 40  0001 C CNN
+F 1 "DGND" H 4500 4580 40  0000 C CNN
+F 2 "" H 4500 4650 60  0000 C CNN
+F 3 "" H 4500 4650 60  0000 C CNN
+	1    4500 4650
 	1    0    0    -1  
 $EndComp
 Text Label 13975 14475 0    59   ~ 0
@@ -4786,12 +4785,12 @@ $EndComp
 $Comp
 L Connector_Specialized:Test_Point_Flag J12
 U 1 1 5CDBFFB1
-P 5650 1550
-F 0 "J12" H 5708 1670 50  0000 L CNN
-F 1 "12VA" H 5708 1579 50  0000 L CNN
-F 2 "DriveParts:Test_Point" H 5850 1550 50  0001 C CNN
-F 3 "" H 5850 1550 50  0001 C CNN
-	1    5650 1550
+P 5500 3550
+F 0 "J12" H 5558 3670 50  0000 L CNN
+F 1 "12VA" H 5558 3579 50  0000 L CNN
+F 2 "DriveParts:Test_Point" H 5700 3550 50  0001 C CNN
+F 3 "" H 5700 3550 50  0001 C CNN
+	1    5500 3550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -4808,23 +4807,23 @@ $EndComp
 $Comp
 L Connector_Specialized:Test_Point_Flag J9
 U 1 1 5CDC06D7
-P 5850 2100
-F 0 "J9" H 5792 2127 50  0000 R CNN
-F 1 "GND" H 5792 2218 50  0000 R CNN
-F 2 "DriveParts:Test_Point" H 6050 2100 50  0001 C CNN
-F 3 "" H 6050 2100 50  0001 C CNN
-	1    5850 2100
+P 6550 2100
+F 0 "J9" H 6492 2127 50  0000 R CNN
+F 1 "GND" H 6492 2218 50  0000 R CNN
+F 2 "DriveParts:Test_Point" H 6750 2100 50  0001 C CNN
+F 3 "" H 6750 2100 50  0001 C CNN
+	1    6550 2100
 	-1   0    0    1   
 $EndComp
 $Comp
 L Connector_Specialized:Test_Point_Flag J11
 U 1 1 5CDC090F
-P 6950 2100
-F 0 "J11" H 6892 2127 50  0000 R CNN
-F 1 "GND" H 6892 2218 50  0000 R CNN
-F 2 "DriveParts:Test_Point" H 7150 2100 50  0001 C CNN
-F 3 "" H 7150 2100 50  0001 C CNN
-	1    6950 2100
+P 5850 2100
+F 0 "J11" H 5792 2127 50  0000 R CNN
+F 1 "GND" H 5792 2218 50  0000 R CNN
+F 2 "DriveParts:Test_Point" H 6050 2100 50  0001 C CNN
+F 3 "" H 6050 2100 50  0001 C CNN
+	1    5850 2100
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -5569,32 +5568,32 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_01x04 J29
 U 1 1 5D0EB1AB
-P 1275 1850
-F 0 "J29" H 1195 1425 50  0000 C CNN
-F 1 "Conn_01x04" H 1195 1516 50  0000 C CNN
-F 2 "Connectors_Phoenix:PhoenixContact_MSTB-GF_04x5.08mm_Angled_ThreadedFlange_MountHole" H 1275 1850 50  0001 C CNN
-F 3 "~" H 1275 1850 50  0001 C CNN
-	1    1275 1850
+P 875 1850
+F 0 "J29" H 795 1425 50  0000 C CNN
+F 1 "Conn_01x04" H 795 1516 50  0000 C CNN
+F 2 "Connectors_Phoenix:PhoenixContact_MSTB-GF_04x5.08mm_Angled_ThreadedFlange_MountHole" H 875 1850 50  0001 C CNN
+F 3 "~" H 875 1850 50  0001 C CNN
+	1    875  1850
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	1475 1950 1550 1950
+	1075 1950 1150 1950
 Wire Wire Line
-	1550 1850 1550 1950
+	1150 1850 1150 1950
 Text Notes 21575 2400 0    50   ~ 0
 SHB11-PBPC-D08-ST-BK
 $Comp
 L WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue R67
 U 1 1 5D39FB60
-P 4450 4350
-F 0 "R67" V 4550 4350 40  0000 C CNN
-F 1 "10k" V 4450 4350 40  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 4380 4350 30  0001 C CNN
-F 3 "" H 4450 4350 30  0000 C CNN
-	1    4450 4350
+P 3450 4650
+F 0 "R67" V 3550 4650 40  0000 C CNN
+F 1 "10k" V 3450 4650 40  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 3380 4650 30  0001 C CNN
+F 3 "" H 3450 4650 30  0000 C CNN
+	1    3450 4650
 	0    -1   -1   0   
 $EndComp
-Connection ~ 4650 4350
+Connection ~ 3650 4650
 Text Label 16100 6350 2    60   ~ 0
 RTD_trip_ref
 $Comp
@@ -5657,12 +5656,12 @@ $EndComp
 $Comp
 L Connector_Specialized:Test_Point_Flag J34
 U 1 1 5ACC9E3F
-P 6125 4700
-F 0 "J34" H 6183 4820 50  0000 L CNN
-F 1 "PS-DIS" H 6183 4729 50  0000 L CNN
-F 2 "DriveParts:Test_Point" H 6325 4700 50  0001 C CNN
-F 3 "" H 6325 4700 50  0001 C CNN
-	1    6125 4700
+P 5225 4750
+F 0 "J34" H 5283 4870 50  0000 L CNN
+F 1 "PS-DIS" H 5283 4779 50  0000 L CNN
+F 2 "DriveParts:Test_Point" H 5425 4750 50  0001 C CNN
+F 3 "" H 5425 4750 50  0001 C CNN
+	1    5225 4750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -5743,8 +5742,6 @@ Connection ~ 18625 8825
 Connection ~ 18525 8825
 Wire Wire Line
 	18525 8775 18525 8825
-Wire Wire Line
-	5275 1550 5400 1550
 $Comp
 L Regulator_Linear:LM1117-3.3 U2
 U 1 1 5ABAF8E5
@@ -5778,15 +5775,14 @@ Wire Wire Line
 Wire Wire Line
 	2325 1950 2325 2100
 Connection ~ 2450 2100
-Connection ~ 1550 1950
+Connection ~ 1150 1950
 Wire Wire Line
-	1475 1750 1550 1750
+	1075 1750 1150 1750
 Wire Wire Line
 	7425 10700 7425 10800
 Connection ~ 7425 10800
 Wire Wire Line
-	1550 1750 1550 1650
-Connection ~ 1550 1750
+	1150 1750 1150 1650
 $Comp
 L WolfDrive_H7Controller-rescue:+12V-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue #PWR0149
 U 1 1 5BFC3F1A
@@ -5806,8 +5802,6 @@ Connection ~ 3725 2100
 Connection ~ 5400 3175
 Wire Wire Line
 	4775 2625 4600 2625
-Wire Wire Line
-	4600 2625 4600 1550
 Connection ~ 4600 1550
 Wire Wire Line
 	4475 1550 4475 1700
@@ -6253,11 +6247,11 @@ Wire Wire Line
 Wire Wire Line
 	15775 7400 16225 7400
 Wire Wire Line
-	3900 4750 3900 4800
+	2900 5050 2900 5100
 Wire Wire Line
-	4100 4350 4300 4350
+	3100 4650 3300 4650
 Wire Wire Line
-	3900 4350 3900 4400
+	2900 4650 2900 4700
 Wire Wire Line
 	15050 2100 15050 2150
 Wire Wire Line
@@ -6267,11 +6261,9 @@ Wire Wire Line
 Wire Wire Line
 	4275 1550 4475 1550
 Wire Wire Line
-	5850 2100 6350 2100
+	6550 2100 6350 2100
 Wire Wire Line
 	5400 1550 5400 1650
-Wire Wire Line
-	5400 1550 5550 1550
 Wire Wire Line
 	16425 8025 16525 8025
 Wire Wire Line
@@ -6569,7 +6561,7 @@ Wire Wire Line
 Wire Wire Line
 	4275 2100 4475 2100
 Wire Wire Line
-	5725 4250 5725 4300
+	4825 4300 4825 4350
 Wire Wire Line
 	16400 9825 16500 9825
 Wire Wire Line
@@ -6641,7 +6633,7 @@ Wire Wire Line
 Wire Wire Line
 	9650 10900 9600 10900
 Wire Wire Line
-	4650 4350 4700 4350
+	3650 4650 3700 4650
 Wire Wire Line
 	19575 8825 20175 8825
 Wire Wire Line
@@ -6679,13 +6671,7 @@ Wire Wire Line
 Wire Wire Line
 	2450 2100 2450 2150
 Wire Wire Line
-	1550 1950 1900 1950
-Wire Wire Line
 	7425 10800 7525 10800
-Wire Wire Line
-	1550 1750 1900 1750
-Wire Wire Line
-	5400 2100 5650 2100
 Wire Wire Line
 	3725 2100 4275 2100
 Wire Wire Line
@@ -6694,8 +6680,6 @@ Wire Wire Line
 	4600 1550 4775 1550
 Wire Wire Line
 	4475 1550 4600 1550
-Wire Wire Line
-	4475 2100 5400 2100
 Wire Wire Line
 	10850 2650 10925 2650
 Wire Wire Line
@@ -6888,17 +6872,6 @@ Wire Wire Line
 	10250 10900 10250 10950
 Text Notes 9050 4275 0    50   ~ 0
 FOOTPRINT
-$Comp
-L 74xGxx:74LVC1G02 U1
-U 1 1 5AB756F4
-P 1450 9800
-F 0 "U1" H 1425 10067 50  0000 C CNN
-F 1 "74LVC1G02" H 1425 9976 50  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:SOT-353_SC-70-5_Handsoldering" H 1450 9800 50  0001 C CNN
-F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 1450 9800 50  0001 C CNN
-	1    1450 9800
-	1    0    0    -1  
-$EndComp
 $Comp
 L Jumper:SolderJumper_3_Bridged12 J28
 U 1 1 5AB7A6E6
@@ -7532,8 +7505,6 @@ Wire Wire Line
 	2900 2100 3325 2100
 Wire Wire Line
 	2450 2100 2675 2100
-Wire Wire Line
-	6350 2100 6950 2100
 $Comp
 L 4xxx:4077 U20
 U 5 1 5B2E4377
@@ -7574,13 +7545,13 @@ Connection ~ 1225 11650
 $Comp
 L power:+12VA #PWR0179
 U 1 1 5C0A3F83
-P 5550 1550
-F 0 "#PWR0179" H 5550 1400 50  0001 C CNN
-F 1 "+12VA" H 5565 1723 50  0000 C CNN
-F 2 "" H 5550 1550 50  0001 C CNN
-F 3 "" H 5550 1550 50  0001 C CNN
-	1    5550 1550
-	1    0    0    -1  
+P 5850 3550
+F 0 "#PWR0179" H 5850 3400 50  0001 C CNN
+F 1 "+12VA" H 5865 3723 50  0000 C CNN
+F 2 "" H 5850 3550 50  0001 C CNN
+F 3 "" H 5850 3550 50  0001 C CNN
+	1    5850 3550
+	-1   0    0    -1  
 $EndComp
 $Comp
 L WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue C27
@@ -7594,16 +7565,9 @@ F 3 "" H 5400 1800 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5650 1950 5650 2100
-Connection ~ 5650 2100
+	6350 1950 6350 2100
 Wire Wire Line
-	5650 2100 5850 2100
-Wire Wire Line
-	5650 1650 5650 1550
-Wire Wire Line
-	5550 1550 5650 1550
-Connection ~ 5550 1550
-Connection ~ 5650 1550
+	6350 1650 6350 1550
 $Comp
 L power:+12VA #PWR0180
 U 1 1 5C539401
@@ -8082,19 +8046,17 @@ Wire Wire Line
 $Comp
 L WolfDrive_H7Controller-rescue:power_+3.3V-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue #PWR0191
 U 1 1 61BC542C
-P 3900 3950
-F 0 "#PWR0191" H 3900 3800 50  0001 C CNN
-F 1 "+3.3V" H 3900 4090 50  0000 C CNN
-F 2 "" H 3900 3950 60  0000 C CNN
-F 3 "" H 3900 3950 60  0000 C CNN
-	1    3900 3950
+P 2900 4250
+F 0 "#PWR0191" H 2900 4100 50  0001 C CNN
+F 1 "+3.3V" H 2900 4390 50  0000 C CNN
+F 2 "" H 2900 4250 60  0000 C CNN
+F 3 "" H 2900 4250 60  0000 C CNN
+	1    2900 4250
 	1    0    0    -1  
 $EndComp
 Connection ~ 6750 2625
-Connection ~ 6950 2100
 Wire Wire Line
-	6950 2100 7275 2100
-Connection ~ 7275 2100
+	5850 2100 6350 2100
 Wire Wire Line
 	7275 2100 7525 2100
 Connection ~ 3325 2100
@@ -8683,4 +8645,159 @@ F 3 "" H 19650 13525 60  0000 C CNN
 	1    19650 13525
 	0    -1   1    0   
 $EndComp
+Connection ~ 6550 2100
+$Comp
+L Regulator_Linear:LM1117-5.0 U1
+U 1 1 5B01F765
+P 5850 1550
+F 0 "U1" H 5850 1792 50  0000 C CNN
+F 1 "LM1117-5.0" H 5850 1701 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:TO-263-3_TabPin2" H 5850 1550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm1117.pdf" H 5850 1550 50  0001 C CNN
+	1    5850 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 1550 5400 1550
+Wire Wire Line
+	5275 1550 5400 1550
+Wire Wire Line
+	5850 1850 5850 2100
+Connection ~ 5850 2100
+Wire Wire Line
+	6150 1550 6350 1550
+$Comp
+L WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_INDUCTOR_SMALL-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue L8
+U 1 1 5BA1AB72
+P 5050 3550
+F 0 "L8" H 5050 3650 50  0000 C CNN
+F 1 "10uH" H 5050 3500 50  0000 C CNN
+F 2 "Inductors_NEOSID:Neosid_Inductor_SM-NE45_SMD1812" H 5050 3400 60  0001 C CNN
+F 3 "" H 5050 3550 60  0000 C CNN
+	1    5050 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue C69
+U 1 1 5BA1AE38
+P 5400 3800
+F 0 "C69" H 5400 3900 40  0000 L CNN
+F 1 "1u" H 5406 3715 40  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5438 3650 30  0001 C CNN
+F 3 "" H 5400 3800 60  0000 C CNN
+	1    5400 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0128
+U 1 1 5BA1B10C
+P 5400 3500
+F 0 "#FLG0128" H 5400 3575 50  0001 C CNN
+F 1 "PWR_FLAG" H 5400 3674 50  0000 C CNN
+F 2 "" H 5400 3500 50  0001 C CNN
+F 3 "" H 5400 3500 50  0001 C CNN
+	1    5400 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 3550 5400 3550
+Wire Wire Line
+	5400 3550 5400 3650
+Wire Wire Line
+	5400 3500 5400 3550
+Connection ~ 5400 3550
+$Comp
+L WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_DGND-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue #PWR0177
+U 1 1 5BC4F7DC
+P 5400 4000
+F 0 "#PWR0177" H 5400 4000 40  0001 C CNN
+F 1 "DGND" H 5400 3930 40  0000 C CNN
+F 2 "" H 5400 4000 60  0000 C CNN
+F 3 "" H 5400 4000 60  0000 C CNN
+	1    5400 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 3950 5400 4000
+Wire Wire Line
+	4800 3550 4600 3550
+Wire Wire Line
+	4600 1550 4600 2625
+Connection ~ 4600 2625
+Wire Wire Line
+	4600 2625 4600 3550
+Wire Wire Line
+	5850 3550 5500 3550
+Connection ~ 5500 3550
+Wire Wire Line
+	5500 3550 5400 3550
+Wire Wire Line
+	5400 2100 5850 2100
+Wire Wire Line
+	4475 2100 5400 2100
+Connection ~ 7275 2100
+Wire Wire Line
+	6550 2100 7275 2100
+$Comp
+L WolfDrive_H7Controller-rescue:power_+5V-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue #PWR0178
+U 1 1 5CD1256D
+P 6350 1500
+F 0 "#PWR0178" H 6350 1590 20  0001 C CNN
+F 1 "+5V" H 6350 1590 30  0000 C CNN
+F 2 "" H 6350 1500 60  0000 C CNN
+F 3 "" H 6350 1500 60  0000 C CNN
+	1    6350 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 1500 6350 1550
+Connection ~ 6350 1550
+$Comp
+L 74xGxx:74LVC1G02 U21
+U 1 1 5CE38029
+P 1450 9800
+F 0 "U21" H 1425 10067 50  0000 C CNN
+F 1 "74LVC1G02" H 1425 9976 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-353_SC-70-5_Handsoldering" H 1450 9800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 1450 9800 50  0001 C CNN
+	1    1450 9800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 1750 1900 1650
+$Comp
+L Diode:1.5KExxA D25
+U 1 1 5B0319FA
+P 1700 1800
+F 0 "D25" V 1654 1879 50  0000 L CNN
+F 1 "1.5KExxA" V 1745 1879 50  0000 L CNN
+F 2 "Diode_SMD:D_SMB-SMC_Universal_Handsoldering" H 1700 1600 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/88301/15ke.pdf" H 1650 1800 50  0001 C CNN
+	1    1700 1800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1150 1950 1700 1950
+Wire Wire Line
+	1700 1650 1900 1650
+Connection ~ 1700 1950
+Wire Wire Line
+	1700 1950 1900 1950
+$Comp
+L Device:Polyfuse F1
+U 1 1 5B3954F5
+P 1450 1650
+F 0 "F1" V 1225 1650 50  0000 C CNN
+F 1 "Polyfuse" V 1316 1650 50  0000 C CNN
+F 2 "" H 1500 1450 50  0001 L CNN
+F 3 "~" H 1450 1650 50  0001 C CNN
+	1    1450 1650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1300 1650 1150 1650
+Connection ~ 1150 1650
+Wire Wire Line
+	1600 1650 1700 1650
+Connection ~ 1700 1650
 $EndSCHEMATC
