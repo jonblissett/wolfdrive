@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/bike/Documents/Jonathan/wolfdrive/controller/WolfDrive_H7Controller/WolfDrive_H7Controller.sch)
-    (date "Thu 15 Mar 2018 05:03:56 GMT")
+    (date "Thu 15 Mar 2018 14:02:38 GMT")
     (tool "Eeschema 5.0.0-rc2-dev-unknown-d906acc~62~ubuntu17.10.1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -1001,7 +1001,7 @@
       (tstamp 5B43445F))
     (comp (ref D1)
       (value SP0503BAHT)
-      (footprint TO_SOT_Packages_SMD:SOT-143)
+      (footprint Package_TO_SOT_SMD:SOT-143R_Reverse_Handsoldering)
       (datasheet http://www.littelfuse.com/~/media/files/littelfuse/technical%20resources/documents/data%20sheets/sp05xxba.pdf)
       (libsource (lib Power_Protection) (part SP0503BAHT))
       (sheetpath (names /) (tstamps /))

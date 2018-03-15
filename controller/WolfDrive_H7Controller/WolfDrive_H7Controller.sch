@@ -3159,7 +3159,7 @@ U 1 1 5D752724
 P 9250 3800
 F 0 "D1" H 9455 3846 50  0000 L CNN
 F 1 "SP0503BAHT" H 9455 3755 50  0000 L CNN
-F 2 "TO_SOT_Packages_SMD:SOT-143" H 9475 3750 50  0001 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-143R_Reverse_Handsoldering" H 9475 3750 50  0001 L CNN
 F 3 "http://www.littelfuse.com/~/media/files/littelfuse/technical%20resources/documents/data%20sheets/sp05xxba.pdf" H 9375 3925 50  0001 C CNN
 	1    9250 3800
 	1    0    0    -1  
@@ -6843,8 +6843,6 @@ Wire Wire Line
 	10200 10900 10250 10900
 Wire Wire Line
 	10250 10900 10250 10950
-Text Notes 9050 4275 0    50   ~ 0
-FOOTPRINT
 $Comp
 L Jumper:SolderJumper_3_Bridged12 J28
 U 1 1 5AB7A6E6
@@ -8536,14 +8534,6 @@ F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 1450 9800 50  0001 C CNN
 	1    1450 9800
 	1    0    0    -1  
 $EndComp
-Text Notes -3025 1450 0    50   ~ 0
-Pin 26 (TEST) on FT232RL should be connected to GND -> short to pin 25.\nDevice does not enumerate unless D1 (SP0503BAHT) is not populated.
-Text Notes -4600 1925 0    50   ~ 0
-Seems to be due to following comment in DS90LV028a datasheet:\n"The receiver also supports open, shorted and terminated (100 Ω) input fail-safe. The receiver output is HIGH for all fail-safe conditions."
-Text Notes -3000 1125 0    50   ~ 0
-Protection diodes D1-D3 on over-temperature trips incorrect value and not required (DNP).\nMOSFET Q2 footprint pinout incorrect.\nCD4044B pinout incorrect - actually pinout for CD4043B so need to invert all fault inputs.\nFootprint for DB15 vertical instead of right angle?\nConnectors CN7-CNCN10 mirrored - connections to STM32 board do not match.
-Text Notes -3650 2725 0    50   ~ 0
-DS90LV028A are rated for 3.3V supply, but schematic has 5V connected!\n\n @jonblissett\n  Owner\njonblissett commented 8 hours ago\nCan use DS90C401 instead - 5V compatible part, but for new version use DS90LV027AQ-Q1 and supply with 3.3V.\n\nWhole 5V supply may no longer be required?
 Wire Wire Line
 	1150 1850 1150 1950
 Connection ~ 1150 1950
