@@ -2,8 +2,8 @@ G04 Gerber job file with board parameters*
 %TF.FileFunction,JobInfo*%
 %TF.Part,SinglePCB*%
 G04 Single PCB fabrication instructions*
-%TF.GenerationSoftware,KiCad,Pcbnew,(2018-01-25 revision 89a5a84af)-makepkg*%
-%TF.CreationDate,2018-03-13T00:00:10+00:00*%
+%TF.GenerationSoftware,KiCad,Pcbnew,5.0.0-rc2-dev-unknown-d906acc~62~ubuntu17.10.1*%
+%TF.CreationDate,2018-03-15T16:12:45+00:00*%
 %TF.ProjectId,WolfDrive_H7Controller,576F6C6644726976655F4837436F6E74,rev?*%
 %MOMM*%
 G04 Overall board parameters*
@@ -31,6 +31,8 @@ G04 Layer Structure*
 %TJ.L_"Copper,L2,Inr",Positive,WolfDrive_H7Controller-In1_GND.Cu.gbr*%
 %TJ.L_"Copper,L3,Inr",Positive,WolfDrive_H7Controller-In2_3V3.Cu.gbr*%
 %TJ.L_"Copper,L4,Bot",Positive,WolfDrive_H7Controller-B.Cu.gbr*%
+%TJ.L_"SolderPaste,Top",Positive,WolfDrive_H7Controller-F.Paste.gbr*%
+%TJ.L_"SolderPaste,Bot",Positive,WolfDrive_H7Controller-B.Paste.gbr*%
 %TJ.L_"Legend,Top",Positive,WolfDrive_H7Controller-F.SilkS.gbr*%
 %TJ.L_"Legend,Bot",Positive,WolfDrive_H7Controller-B.SilkS.gbr*%
 %TJ.L_"SolderMask,Top",Negative,WolfDrive_H7Controller-F.Mask.gbr*%
