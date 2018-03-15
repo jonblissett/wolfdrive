@@ -6506,8 +6506,6 @@ Wire Wire Line
 Wire Wire Line
 	19550 13125 19550 13225
 Wire Wire Line
-	22450 12925 22450 13025
-Wire Wire Line
 	19550 13325 19650 13325
 Wire Wire Line
 	13100 3250 13300 3250
@@ -7121,30 +7119,6 @@ F 3 "" H 1525 14875 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L WolfDrive_H7Controller-rescue:power_+3.3V-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue #PWR0157
-U 1 1 5C3A43D2
-P 1375 15275
-F 0 "#PWR0157" H 1375 15125 50  0001 C CNN
-F 1 "+3.3V" H 1375 15415 50  0000 C CNN
-F 2 "" H 1375 15275 60  0000 C CNN
-F 3 "" H 1375 15275 60  0000 C CNN
-	1    1375 15275
-	-1   0    0    -1  
-$EndComp
-$Comp
-L WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue C50
-U 1 1 5C3A43D8
-P 1375 15425
-F 0 "C50" H 1375 15525 40  0000 L CNN
-F 1 "10n" H 1381 15340 40  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 1413 15275 30  0001 C CNN
-F 3 "" H 1375 15425 60  0000 C CNN
-	1    1375 15425
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1375 15575 1375 15625
-$Comp
 L 74xGxx:74LVC1G02 U18
 U 1 1 5D565CDA
 P 5375 13275
@@ -7249,91 +7223,91 @@ SP1_MOSI-
 $Comp
 L Power_Protection:SP0504BAHT D22
 U 1 1 5AF48A57
-P 20525 2750
-F 0 "D22" V 20183 2750 50  0000 C CNN
-F 1 "SP0504BAHT" V 20274 2750 50  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:TSOT-23-5" H 20825 2700 50  0001 L CNN
-F 3 "http://www.littelfuse.com/~/media/files/littelfuse/technical%20resources/documents/data%20sheets/sp05xxba.pdf" H 20650 2875 50  0001 C CNN
-	1    20525 2750
+P 20550 2750
+F 0 "D22" V 20208 2750 50  0000 C CNN
+F 1 "SP0504BAHT" V 20299 2750 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:TSOT-23-5" H 20850 2700 50  0001 L CNN
+F 3 "http://www.littelfuse.com/~/media/files/littelfuse/technical%20resources/documents/data%20sheets/sp05xxba.pdf" H 20675 2875 50  0001 C CNN
+	1    20550 2750
 	0    1    1    0   
 $EndComp
-Text Label 20725 2650 0    59   ~ 0
+Text Label 20750 2750 0    59   ~ 0
 PWMA_HS-
-Text Label 20725 2750 0    59   ~ 0
+Text Label 20750 2850 0    59   ~ 0
 PWMA_HS+
-Text Label 20725 2850 0    59   ~ 0
-PWMA_HS+
-Text Label 20725 2950 0    59   ~ 0
+Text Label 20750 2950 0    59   ~ 0
+PWMA_LS+
+Text Label 20750 2650 0    59   ~ 0
 PWMA_LS-
 $Comp
 L WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_DGND-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue #PWR0164
 U 1 1 5B525A5C
-P 20325 2750
-F 0 "#PWR0164" H 20325 2750 40  0001 C CNN
-F 1 "DGND" H 20325 2680 40  0000 C CNN
-F 2 "" H 20325 2750 60  0000 C CNN
-F 3 "" H 20325 2750 60  0000 C CNN
-	1    20325 2750
+P 20350 2750
+F 0 "#PWR0164" H 20350 2750 40  0001 C CNN
+F 1 "DGND" H 20350 2680 40  0000 C CNN
+F 2 "" H 20350 2750 60  0000 C CNN
+F 3 "" H 20350 2750 60  0000 C CNN
+	1    20350 2750
 	0    1    1    0   
 $EndComp
 $Comp
 L Power_Protection:SP0504BAHT D23
 U 1 1 5B5268A8
-P 20525 4800
-F 0 "D23" V 20183 4800 50  0000 C CNN
-F 1 "SP0504BAHT" V 20274 4800 50  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:TSOT-23-5" H 20825 4750 50  0001 L CNN
-F 3 "http://www.littelfuse.com/~/media/files/littelfuse/technical%20resources/documents/data%20sheets/sp05xxba.pdf" H 20650 4925 50  0001 C CNN
-	1    20525 4800
+P 20550 4800
+F 0 "D23" V 20208 4800 50  0000 C CNN
+F 1 "SP0504BAHT" V 20299 4800 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:TSOT-23-5" H 20850 4750 50  0001 L CNN
+F 3 "http://www.littelfuse.com/~/media/files/littelfuse/technical%20resources/documents/data%20sheets/sp05xxba.pdf" H 20675 4925 50  0001 C CNN
+	1    20550 4800
 	0    1    1    0   
 $EndComp
-Text Label 20725 4700 0    59   ~ 0
+Text Label 20750 4800 0    59   ~ 0
 PWMB_HS-
-Text Label 20725 4800 0    59   ~ 0
+Text Label 20750 4900 0    59   ~ 0
 PWMB_HS+
-Text Label 20725 4900 0    59   ~ 0
-PWMB_HS+
-Text Label 20725 5000 0    59   ~ 0
+Text Label 20750 5000 0    59   ~ 0
+PWMB_LS+
+Text Label 20750 4700 0    59   ~ 0
 PWMB_LS-
 $Comp
 L WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_DGND-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue #PWR0165
 U 1 1 5B5268B2
-P 20325 4800
-F 0 "#PWR0165" H 20325 4800 40  0001 C CNN
-F 1 "DGND" H 20325 4730 40  0000 C CNN
-F 2 "" H 20325 4800 60  0000 C CNN
-F 3 "" H 20325 4800 60  0000 C CNN
-	1    20325 4800
+P 20350 4800
+F 0 "#PWR0165" H 20350 4800 40  0001 C CNN
+F 1 "DGND" H 20350 4730 40  0000 C CNN
+F 2 "" H 20350 4800 60  0000 C CNN
+F 3 "" H 20350 4800 60  0000 C CNN
+	1    20350 4800
 	0    1    1    0   
 $EndComp
 $Comp
 L Power_Protection:SP0504BAHT D21
 U 1 1 5B652376
-P 20500 6650
-F 0 "D21" V 20158 6650 50  0000 C CNN
-F 1 "SP0504BAHT" V 20249 6650 50  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:TSOT-23-5" H 20800 6600 50  0001 L CNN
-F 3 "http://www.littelfuse.com/~/media/files/littelfuse/technical%20resources/documents/data%20sheets/sp05xxba.pdf" H 20625 6775 50  0001 C CNN
-	1    20500 6650
+P 20550 6650
+F 0 "D21" V 20208 6650 50  0000 C CNN
+F 1 "SP0504BAHT" V 20299 6650 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:TSOT-23-5" H 20850 6600 50  0001 L CNN
+F 3 "http://www.littelfuse.com/~/media/files/littelfuse/technical%20resources/documents/data%20sheets/sp05xxba.pdf" H 20675 6775 50  0001 C CNN
+	1    20550 6650
 	0    1    1    0   
 $EndComp
-Text Label 20700 6550 0    59   ~ 0
+Text Label 20750 6650 0    59   ~ 0
 PWMC_HS-
-Text Label 20700 6650 0    59   ~ 0
+Text Label 20750 6750 0    59   ~ 0
 PWMC_HS+
-Text Label 20700 6750 0    59   ~ 0
-PWMC_HS+
-Text Label 20700 6850 0    59   ~ 0
+Text Label 20750 6850 0    59   ~ 0
+PWMC_LS+
+Text Label 20750 6550 0    59   ~ 0
 PWMC_LS-
 $Comp
 L WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_DGND-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue #PWR0166
 U 1 1 5B652380
-P 20300 6650
-F 0 "#PWR0166" H 20300 6650 40  0001 C CNN
-F 1 "DGND" H 20300 6580 40  0000 C CNN
-F 2 "" H 20300 6650 60  0000 C CNN
-F 3 "" H 20300 6650 60  0000 C CNN
-	1    20300 6650
+P 20350 6650
+F 0 "#PWR0166" H 20350 6650 40  0001 C CNN
+F 1 "DGND" H 20350 6580 40  0000 C CNN
+F 2 "" H 20350 6650 60  0000 C CNN
+F 3 "" H 20350 6650 60  0000 C CNN
+	1    20350 6650
 	0    1    1    0   
 $EndComp
 $Comp
@@ -7837,8 +7811,6 @@ F 3 "" H 21900 13325 30  0000 C CNN
 	0    1    1    0   
 $EndComp
 Connection ~ 22450 13125
-Wire Wire Line
-	22450 13125 22450 13325
 $Comp
 L WolfDrive_H7Controller-rescue:device_R-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue R45
 U 1 1 6051852D
@@ -7873,39 +7845,14 @@ F 3 "" H 21900 12725 30  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Jumper:SolderJumper_3_Open J56
-U 1 1 60518D0F
-P 22600 13025
-F 0 "J56" H 22600 13330 50  0000 C CNN
-F 1 "GS3" H 22600 13239 50  0000 C CNN
-F 2 "Connectors:GS3" V 22688 12951 50  0001 C CNN
-F 3 "" H 22600 13025 50  0001 C CNN
-	1    22600 13025
-	0    1    1    0   
-$EndComp
-Connection ~ 22450 13025
-Wire Wire Line
-	22450 13025 22450 13125
-$Comp
 L WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_DGND-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue #PWR0189
 U 1 1 6051B369
-P 22600 13225
-F 0 "#PWR0189" H 22600 13225 40  0001 C CNN
-F 1 "DGND" H 22600 13155 40  0000 C CNN
-F 2 "" H 22600 13225 60  0000 C CNN
-F 3 "" H 22600 13225 60  0000 C CNN
-	1    22600 13225
-	-1   0    0    -1  
-$EndComp
-$Comp
-L WolfDrive_H7Controller-rescue:power_+3.3V-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue #PWR0190
-U 1 1 6051B5F8
-P 22600 12825
-F 0 "#PWR0190" H 22600 12675 50  0001 C CNN
-F 1 "+3.3V" H 22600 12965 50  0000 C CNN
-F 2 "" H 22600 12825 60  0000 C CNN
-F 3 "" H 22600 12825 60  0000 C CNN
-	1    22600 12825
+P 22450 13400
+F 0 "#PWR0189" H 22450 13400 40  0001 C CNN
+F 1 "DGND" H 22450 13330 40  0000 C CNN
+F 2 "" H 22450 13400 60  0000 C CNN
+F 3 "" H 22450 13400 60  0000 C CNN
+	1    22450 13400
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
@@ -7929,8 +7876,6 @@ Wire Wire Line
 Connection ~ 3025 1550
 Wire Wire Line
 	3025 1550 3275 1550
-Wire Wire Line
-	1375 15625 1575 15625
 $Comp
 L 74xGxx:74LVC1G02 U15
 U 1 1 5C3A43B1
@@ -7954,7 +7899,6 @@ Wire Wire Line
 	1625 15225 1575 15225
 Wire Wire Line
 	1575 15225 1575 15625
-Connection ~ 1575 15625
 Wire Wire Line
 	1575 15625 2075 15625
 $Comp
@@ -8527,17 +8471,6 @@ Connection ~ 5850 2100
 Wire Wire Line
 	6150 1550 6350 1550
 $Comp
-L WolfDrive_H7Controller-rescue:WolfDrive_H7Controller-rescue_INDUCTOR_SMALL-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue L8
-U 1 1 5BA1AB72
-P 5050 3550
-F 0 "L8" H 5050 3650 50  0000 C CNN
-F 1 "10uH" H 5050 3500 50  0000 C CNN
-F 2 "Inductors_NEOSID:Neosid_Inductor_SM-NE45_SMD1812" H 5050 3400 60  0001 C CNN
-F 3 "" H 5050 3550 60  0000 C CNN
-	1    5050 3550
-	1    0    0    -1  
-$EndComp
-$Comp
 L WolfDrive_H7Controller-rescue:device_C-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue C69
 U 1 1 5BA1AE38
 P 5400 3800
@@ -8560,16 +8493,12 @@ F 3 "" H 5400 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5300 3550 5400 3550
-Wire Wire Line
 	5400 3550 5400 3650
 Wire Wire Line
 	5400 3500 5400 3550
 Connection ~ 5400 3550
 Wire Wire Line
 	5400 3950 5400 4000
-Wire Wire Line
-	4800 3550 4600 3550
 Wire Wire Line
 	4600 1550 4600 2625
 Connection ~ 4600 2625
@@ -8626,13 +8555,13 @@ Connection ~ 1150 1650
 $Comp
 L Diode:1.5KExxA D25
 U 1 1 5B0319FA
-P 1800 1850
-F 0 "D25" V 1754 1929 50  0000 L CNN
-F 1 "1.5KExxA" V 1845 1929 50  0000 L CNN
-F 2 "Diode_SMD:D_SMB-SMC_Universal_Handsoldering" H 1800 1650 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/88301/15ke.pdf" H 1750 1850 50  0001 C CNN
-	1    1800 1850
-	0    1    1    0   
+P 2250 1800
+F 0 "D25" V 2204 1879 50  0000 L CNN
+F 1 "1.5KExxA" V 2295 1879 50  0000 L CNN
+F 2 "Diode_SMD:D_SMB-SMC_Universal_Handsoldering" H 2250 1600 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/88301/15ke.pdf" H 2200 1800 50  0001 C CNN
+	1    2250 1800
+	0    -1   1    0   
 $EndComp
 Wire Wire Line
 	1150 1950 1250 1950
@@ -8641,38 +8570,24 @@ Wire Wire Line
 $Comp
 L Device:Polyfuse F1
 U 1 1 5D0A55F3
-P 2150 1550
-F 0 "F1" V 1925 1550 50  0000 C CNN
-F 1 "Polyfuse" V 2016 1550 50  0000 C CNN
-F 2 "Fuse:Fuse_1812_4532Metric_Pad1.24x3.50mm_HandSolder" H 2200 1350 50  0001 L CNN
-F 3 "~" H 2150 1550 50  0001 C CNN
-	1    2150 1550
+P 2000 1550
+F 0 "F1" V 1775 1550 50  0000 C CNN
+F 1 "Polyfuse" V 1866 1550 50  0000 C CNN
+F 2 "Fuse:Fuse_1812_4532Metric_Pad1.24x3.50mm_HandSolder" H 2050 1350 50  0001 L CNN
+F 3 "~" H 2000 1550 50  0001 C CNN
+	1    2000 1550
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2300 1550 2450 1550
-Wire Wire Line
-	2000 1550 1800 1550
-Wire Wire Line
-	1800 1550 1800 1700
+	2150 1550 2250 1550
 Wire Wire Line
 	1650 1750 1700 1750
 Wire Wire Line
 	1700 1750 1700 1550
 Wire Wire Line
-	1700 1550 1800 1550
-Connection ~ 1800 1550
-Wire Wire Line
 	1650 1950 1700 1950
 Wire Wire Line
 	1700 1950 1700 2100
-Wire Wire Line
-	1700 2100 1800 2100
-Wire Wire Line
-	1800 2000 1800 2100
-Connection ~ 1800 2100
-Wire Wire Line
-	1800 2100 2450 2100
 $Comp
 L WolfDrive_H7Controller-rescue:power_+3.3V-RESCUE-WolfDrive_H7Controller-WolfDrive_H7Controller-rescue #PWR0191
 U 1 1 61BC542C
@@ -8811,4 +8726,27 @@ Wire Wire Line
 	5400 3550 5850 3550
 Wire Wire Line
 	6350 1550 6700 1550
+Wire Wire Line
+	4600 3550 5400 3550
+Wire Wire Line
+	22450 12925 22450 13125
+Wire Wire Line
+	22450 13125 22450 13325
+Connection ~ 22450 13325
+Wire Wire Line
+	22450 13325 22450 13400
+Wire Wire Line
+	1700 1550 1850 1550
+Wire Wire Line
+	1700 2100 2250 2100
+Wire Wire Line
+	2250 1950 2250 2100
+Connection ~ 2250 2100
+Wire Wire Line
+	2250 2100 2450 2100
+Wire Wire Line
+	2250 1650 2250 1550
+Connection ~ 2250 1550
+Wire Wire Line
+	2250 1550 2450 1550
 $EndSCHEMATC
