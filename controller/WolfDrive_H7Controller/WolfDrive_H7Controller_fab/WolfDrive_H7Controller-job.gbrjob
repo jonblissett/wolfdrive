@@ -2,8 +2,8 @@ G04 Gerber job file with board parameters*
 %TF.FileFunction,JobInfo*%
 %TF.Part,SinglePCB*%
 G04 Single PCB fabrication instructions*
-%TF.GenerationSoftware,KiCad,Pcbnew,(2018-01-25 revision 89a5a84af)-makepkg*%
-%TF.CreationDate,2018-03-13T00:00:10+00:00*%
+%TF.GenerationSoftware,KiCad,Pcbnew,(5.0.0-rc2-dev-194-g8567eab09)*%
+%TF.CreationDate,2018-03-15T17:26:55+00:00*%
 %TF.ProjectId,WolfDrive_H7Controller,576F6C6644726976655F4837436F6E74,rev?*%
 %MOMM*%
 G04 Overall board parameters*
