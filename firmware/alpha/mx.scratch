@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project>
-<ProjectName>/home/jpb/Dropbox/Uni/PhD/PCBs/WolfDrive/wolfdrive/firmware/alpha/wolfdrive_alpha/\wolfdrive_alpha</ProjectName>
+<ProjectName>/home/jpb/Dropbox/Uni/PhD/PCBs/WolfDrive/wolfdrive/firmware/alpha/\wolfdrive_alpha</ProjectName>
 <ProjectNature>C</ProjectNature> 
 <CMSIS>../Drivers/CMSIS</CMSIS>
 <HAL_Driver>/home/jpb/STM32Cube/Repository//STM32Cube_FW_H7_V1.2.0/Drivers/CMSIS</HAL_Driver>
