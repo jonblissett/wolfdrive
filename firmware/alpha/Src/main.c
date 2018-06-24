@@ -44,7 +44,14 @@
 /* USER CODE BEGIN Includes */
 
 #include "pwm.h"
+#include "foc.h"
+#include "math.h"
+#include "pi.h"
+#include "userparms.h"
+#include "control.h"
+#include "dac.h"
 
+#include "stm32h7xx_hal_qspi.h"
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
@@ -94,6 +101,16 @@ PCD_HandleTypeDef hpcd_USB_OTG_FS;
 
 /* USER CODE BEGIN PV */
 /* Private variables ---------------------------------------------------------*/
+char buffer[50] = "Whatever.\n";
+uint8_t SPI_Rx_Buf[6];
+uint8_t qSPI_Rx_Buf[255];
+tPIParm PIParmQ;
+tPIParm PIParmD;
+tCtrlParm CtrlParm;
+
+uint32_t Data1 = 0, Data2 = 1800;
+
+float theta_m = 0, theta_e = 0, amp = 0.9, dc_off = 0.5;
 
 /* USER CODE END PV */
 
@@ -113,12 +130,17 @@ static void MX_ADC3_Init(void);
 static void MX_USART6_UART_Init(void);
 static void MX_SDMMC1_SD_Init(void);
 
-void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
+void HAL_TIM_MspPostInit(TIM_HandleTypeDef* htim);
                                 
 
 /* USER CODE BEGIN PFP */
 /* Private function prototypes -----------------------------------------------*/
+void InitUserParms(void);
+void DoControl(void);
+float ReadEncoder(SPI_HandleTypeDef hspi);
 
+HAL_StatusTypeDef     QSPI_Receive       (QSPI_HandleTypeDef *hqspi, uint8_t *pData, uint32_t Timeout);
+//HAL_StatusTypeDef HAL_SPI_Receive2(SPI_HandleTypeDef *hspi, uint8_t *pData, uint16_t Size, uint32_t Timeout);
 /* USER CODE END PFP */
 
 /* USER CODE BEGIN 0 */
@@ -154,35 +176,161 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  MX_ETH_Init();
+  //MX_ETH_Init();
   MX_USART3_UART_Init();
-  MX_USB_OTG_FS_PCD_Init();
-  MX_ADC2_Init();
-  MX_ADC1_Init();
+  //MX_USB_OTG_FS_PCD_Init();
+  //MX_ADC2_Init();
+  //MX_ADC1_Init();
   MX_SPI1_Init();
   MX_QUADSPI_Init();
   MX_TIM1_Init();
-  MX_SPI2_Init();
-  MX_ADC3_Init();
-  MX_USART6_UART_Init();
+  //MX_SPI2_Init();
+  //MX_ADC3_Init();
+  //MX_USART6_UART_Init();
+  MX_DAC1_Init();
   //MX_SDMMC1_SD_Init();
   /* USER CODE BEGIN 2 */
+  InitUserParms();
+
   pwm_test(htim1);
   set_duty(htim1, (uint32_t) 1250*1/4, 1);
   set_duty(htim1, (uint32_t) 1250*2/4, 2);
   set_duty(htim1, (uint32_t) 1250*3/4, 3);
-  /* USER CODE END 2 */
 
+  /*##-4- Enable DAC Channel1 and channel 2 ################################################*/
+  if (HAL_DAC_Start(&hdac1, DAC_CHANNEL_1) != HAL_OK)
+  {
+    /* Start Error */
+    Error_Handler();
+  }
+  if (HAL_DAC_Start(&hdac1, DAC_CHANNEL_2) != HAL_OK)
+  {
+    /* Start Error */
+    Error_Handler();
+  }
+
+  QSPI_CommandTypeDef sCommand;
+  //config:
+  sCommand.InstructionMode   = QSPI_INSTRUCTION_NONE;
+  sCommand.AddressMode       = QSPI_ADDRESS_NONE;
+  sCommand.Address           = ((uint32_t)0x0000);
+  sCommand.AlternateByteMode = QSPI_ALTERNATE_BYTES_NONE;
+  sCommand.DataMode          = QSPI_DATA_4_LINES;
+  sCommand.DummyCycles       = 4;
+  sCommand.NbData            = 16;
+  sCommand.DdrMode           = QSPI_DDR_MODE_DISABLE;
+  sCommand.DdrHoldHalfCycle  = QSPI_DDR_HHC_ANALOG_DELAY;
+  sCommand.SIOOMode          = QSPI_SIOO_INST_ONLY_FIRST_CMD;
+
+  if (HAL_QSPI_Command(&hqspi, &sCommand, 100) != HAL_OK)
+  {
+    _Error_Handler(__FILE__, __LINE__);
+  }
+
+  HAL_GPIO_WritePin(GPIOG, PWM_EN_Pin, GPIO_PIN_SET);
+  //HAL_GPIO_WritePin(flt_reset_GPIO_Port,flt_reset_Pin, GPIO_PIN_SET);
+
+  /* USER CODE END 2 */
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
 	  HAL_GPIO_WritePin(GPIOB, LD2_Pin, GPIO_PIN_RESET);
+	  //HAL_GPIO_WritePin(GPIOB, GPIO_PIN_2|GPIO_PIN_10, GPIO_PIN_RESET);
+	  //HAL_Delay(250);
 	  HAL_GPIO_WritePin(GPIOB, LD2_Pin, GPIO_PIN_SET);
+	  //HAL_GPIO_WritePin(GPIOB, GPIO_PIN_2|GPIO_PIN_10, GPIO_PIN_SET);
+	  //HAL_Delay(250);
 
-  /* USER CODE END WHILE */
+	  /*
+	  // Fake encoder
+	  ParkParm.fAngle += 0.01f;
+	  if(ParkParm.fAngle > 3.14159265f)
+		  ParkParm.fAngle -= 6.28318531f;
+	  // Fake ADC
+	  ParkParm.fIa = 100*sin(0.2f+ParkParm.fAngle);
+	  ParkParm.fIb = 100*sin(0.2f+ParkParm.fAngle+1.047f);
+	  // Print*/
+	  //sprintf(buffer,"angle,sin,cosine = %f,%f,%f \n",ParkParm.fAngle,ParkParm.fSin,ParkParm.fCos);
+	  //HAL_UART_Transmit(&huart3, buffer, sizeof(buffer), HAL_MAX_DELAY);
+	  theta_m = ReadEncoder(hspi1);
 
-  /* USER CODE BEGIN 3 */
+	  theta_m = theta_m / 180.0f * 3.14159265f;
+	  /*theta_m += 0.062832f;
+	  if (theta_m > 6.2832f)
+		theta_m = 0;*/
+	  //char buff[64] = "";
+	  //sprintf(buff, "position=%.4f radians\n", theta_m);
+	  //HAL_UART_Transmit(&huart3, buff, sizeof(buff), HAL_MAX_DELAY);
+
+	  theta_e = theta_m * diPoles;
+	  ParkParm.fAngle = theta_e - ((int32_t)(theta_e / 6.2831853f) * 6.2831853f);
+
+	  SinCos();
+
+	  Data1 = (uint32_t) (35+((4025-35) * (amp * ParkParm.fSin / 2.0f + dc_off)));
+	  Data2 = (uint32_t) (35+((4025-35) * (amp * ParkParm.fCos / 2.0f + dc_off)));
+	  //Data2+=20;
+	  if (HAL_DACEx_DualSetValue(&hdac1, DAC_ALIGN_12B_R, Data1, Data2) != HAL_OK)
+		  _Error_Handler(__FILE__, __LINE__);
+	  char dbuff[64] = "";
+	  //sprintf(dbuff, "%u,%u,%f,%f,%f\n", Data1, Data2, ParkParm.fAngle, ParkParm.fSin, ParkParm.fCos);
+	  sprintf(dbuff, "%u,%f\n", Data1, ParkParm.fAngle);
+	  HAL_UART_Transmit(&huart3, dbuff, sizeof(dbuff), HAL_MAX_DELAY);
+
+	  if (QSPI_Receive(&hqspi, (uint8_t *)qSPI_Rx_Buf, 100) != HAL_OK)
+		  _Error_Handler(__FILE__, __LINE__);
+
+	  /*char buf[128] = "", *pos = buf;
+	  for (int i = 0 ; i != 16 ; i++) {
+		  if (i) {
+			  pos += sprintf(pos, ", ");
+		  }
+		  pos += sprintf(pos, "%x", qSPI_Rx_Buf[i]);
+	  }
+	  sprintf(buf, "%s\n", buf);
+	  HAL_UART_Transmit(&huart3, buf, sizeof(buf), HAL_MAX_DELAY);*/
+
+	  uint8_t twobits[16];
+	  uint32_t iobyte[4];
+
+	  for (int by = 0 ; by != 4; by++) {
+		  iobyte[by] = 0; // comment out to test comms, OR all and data check for 0xfffcfffc
+		  for (uint8_t bi = 0 ; bi != 16; bi++) {
+			  twobits[bi] = ((qSPI_Rx_Buf[bi] >> by) & 1) | ((qSPI_Rx_Buf[bi] >> (by+3)) & 2);
+			  iobyte[by] |= twobits[bi] << ((15-bi) << 1);
+		  }
+		  //io0byte[by] = twobits[0] | (twobits[1] << 2) | (twobits[2] << 4) | (twobits[3] << 6);
+	  }
+
+	  int16_t extADC[8];
+	  for (int ch = 0; ch !=4; ch++) {
+		  extADC[ch+ch] = (uint16_t)(iobyte[ch] & 0xFFFC); // [13:0][xx]
+		  extADC[ch+ch+1] = (uint16_t)((iobyte[ch] >> 16) & 0xFFFC);
+	  }
+
+	  char buff[128] = "";
+	  //sprintf(buff, "%x,%x,%x,%x\n", iobyte[0],iobyte[1],iobyte[2],iobyte[3]);
+	  //sprintf(buff, "%x,%x,%x,%x,%x,%x\n", iobyte[0],iobyte[1],extADC[0],extADC[1],extADC[2],extADC[3]);
+	  //sprintf(buff, "%d,%d,%d,%d\n",extADC[0],extADC[1],extADC[2],extADC[3]);
+
+	  float Vdc = (float)((uint16_t)extADC[3])*0.012f;
+	  float offset = -1.215f;
+	  float I = ((float)(extADC[1]))/0x7FFF*1250-offset;
+	  //sprintf(buff, "%.1f,%.3f\n", Vdc,I);
+	  //HAL_UART_Transmit(&huart3, buff, sizeof(buff), HAL_MAX_DELAY);
+
+	  /*uint8_t fi2b = ((qSPI_Rx_Buf[0] >> 1) & 1) | ((qSPI_Rx_Buf[0] >> 4) & 2);
+	  uint8_t se2b = ((qSPI_Rx_Buf[1] >> 1) & 1) | ((qSPI_Rx_Buf[1] >> 4) & 2);
+	  uint8_t th2b = ((qSPI_Rx_Buf[2] >> 1) & 1) | ((qSPI_Rx_Buf[2] >> 4) & 2);
+	  uint8_t fo2b = ((qSPI_Rx_Buf[3] >> 1) & 1) | ((qSPI_Rx_Buf[3] >> 4) & 2);
+	  uint8_t io1 = fi2b | (se2b << 2) | (th2b << 4) | (fo2b << 6);
+	  char bufff[128] = "";
+	  sprintf(bufff, "%x,%x,%x,%x = %x\n", fi2b, se2b, th2b, fo2b, io1);
+	  HAL_UART_Transmit(&huart3, bufff, sizeof(bufff), HAL_MAX_DELAY);*/
+	  /* USER CODE END WHILE */
+
+	  /* USER CODE BEGIN 3 */
 
   }
   /* USER CODE END 3 */
@@ -475,10 +623,10 @@ static void MX_QUADSPI_Init(void)
 
   /* QUADSPI parameter configuration*/
   hqspi.Instance = QUADSPI;
-  hqspi.Init.ClockPrescaler = 255;
-  hqspi.Init.FifoThreshold = 1;
+  hqspi.Init.ClockPrescaler = 1;//19;
+  hqspi.Init.FifoThreshold = 16;
   hqspi.Init.SampleShifting = QSPI_SAMPLE_SHIFTING_NONE;
-  hqspi.Init.FlashSize = 1;
+  hqspi.Init.FlashSize = 3;
   hqspi.Init.ChipSelectHighTime = QSPI_CS_HIGH_TIME_1_CYCLE;
   hqspi.Init.ClockMode = QSPI_CLOCK_MODE_0;
   hqspi.Init.FlashID = QSPI_FLASH_ID_1;
@@ -514,12 +662,12 @@ static void MX_SPI1_Init(void)
   /* SPI1 parameter configuration*/
   hspi1.Instance = SPI1;
   hspi1.Init.Mode = SPI_MODE_MASTER;
-  hspi1.Init.Direction = SPI_DIRECTION_2LINES;
-  hspi1.Init.DataSize = SPI_DATASIZE_4BIT;
-  hspi1.Init.CLKPolarity = SPI_POLARITY_LOW;
+  hspi1.Init.Direction = SPI_DIRECTION_2LINES_RXONLY;
+  hspi1.Init.DataSize = SPI_DATASIZE_8BIT;
+  hspi1.Init.CLKPolarity = SPI_POLARITY_HIGH;
   hspi1.Init.CLKPhase = SPI_PHASE_1EDGE;
   hspi1.Init.NSS = SPI_NSS_HARD_OUTPUT;
-  hspi1.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_2;
+  hspi1.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_16;
   hspi1.Init.FirstBit = SPI_FIRSTBIT_MSB;
   hspi1.Init.TIMode = SPI_TIMODE_DISABLE;
   hspi1.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;
@@ -662,8 +810,8 @@ static void MX_USART3_UART_Init(void)
 {
 
   huart3.Instance = USART3;
-  huart3.Init.BaudRate = 115200;
-  huart3.Init.WordLength = UART_WORDLENGTH_7B;
+  huart3.Init.BaudRate = 1152000;
+  huart3.Init.WordLength = UART_WORDLENGTH_8B;
   huart3.Init.StopBits = UART_STOPBITS_1;
   huart3.Init.Parity = UART_PARITY_NONE;
   huart3.Init.Mode = UART_MODE_TX_RX;
@@ -827,6 +975,274 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+void InitUserParms(void)
+{
+	// Setup required parameters
+
+	// Pick scaling values to be 8 times nominal for speed and current
+
+	// Use 8 times nominal mechanical speed of motor (in RPM) for scaling
+	//MotorParm.iScaleMechRPM  = diNomRPM*8;
+
+	// Number of pole pairs
+	//MotorParm.iPoles        = diPoles ;
+
+	// Encoder counts per revolution as detected by the
+	//       dsPIC quadrature configuration.
+	//MotorParm.iCntsPerRev  = diCntsPerRev;
+
+	// Rotor time constant in sec
+	//otorParm.fRotorTmConst = dfRotorTmConst;
+
+	// Basic loop period (in sec).  (PWM interrupt period)
+	//MotorParm.fLoopPeriod = dLoopInTcy * dTcy;  //Loop period in cycles * sec/cycle
+
+	// Encoder velocity interrupt period (in sec).
+	//MotorParm.fVelIrpPeriod = MotorParm.fLoopPeriod;
+
+	// Number of vel interrupts per velocity calculation.
+	//MotorParm.iIrpPerCalc = diIrpPerCalc;       // In loops
+
+	// Number of vel interrupts per velocity calculation.
+	//MotorParm.iIrpPerPos = diIrpPerPos;       // In loops
+
+	// Scale mechanical speed of motor (in rev/sec)
+	//MotorParm.fScaleMechRPS = MotorParm.iScaleMechRPM/60.0;
+
+	// Scaled flux speed of motor (in rev/sec)
+	// All dimensionless flux velocities scaled by this value.
+	//MotorParm.fScaleFluxRPS = MotorParm.iPoles*MotorParm.fScaleMechRPS;
+
+	// Minimum period of one revolution of flux vector (in sec)
+	//MotorParm.fScaleFluxPeriod = 1.0/MotorParm.fScaleFluxRPS;
+
+	// Fraction of revolution per LoopTime at maximum flux velocity
+	//MotorParm.fScaleFracRevPerLoop = MotorParm.fLoopPeriod * MotorParm.fScaleFluxRPS;
+
+	// Scaled flux speed of motor (in radians/sec)
+	// All dimensionless velocities in radians/sec scaled by this value.
+	//MotorParm.fScaleFluxSpeed = 6.283 * MotorParm.fScaleFluxRPS;
+
+	// scaled mech. speed of motor in rad/s
+
+	// Encoder count rate at iScaleMechRPM
+	//MotorParm.lScaleCntRate = MotorParm.iCntsPerRev * (MotorParm.iScaleMechRPM/60.0);
+
+
+
+	// ============= Open Loop ======================
+
+	//    OpenLoopParm.qKdelta = 32768.0 * 2 * MotorParm.iPoles * MotorParm.fLoopPeriod * MotorParm.fScaleMechRPS;
+	//    OpenLoopParm.qVelMech = dqOL_VelMech;
+	//    CtrlParm.qVelRef = OpenLoopParm.qVelMech;
+	/*
+            InitOpenLoop();
+
+        // ============= Field Weakening ===============
+        // Field Weakening constant for constant torque range
+            FdWeakParm.qK1 = dqK1;       // Flux reference value
+	 */
+	// ============= PI D Term ===============
+	PIParmD.fKp = dDqKp;
+	PIParmD.fKi = dDqKi;
+	PIParmD.fKc = dDqKc;
+	PIParmD.fOutMax = dDqOutMax;
+	PIParmD.fOutMin = -PIParmD.fOutMax;
+
+	InitPI(&PIParmD);
+
+	// ============= PI Q Term ===============
+	PIParmQ.fKp = dQqKp;
+	PIParmQ.fKi = dQqKi;
+	PIParmQ.fKc = dQqKc;
+	PIParmQ.fOutMax = dQqOutMax;
+	PIParmQ.fOutMin = -PIParmQ.fOutMax;
+
+	InitPI(&PIParmQ);
+
+	// ============= ADC - Measure Current & Pot ======================
+
+	// Scaling constants: Determined by calibration or hardware design.
+	//ReadADCParm.qK      = dqK;
+
+	//MeasCurrParm.qKa    = dqKa;
+	//MeasCurrParm.qKb    = dqKb;
+	// Appcon/Changes 25 Jan 2007
+	/*
+    MeasCurrParm.iOffsetCompVelLimit= iCompVelLimitLow;
+    MeasCurrParm.iOffsetCompHyst=iCompVelHyst;
+    MeasCurrParm.iOffsetCompAktiv=0;
+        CtrlParm.qVelRef=0;     // Speed reference value
+	 */
+	//*******************************
+
+	// Inital offsets
+	//InitMeasCompCurr( 3339, 3225 );  // 564, 563 if encoder not connected so (564-2^9)*2^6, measured 1.80v offset on scope with 50mv/div precision at 3.24V aVDD .. center at 1.62V, so 0.18V offset,
+
+}
+
+void DoControl(void)
+{
+	// Closed Loop Vector Control
+
+	/*position = read_encoder()-theta_qoffset;				// offset measured with rotor flux aligned to q, 0 rad=0, pi rad=2^15 so INTEGER not Q scaling
+
+	ParkParm.fAngle = (position+timing_angle)*diPoles;		// pass park electrical position, so multiply by pole pairs
+	EncoderParm.iCurrCnt = ((unsigned short)position)>>1;	// pass mechanical position to CalcVel sub.
+	*/
+
+	// PI control to test ADC, set Ia=VdRef
+
+	/*PIParmD.fInMeas = ParkParm.fId;
+	        PIParmD.fInRef  = CtrlParm.fVdRef;
+	        CalcPI(&PIParmD);
+	        ParkParm.fVd    = PIParmD.fOut;
+	 */
+
+	// PI control for Q
+	PIParmQ.fInMeas = ParkParm.fIq;
+	PIParmQ.fInRef  = CtrlParm.fVqRef;
+	CalcPI(&PIParmQ);
+	// Calc. feed forward terms
+	/*
+	emf=((long)EncoderParm.fVelMech*dqEmfScale);
+	ir=((long)CtrlParm.fVqRef*dqRsScale);
+	ff=PIParmQ.qOut+emf+ir;
+	if( ff > PIParmQ.fOutMax )
+		ParkParm.fVq = PIParmQ.fOutMax;
+	else if( ff < PIParmQ.qOutMin )
+		ParkParm.fVq = PIParmQ.fOutMin;
+	else
+		ParkParm.fVq = ff;*/
+	ParkParm.fVq=PIParmQ.fOut;
+
+	// PI control for D
+	PIParmD.fInMeas = ParkParm.fId;
+	PIParmD.fInRef  = CtrlParm.fVdRef;
+	CalcPI(&PIParmD);
+	ParkParm.fVd    = PIParmD.fOut;
+}
+
+float ReadEncoder(SPI_HandleTypeDef hspi)
+{
+	if (HAL_SPI_Receive(&hspi, (uint8_t *)SPI_Rx_Buf, 6, 2) != HAL_OK)
+		_Error_Handler(__FILE__, __LINE__);
+	/*char buf[64], *pos = buf;
+	  for (int i = 0 ; i != 6 ; i++) {
+	      if (i) {
+	          pos += sprintf(pos, ", ");
+	      }
+	      pos += sprintf(pos, "%d", SPI_Rx_Buf[i]);
+	  }
+	  sprintf(buf, "%s\n", buf);
+	  HAL_UART_Transmit(&huart3, buf, sizeof(buf), HAL_MAX_DELAY);*/
+	uint32_t posi = 0;
+	//posi = ((uint32_t)SPI_Rx_Buf[2]) << 24 | ((uint32_t)SPI_Rx_Buf[3]) << 16 | ((uint32_t)SPI_Rx_Buf[4]) << 8;
+	//posi &= 0xFFFFF000;	// Encoder is 20b resolution
+	posi = ((uint32_t)SPI_Rx_Buf[2]) << 12 | ((uint32_t)SPI_Rx_Buf[3]) << 4 | ((uint32_t)SPI_Rx_Buf[4]) >> 4;
+	float f_posi = ((float)posi)/0xFFFFF*360;
+	return f_posi;
+}
+
+static HAL_StatusTypeDef QSPI_WaitFlagStateUntilTimeout(QSPI_HandleTypeDef *hqspi, uint32_t Flag,
+                                                        FlagStatus State, uint32_t tickstart, uint32_t Timeout)
+{
+  /* Wait until flag is in expected state */
+  while((FlagStatus)(__HAL_QSPI_GET_FLAG(hqspi, Flag)) != State)
+  {
+    /* Check for the Timeout */
+    if (Timeout != HAL_MAX_DELAY)
+    {
+      if((Timeout == 0) || ((HAL_GetTick() - tickstart) > Timeout))
+      {
+        hqspi->State     = HAL_QSPI_STATE_ERROR;
+        hqspi->ErrorCode |= HAL_QSPI_ERROR_TIMEOUT;
+
+        return HAL_ERROR;
+      }
+    }
+  }
+  return HAL_OK;
+}
+
+
+HAL_StatusTypeDef QSPI_Receive(QSPI_HandleTypeDef *hqspi, uint8_t *pData, uint32_t Timeout)
+{
+	HAL_StatusTypeDef status = HAL_OK;
+	uint32_t tickstart = HAL_GetTick();
+	uint32_t addr_reg = READ_REG(hqspi->Instance->AR);
+	__IO uint32_t *data_reg = &hqspi->Instance->DR;
+
+	/* Process locked */
+	__HAL_LOCK(hqspi);
+
+	if(hqspi->State == HAL_QSPI_STATE_READY)
+	{
+		hqspi->ErrorCode = HAL_QSPI_ERROR_NONE;
+
+		if(pData != NULL )
+		{
+			/* Update state */
+			hqspi->State = HAL_QSPI_STATE_BUSY_INDIRECT_RX;
+
+			/* Configure counters and size of the handle */
+			hqspi->RxXferCount = READ_REG(hqspi->Instance->DLR) + 10;
+			hqspi->RxXferSize = READ_REG(hqspi->Instance->DLR) + 10;
+			hqspi->pRxBuffPtr = pData;
+
+			/* Configure QSPI: CCR register with functional as indirect read */
+			MODIFY_REG(hqspi->Instance->CCR, QUADSPI_CCR_FMODE, ((uint32_t)QUADSPI_CCR_FMODE_0));
+			///* Start the transfer by re-writing the address in AR register */
+			//WRITE_REG(hqspi->Instance->AR, addr_reg);
+		    /* Start the transfer by writing the address CCR register */
+		    __IO uint32_t *data_reg = &hqspi->Instance->DR;
+		    MODIFY_REG(hqspi->Instance->CCR, QUADSPI_CCR_INSTRUCTION, 0x03);
+
+			while(hqspi->RxXferCount > 0)
+			{
+				/* Wait until FT or TC flag is set to read received data */
+				status = QSPI_WaitFlagStateUntilTimeout(hqspi, (QSPI_FLAG_FT | QSPI_FLAG_TC), SET, tickstart, Timeout);
+
+				if  (status != HAL_OK)
+				{
+					break;
+				}
+
+				*hqspi->pRxBuffPtr++ = *(__IO uint8_t *)data_reg;
+				hqspi->RxXferCount--;
+			}
+
+			if (status == HAL_OK)
+			{
+				/* Wait until TC flag is set to go back in idle state */
+				status = QSPI_WaitFlagStateUntilTimeout(hqspi, QSPI_FLAG_TC, SET, tickstart, Timeout);
+
+				if  (status == HAL_OK)
+				{
+					/* Clear Transfer Complete bit */
+					__HAL_QSPI_CLEAR_FLAG(hqspi, QSPI_FLAG_TC);
+				}
+			}
+
+			/* Update QSPI state */
+			hqspi->State = HAL_QSPI_STATE_READY;
+		}
+		else
+		{
+			hqspi->ErrorCode |= HAL_QSPI_ERROR_INVALID_PARAM;
+			status = HAL_ERROR;
+		}
+	}
+	else
+	{
+		status = HAL_BUSY;
+	}
+
+	/* Process unlocked */
+	__HAL_UNLOCK(hqspi);
+
+	return status;
+}
 
 /* USER CODE END 4 */
 
@@ -838,13 +1254,17 @@ static void MX_GPIO_Init(void)
   */
 void _Error_Handler(char *file, int line)
 {
-  /* USER CODE BEGIN Error_Handler_Debug */
-  /* User can add his own implementation to report the HAL error return state */
-  while(1)
-  {
-	  HAL_GPIO_WritePin(GPIOB, LD3_Pin, GPIO_PIN_SET);
-  }
-  /* USER CODE END Error_Handler_Debug */
+	/* USER CODE BEGIN Error_Handler_Debug */
+	/* User can add his own implementation to report the HAL error return state */
+	char fbuff[128] = "";
+	sprintf(fbuff, "\n ERROR: file=%s, line=%d \n", file, line);
+	HAL_UART_Transmit(&huart3, fbuff, sizeof(fbuff), HAL_MAX_DELAY);
+
+	HAL_GPIO_WritePin(GPIOB, LD3_Pin, GPIO_PIN_SET);
+	while(1)
+	{
+	}
+	/* USER CODE END Error_Handler_Debug */
 }
 
 #ifdef  USE_FULL_ASSERT

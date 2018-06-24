@@ -1,0 +1,57 @@
+//#include "fast_trig.h"
+
+void fast_SinCos(float angle)
+{
+	//always wrap input angle to -PI..PI
+	if (angle < -3.14159265f)
+		angle += 6.28318531f;
+	else
+		if (angle >  3.14159265f)
+			angle -= 6.28318531f;
+
+	//compute sine
+	if (angle < 0)
+	{
+		sin = 1.27323954f * angle + .405284735f * angle * angle;
+
+		if (sin < 0)
+			sin = .225f * (sin *-sin - sin) + sin;
+		else
+			sin = .225f * (sin * sin - sin) + sin;
+	}
+	else
+	{
+		sin = 1.27323954f * angle - 0.405284735f * angle * angle;
+
+		if (sin < 0)
+			sin = .225f * (sin *-sin - sin) + sin;
+		else
+			sin = .225f * (sin * sin - sin) + sin;
+	}
+
+	//compute cosine: sin(angle + PI/2) = cos(angle)
+	angle += 1.57079632f;
+	if (angle >  3.14159265f)
+		angle -= 6.28318531f;
+
+	if (angle < 0)
+	{
+		cos = 1.27323954f * angle + 0.405284735f * angle * angle;
+
+		if (cos < 0)
+			cos = .225f * (cos *-cos - cos) + cos;
+		else
+			cos = .225f * (cos * cos - cos) + cos;
+	}
+	else
+	{
+		cos = 1.27323954f * angle - 0.405284735f * angle * angle;
+
+		if (cos < 0)
+			cos = .225f * (cos *-cos - cos) + cos;
+		else
+			cos = .225f * (cos * cos - cos) + cos;
+	}
+	ParkParm.fSin = sin(ParkParm.fAngle);
+	ParkParm.fCos = cos(ParkParm.fAngle);
+}

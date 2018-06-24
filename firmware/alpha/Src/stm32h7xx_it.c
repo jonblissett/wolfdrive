@@ -37,6 +37,9 @@
 
 /* USER CODE BEGIN 0 */
 
+#include "foc.h"
+#include "control.h"
+
 /* USER CODE END 0 */
 
 /* External variables --------------------------------------------------------*/
@@ -100,11 +103,27 @@ void SysTick_Handler(void)
 void TIM1_CC_IRQHandler(void)
 {
   /* USER CODE BEGIN TIM1_CC_IRQn 0 */
-	HAL_GPIO_WritePin(GPIOB, LD1_Pin, GPIO_PIN_SET);
+  HAL_GPIO_WritePin(GPIOB, LD1_Pin, GPIO_PIN_SET);
   /* USER CODE END TIM1_CC_IRQn 0 */
   HAL_TIM_IRQHandler(&htim1);
   /* USER CODE BEGIN TIM1_CC_IRQn 1 */
-	HAL_GPIO_WritePin(GPIOB, LD1_Pin, GPIO_PIN_RESET);
+
+/*
+  // Calculate sin(Angle), cos(Angle) from angle
+  SinCos();
+  // Calculate Id, Iq from Ia, Ib, sin(Angle), cos(Angle)
+  ClarkePark();
+  // PI - calculate Vd, Vq, from Id, Idref, Iq, Iqref
+  DoControl();
+  //CalcSpeed(); Angle offset thing();
+  //SinCos();
+  // Calculate Valpha, Vbeta from Vd,Vq,Angle
+  InvPark();
+  // Calculate Vr{1,2,3} from Valpha, Vbeta
+  CalcRefVec();
+  // SVM and set PWM duty from Vr{1,2,3}
+  CalcSVGen(htim1);*/
+  HAL_GPIO_WritePin(GPIOB, LD1_Pin, GPIO_PIN_RESET);
   /* USER CODE END TIM1_CC_IRQn 1 */
 }
 
