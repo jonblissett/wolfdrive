@@ -108,9 +108,7 @@ tPIParm PIParmQ;
 tPIParm PIParmD;
 tCtrlParm CtrlParm;
 
-uint32_t Data1 = 0, Data2 = 1800;
 
-float theta_m = 0, theta_e = 0, amp = 0.9, dc_off = 0.5;
 
 /* USER CODE END PV */
 
@@ -138,6 +136,7 @@ void HAL_TIM_MspPostInit(TIM_HandleTypeDef* htim);
 void InitUserParms(void);
 void DoControl(void);
 float ReadEncoder(SPI_HandleTypeDef hspi);
+int32_t ReadEncoderInt(SPI_HandleTypeDef hspi);
 
 HAL_StatusTypeDef     QSPI_Receive       (QSPI_HandleTypeDef *hqspi, uint8_t *pData, uint32_t Timeout);
 //HAL_StatusTypeDef HAL_SPI_Receive2(SPI_HandleTypeDef *hspi, uint8_t *pData, uint16_t Size, uint32_t Timeout);
@@ -210,7 +209,6 @@ int main(void)
   }
 
   QSPI_CommandTypeDef sCommand;
-  //config:
   sCommand.InstructionMode   = QSPI_INSTRUCTION_NONE;
   sCommand.AddressMode       = QSPI_ADDRESS_NONE;
   sCommand.Address           = ((uint32_t)0x0000);
@@ -235,10 +233,8 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  HAL_GPIO_WritePin(GPIOB, LD2_Pin, GPIO_PIN_RESET);
 	  //HAL_GPIO_WritePin(GPIOB, GPIO_PIN_2|GPIO_PIN_10, GPIO_PIN_RESET);
 	  //HAL_Delay(250);
-	  HAL_GPIO_WritePin(GPIOB, LD2_Pin, GPIO_PIN_SET);
 	  //HAL_GPIO_WritePin(GPIOB, GPIO_PIN_2|GPIO_PIN_10, GPIO_PIN_SET);
 	  //HAL_Delay(250);
 
@@ -253,9 +249,8 @@ int main(void)
 	  // Print*/
 	  //sprintf(buffer,"angle,sin,cosine = %f,%f,%f \n",ParkParm.fAngle,ParkParm.fSin,ParkParm.fCos);
 	  //HAL_UART_Transmit(&huart3, buffer, sizeof(buffer), HAL_MAX_DELAY);
-	  theta_m = ReadEncoder(hspi1);
 
-	  theta_m = theta_m / 180.0f * 3.14159265f;
+
 	  /*theta_m += 0.062832f;
 	  if (theta_m > 6.2832f)
 		theta_m = 0;*/
@@ -263,71 +258,12 @@ int main(void)
 	  //sprintf(buff, "position=%.4f radians\n", theta_m);
 	  //HAL_UART_Transmit(&huart3, buff, sizeof(buff), HAL_MAX_DELAY);
 
-	  theta_e = theta_m * diPoles;
-	  ParkParm.fAngle = theta_e - ((int32_t)(theta_e / 6.2831853f) * 6.2831853f);
 
-	  SinCos();
-
-	  Data1 = (uint32_t) (35+((4025-35) * (amp * ParkParm.fSin / 2.0f + dc_off)));
-	  Data2 = (uint32_t) (35+((4025-35) * (amp * ParkParm.fCos / 2.0f + dc_off)));
-	  //Data2+=20;
-	  if (HAL_DACEx_DualSetValue(&hdac1, DAC_ALIGN_12B_R, Data1, Data2) != HAL_OK)
-		  _Error_Handler(__FILE__, __LINE__);
-	  char dbuff[64] = "";
+	  char dbuff[20] = "";
 	  //sprintf(dbuff, "%u,%u,%f,%f,%f\n", Data1, Data2, ParkParm.fAngle, ParkParm.fSin, ParkParm.fCos);
-	  sprintf(dbuff, "%u,%f\n", Data1, ParkParm.fAngle);
+	  sprintf(dbuff, "%f,%.2f\n", ParkParm.fAngle,CtrlParm.fVelE/diPoles/3.1416f*30.0f);
 	  HAL_UART_Transmit(&huart3, dbuff, sizeof(dbuff), HAL_MAX_DELAY);
 
-	  if (QSPI_Receive(&hqspi, (uint8_t *)qSPI_Rx_Buf, 100) != HAL_OK)
-		  _Error_Handler(__FILE__, __LINE__);
-
-	  /*char buf[128] = "", *pos = buf;
-	  for (int i = 0 ; i != 16 ; i++) {
-		  if (i) {
-			  pos += sprintf(pos, ", ");
-		  }
-		  pos += sprintf(pos, "%x", qSPI_Rx_Buf[i]);
-	  }
-	  sprintf(buf, "%s\n", buf);
-	  HAL_UART_Transmit(&huart3, buf, sizeof(buf), HAL_MAX_DELAY);*/
-
-	  uint8_t twobits[16];
-	  uint32_t iobyte[4];
-
-	  for (int by = 0 ; by != 4; by++) {
-		  iobyte[by] = 0; // comment out to test comms, OR all and data check for 0xfffcfffc
-		  for (uint8_t bi = 0 ; bi != 16; bi++) {
-			  twobits[bi] = ((qSPI_Rx_Buf[bi] >> by) & 1) | ((qSPI_Rx_Buf[bi] >> (by+3)) & 2);
-			  iobyte[by] |= twobits[bi] << ((15-bi) << 1);
-		  }
-		  //io0byte[by] = twobits[0] | (twobits[1] << 2) | (twobits[2] << 4) | (twobits[3] << 6);
-	  }
-
-	  int16_t extADC[8];
-	  for (int ch = 0; ch !=4; ch++) {
-		  extADC[ch+ch] = (uint16_t)(iobyte[ch] & 0xFFFC); // [13:0][xx]
-		  extADC[ch+ch+1] = (uint16_t)((iobyte[ch] >> 16) & 0xFFFC);
-	  }
-
-	  char buff[128] = "";
-	  //sprintf(buff, "%x,%x,%x,%x\n", iobyte[0],iobyte[1],iobyte[2],iobyte[3]);
-	  //sprintf(buff, "%x,%x,%x,%x,%x,%x\n", iobyte[0],iobyte[1],extADC[0],extADC[1],extADC[2],extADC[3]);
-	  //sprintf(buff, "%d,%d,%d,%d\n",extADC[0],extADC[1],extADC[2],extADC[3]);
-
-	  float Vdc = (float)((uint16_t)extADC[3])*0.012f;
-	  float offset = -1.215f;
-	  float I = ((float)(extADC[1]))/0x7FFF*1250-offset;
-	  //sprintf(buff, "%.1f,%.3f\n", Vdc,I);
-	  //HAL_UART_Transmit(&huart3, buff, sizeof(buff), HAL_MAX_DELAY);
-
-	  /*uint8_t fi2b = ((qSPI_Rx_Buf[0] >> 1) & 1) | ((qSPI_Rx_Buf[0] >> 4) & 2);
-	  uint8_t se2b = ((qSPI_Rx_Buf[1] >> 1) & 1) | ((qSPI_Rx_Buf[1] >> 4) & 2);
-	  uint8_t th2b = ((qSPI_Rx_Buf[2] >> 1) & 1) | ((qSPI_Rx_Buf[2] >> 4) & 2);
-	  uint8_t fo2b = ((qSPI_Rx_Buf[3] >> 1) & 1) | ((qSPI_Rx_Buf[3] >> 4) & 2);
-	  uint8_t io1 = fi2b | (se2b << 2) | (th2b << 4) | (fo2b << 6);
-	  char bufff[128] = "";
-	  sprintf(bufff, "%x,%x,%x,%x = %x\n", fi2b, se2b, th2b, fo2b, io1);
-	  HAL_UART_Transmit(&huart3, bufff, sizeof(bufff), HAL_MAX_DELAY);*/
 	  /* USER CODE END WHILE */
 
 	  /* USER CODE BEGIN 3 */
@@ -667,7 +603,7 @@ static void MX_SPI1_Init(void)
   hspi1.Init.CLKPolarity = SPI_POLARITY_HIGH;
   hspi1.Init.CLKPhase = SPI_PHASE_1EDGE;
   hspi1.Init.NSS = SPI_NSS_HARD_OUTPUT;
-  hspi1.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_16;
+  hspi1.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_64;
   hspi1.Init.FirstBit = SPI_FIRSTBIT_MSB;
   hspi1.Init.TIMode = SPI_TIMODE_DISABLE;
   hspi1.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;
@@ -734,7 +670,7 @@ static void MX_TIM1_Init(void)
   htim1.Instance = TIM1;
   htim1.Init.Prescaler = 1;
   htim1.Init.CounterMode = TIM_COUNTERMODE_CENTERALIGNED1;
-  htim1.Init.Period = 1249;
+  htim1.Init.Period = (uint32_t)(5e7/dPWMfreq-1);//1249;
   htim1.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim1.Init.RepetitionCounter = 0;
   htim1.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
@@ -992,7 +928,7 @@ void InitUserParms(void)
 	//MotorParm.iCntsPerRev  = diCntsPerRev;
 
 	// Rotor time constant in sec
-	//otorParm.fRotorTmConst = dfRotorTmConst;
+	//MotorParm.fRotorTmConst = dfRotorTmConst;
 
 	// Basic loop period (in sec).  (PWM interrupt period)
 	//MotorParm.fLoopPeriod = dLoopInTcy * dTcy;  //Loop period in cycles * sec/cycle
@@ -1142,6 +1078,82 @@ float ReadEncoder(SPI_HandleTypeDef hspi)
 	posi = ((uint32_t)SPI_Rx_Buf[2]) << 12 | ((uint32_t)SPI_Rx_Buf[3]) << 4 | ((uint32_t)SPI_Rx_Buf[4]) >> 4;
 	float f_posi = ((float)posi)/0xFFFFF*360;
 	return f_posi;
+}
+
+int32_t ReadEncoderInt(SPI_HandleTypeDef hspi)
+{
+	if (HAL_SPI_Receive(&hspi, (uint8_t *)SPI_Rx_Buf, 6, 2) != HAL_OK)
+		_Error_Handler(__FILE__, __LINE__);
+	/*char buf[64], *pos = buf;
+	  for (int i = 0 ; i != 6 ; i++) {
+	      if (i) {
+	          pos += sprintf(pos, ", ");
+	      }
+	      pos += sprintf(pos, "%d", SPI_Rx_Buf[i]);
+	  }
+	  sprintf(buf, "%s\n", buf);
+	  HAL_UART_Transmit(&huart3, buf, sizeof(buf), HAL_MAX_DELAY);*/
+	uint32_t posi = 0;
+	posi = ((uint32_t)SPI_Rx_Buf[2]) << 24 | ((uint32_t)SPI_Rx_Buf[3]) << 16 | ((uint32_t)SPI_Rx_Buf[4]) << 8;
+	posi &= 0xFFFFF000;	// Encoder is 20b resolution
+	//posi = ((uint32_t)SPI_Rx_Buf[2]) << 12 | ((uint32_t)SPI_Rx_Buf[3]) << 4 | ((uint32_t)SPI_Rx_Buf[4]) >> 4;
+	//float f_posi = ((float)posi)/0xFFFFF*360;
+	//return f_posi;
+	return (int32_t)(posi-0x7FFFFFF);
+}
+
+void ReadQSPI(QSPI_HandleTypeDef *hqspi)
+{
+	  if (QSPI_Receive(&hqspi, (uint8_t *)qSPI_Rx_Buf, 100) != HAL_OK)
+		  _Error_Handler(__FILE__, __LINE__);
+
+	  /*char buf[128] = "", *pos = buf;
+	  for (int i = 0 ; i != 16 ; i++) {
+		  if (i) {
+			  pos += sprintf(pos, ", ");
+		  }
+		  pos += sprintf(pos, "%x", qSPI_Rx_Buf[i]);
+	  }
+	  sprintf(buf, "%s\n", buf);
+	  HAL_UART_Transmit(&huart3, buf, sizeof(buf), HAL_MAX_DELAY);*/
+
+	  uint8_t twobits[16];
+	  uint32_t iobyte[4];
+
+	  for (int by = 0 ; by != 4; by++) {
+		  iobyte[by] = 0; // comment out to test comms, OR all and data check for 0xfffcfffc
+		  for (uint8_t bi = 0 ; bi != 16; bi++) {
+			  twobits[bi] = ((qSPI_Rx_Buf[bi] >> by) & 1) | ((qSPI_Rx_Buf[bi] >> (by+3)) & 2);
+			  iobyte[by] |= twobits[bi] << ((15-bi) << 1);
+		  }
+		  //io0byte[by] = twobits[0] | (twobits[1] << 2) | (twobits[2] << 4) | (twobits[3] << 6);
+	  }
+
+	  int16_t extADC[8];
+	  for (int ch = 0; ch !=4; ch++) {
+		  extADC[ch+ch] = (uint16_t)(iobyte[ch] & 0xFFFC); // [13:0][xx]
+		  extADC[ch+ch+1] = (uint16_t)((iobyte[ch] >> 16) & 0xFFFC);
+	  }
+
+	  char buff[128] = "";
+	  //sprintf(buff, "%x,%x,%x,%x\n", iobyte[0],iobyte[1],iobyte[2],iobyte[3]);
+	  //sprintf(buff, "%x,%x,%x,%x,%x,%x\n", iobyte[0],iobyte[1],extADC[0],extADC[1],extADC[2],extADC[3]);
+	  //sprintf(buff, "%d,%d,%d,%d\n",extADC[0],extADC[1],extADC[2],extADC[3]);
+
+	  float Vdc = (float)((uint16_t)extADC[3])*0.012f;
+	  float offset = -1.215f;
+	  float I = ((float)(extADC[1]))/0x7FFF*1250-offset;
+	  //sprintf(buff, "%.1f,%.3f\n", Vdc,I);
+	  //HAL_UART_Transmit(&huart3, buff, sizeof(buff), HAL_MAX_DELAY);
+
+	  /*uint8_t fi2b = ((qSPI_Rx_Buf[0] >> 1) & 1) | ((qSPI_Rx_Buf[0] >> 4) & 2);
+	  uint8_t se2b = ((qSPI_Rx_Buf[1] >> 1) & 1) | ((qSPI_Rx_Buf[1] >> 4) & 2);
+	  uint8_t th2b = ((qSPI_Rx_Buf[2] >> 1) & 1) | ((qSPI_Rx_Buf[2] >> 4) & 2);
+	  uint8_t fo2b = ((qSPI_Rx_Buf[3] >> 1) & 1) | ((qSPI_Rx_Buf[3] >> 4) & 2);
+	  uint8_t io1 = fi2b | (se2b << 2) | (th2b << 4) | (fo2b << 6);
+	  char bufff[128] = "";
+	  sprintf(bufff, "%x,%x,%x,%x = %x\n", fi2b, se2b, th2b, fo2b, io1);
+	  HAL_UART_Transmit(&huart3, bufff, sizeof(bufff), HAL_MAX_DELAY);*/
 }
 
 static HAL_StatusTypeDef QSPI_WaitFlagStateUntilTimeout(QSPI_HandleTypeDef *hqspi, uint32_t Flag,

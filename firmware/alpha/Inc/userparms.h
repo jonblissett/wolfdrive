@@ -32,25 +32,26 @@
 */
 //**************  Oscillator **************
 
-#define dLoopTimeInSec  0.000025        // PWM Period - 20 uSec, 40Khz PWM
-#define dDeadTimeSec    0.0000005        // Deadtime in seconds
+#define dLoopTimeInSec  0.00010f         	// PWM Period - 40 uSec, 25Khz PWM
+#define dPWMfreq		(1/dLoopTimeInSec) 	// PWM frequency (Hz)
+#define dDeadTimeSec    0.0000005        	// Deadtime in seconds ## NOT IMPLEMENTED ##
 //#define	dDispLoopTime	0.100			// Display and button polling loop period in sec
 
 // Derived
-#define dFosc       400000000            // Clock frequency (Hz)
-#define dFcy        400000000            // Instruction cycle frequency (Hz)
-#define dTcy        (1.0/dFcy)          // Instruction cycle period (sec)
-#define dFClkDeadTime 200000000
-#define dDeadTime   (int)(dDeadTimeSec*dFClkDeadTime) // Dead time in dTcys
+#define dFosc       	400000000            	// Clock frequency (Hz)
+#define dFcy        	400000000            	// Instruction cycle frequency (Hz)
+#define dTcy        	(1.0/dFcy)          	// Instruction cycle period (sec)
+#define dFClkDeadTime 	200000000
+#define dDeadTime   	(int)(dDeadTimeSec*dFClkDeadTime) // Dead time in dTcys
 
-#define dLoopInTcy  (dLoopTimeInSec/dTcy)   // Basic loop period in units of Tcy
+#define dLoopInTcy  	(dLoopTimeInSec/dTcy)   // Basic loop period in units of Tcy
 
 //**************  Motor Parameters **************
 #define diPoles         8       // Number of pole pairs
 //#define diCntsPerRev    32768    // Encoder counts per revolution
 //#define diNomRPM        8000    // Name Plate Motor RPM
 
-//#define dqTorqueConst   0.71     // Motor back-emf constant in V/rad/s
+#define dqTorqueConst   0.644     // Motor back-emf constant in V/rad/s
 //#define diDCBusV        64      // volts
 
 //#define dqEmfScale      0.54)//diNomRPM*8/60*2*3.14159/diDCBusV/64*0.71)  //NomRPM*8/60*2 pi/DVBusV/2^6 * dqTorqueConst

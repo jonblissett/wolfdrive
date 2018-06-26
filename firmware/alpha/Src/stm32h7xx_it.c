@@ -39,11 +39,30 @@
 
 #include "foc.h"
 #include "control.h"
+#include "userparms.h"
 
 /* USER CODE END 0 */
 
 /* External variables --------------------------------------------------------*/
 extern TIM_HandleTypeDef htim1;
+extern SPI_HandleTypeDef hspi1;
+extern DAC_HandleTypeDef hdac1;
+
+// DAC
+uint32_t Data1 = 0, Data2 = 1800;
+float amp = 0.8, dc_off = 0.55;
+
+// Encoder
+float theta_e = 0;
+float theta_m = 0;
+
+float ReadEncoder(SPI_HandleTypeDef hspi);
+int32_t ReadEncoderInt(SPI_HandleTypeDef hspi);
+
+float prev_ang = 0, old_ang = 0;
+float e_rpm = 0; prev_e_rpm = 0;
+float angbuff[50];
+int angbuffindex = 0;
 
 /******************************************************************************/
 /*            Cortex Processor Interruption and Exception Handlers         */ 
@@ -103,15 +122,81 @@ void SysTick_Handler(void)
 void TIM1_CC_IRQHandler(void)
 {
   /* USER CODE BEGIN TIM1_CC_IRQn 0 */
-  HAL_GPIO_WritePin(GPIOB, LD1_Pin, GPIO_PIN_SET);
+  HAL_GPIO_WritePin(GPIOB, LD2_Pin, GPIO_PIN_SET);
   /* USER CODE END TIM1_CC_IRQn 0 */
   HAL_TIM_IRQHandler(&htim1);
   /* USER CODE BEGIN TIM1_CC_IRQn 1 */
 
-/*
+  theta_m = ReadEncoder(hspi1);
+  theta_m = theta_m / 180.0f * 3.14159265f;
+  theta_e = theta_m * diPoles;
+  theta_e += 0;//3.1416f*0.125 + 3.1416f*0.5;
+
+  //theta_m = ReadEncoderInt(hspi1);
+  //theta_e = diPoles * ((float)theta_m) / 0x7FFFFFF * 3.14159265f;
+
+  prev_ang = ParkParm.fAngle;
+
+  ParkParm.fAngle = theta_e - ((int32_t)(theta_e / 6.283185307f) * 6.283185307f) - 3.14159265f;
+
+  float angerr = fabsf(ParkParm.fAngle-prev_ang);
+
+  // 8000rpm, 40uS loop time -> 15 electrical degrees
+  float maxerr = 20.0f*3.1415f/180.0f;
+
+  if((angerr > maxerr) && angerr < (6.283185307f-maxerr))
+  {
+	  // likely dodgy reading, so extrapolate assuming constant speed
+	  prev_ang += CtrlParm.fVelE * dLoopTimeInSec;
+	  if (prev_ang < -3.14159265f)
+		  prev_ang += 6.28318531f;
+	  else if (prev_ang >  3.14159265f)
+		  prev_ang -= 6.28318531f;
+	  ParkParm.fAngle = prev_ang;
+	  HAL_GPIO_WritePin(GPIOB, LD3_Pin, GPIO_PIN_SET);
+  }
+  else
+  {
+	  HAL_GPIO_WritePin(GPIOB, LD3_Pin, GPIO_PIN_RESET);
+  }
+
+
+  angbuff[angbuffindex] = ParkParm.fAngle;
+
+  if(angbuffindex < 50)
+	  angbuffindex++;
+  else
+  {
+	  angbuffindex = 0;
+
+	  float aDiff = 0;
+	  CtrlParm.fVelE = 0;
+	  for(int n = 1; n != 50; n++)
+	  {
+		  aDiff = angbuff[n] - angbuff[n-1];
+		  if(aDiff < -3.14159f)
+			  aDiff += 6.2831853f;
+		  if(aDiff > 3.14159f)
+			  aDiff -= 6.2831853f;
+		  CtrlParm.fVelE += aDiff;
+	  }
+	  CtrlParm.fVelE /= 49;
+
+	  /*CtrlParm.fVelE = ParkParm.fAngle - old_ang;
+	  if(CtrlParm.fVelE < -3.14159f)
+		  CtrlParm.fVelE += 6.2831853f;
+	  if(CtrlParm.fVelE > 3.14159f)
+		  CtrlParm.fVelE -= 6.2831853f;*/
+
+	  //CtrlParm.fVelE = 0.4f * CtrlParm.fVelE * 36000.0f + (1.0f-0.4f) * prev_e_rpm;
+	  CtrlParm.fVelE = CtrlParm.fVelE * 36000.0f;
+      old_ang = ParkParm.fAngle;
+	  prev_e_rpm = CtrlParm.fVelE;
+  }
+
   // Calculate sin(Angle), cos(Angle) from angle
   SinCos();
-  // Calculate Id, Iq from Ia, Ib, sin(Angle), cos(Angle)
+  /*// Calculate Id, Iq from Ia, Ib, sin(Angle), cos(Angle)
   ClarkePark();
   // PI - calculate Vd, Vq, from Id, Idref, Iq, Iqref
   DoControl();
@@ -123,7 +208,18 @@ void TIM1_CC_IRQHandler(void)
   CalcRefVec();
   // SVM and set PWM duty from Vr{1,2,3}
   CalcSVGen(htim1);*/
-  HAL_GPIO_WritePin(GPIOB, LD1_Pin, GPIO_PIN_RESET);
+
+  Data2 = (uint32_t) (35+((4025-35) * (amp * ParkParm.fSin / 2.0f + dc_off)));
+  Data1 = (uint32_t) (35+((4025-35) * (amp * ParkParm.fCos / 2.0f + dc_off)));
+
+  //ata1 = (uint32_t) (35+((4025-35) * (amp * 0 / 2.0f + dc_off)));
+  //Data2 = (uint32_t) (35+((4025-35) * (amp * -1 / 2.0f + dc_off)));
+
+  if (HAL_DACEx_DualSetValue(&hdac1, DAC_ALIGN_12B_R, Data1, Data2) != HAL_OK)
+	  _Error_Handler(__FILE__, __LINE__);
+
+
+  HAL_GPIO_WritePin(GPIOB, LD2_Pin, GPIO_PIN_RESET);
   /* USER CODE END TIM1_CC_IRQn 1 */
 }
 

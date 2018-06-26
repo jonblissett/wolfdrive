@@ -3018,7 +3018,7 @@ static void SPI_CloseTransfer(SPI_HandleTypeDef *hspi)
   __HAL_SPI_CLEAR_TXTFFLAG(hspi);
 
   /* Disable SPI peripheral */
-  __HAL_SPI_DISABLE(hspi);
+  //__HAL_SPI_DISABLE(hspi);
 
   /* Disable ITs */
   __HAL_SPI_DISABLE_IT(hspi, (SPI_IT_EOT | SPI_IT_TXE | SPI_IT_RXNE | SPI_IT_UDR | SPI_IT_OVR | SPI_IT_FRE | SPI_IT_MODF));
