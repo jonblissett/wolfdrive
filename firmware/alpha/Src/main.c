@@ -603,7 +603,7 @@ static void MX_SPI1_Init(void)
   hspi1.Init.CLKPolarity = SPI_POLARITY_HIGH;
   hspi1.Init.CLKPhase = SPI_PHASE_1EDGE;
   hspi1.Init.NSS = SPI_NSS_HARD_OUTPUT;
-  hspi1.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_64;
+  hspi1.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_16;
   hspi1.Init.FirstBit = SPI_FIRSTBIT_MSB;
   hspi1.Init.TIMode = SPI_TIMODE_DISABLE;
   hspi1.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;
@@ -1075,13 +1075,17 @@ float ReadEncoder(SPI_HandleTypeDef hspi)
 	uint32_t posi = 0;
 	//posi = ((uint32_t)SPI_Rx_Buf[2]) << 24 | ((uint32_t)SPI_Rx_Buf[3]) << 16 | ((uint32_t)SPI_Rx_Buf[4]) << 8;
 	//posi &= 0xFFFFF000;	// Encoder is 20b resolution
-	posi = ((uint32_t)SPI_Rx_Buf[2]) << 12 | ((uint32_t)SPI_Rx_Buf[3]) << 4 | ((uint32_t)SPI_Rx_Buf[4]) >> 4;
+	// AkSIM v1 has 12b ACK
+	//posi = ((uint32_t)SPI_Rx_Buf[2]) << 12 | ((uint32_t)SPI_Rx_Buf[3]) << 4 | ((uint32_t)SPI_Rx_Buf[4]) >> 4;
+	// AkSim v2 has 13b ACK
+	posi = ((uint32_t)SPI_Rx_Buf[2]) << 13 | ((uint32_t)SPI_Rx_Buf[3]) << 5 | ((uint32_t)SPI_Rx_Buf[4]) >> 3;
 	float f_posi = ((float)posi)/0xFFFFF*360;
 	return f_posi;
 }
 
 int32_t ReadEncoderInt(SPI_HandleTypeDef hspi)
 {
+	// ****AKSIM 1 ONLY****
 	if (HAL_SPI_Receive(&hspi, (uint8_t *)SPI_Rx_Buf, 6, 2) != HAL_OK)
 		_Error_Handler(__FILE__, __LINE__);
 	/*char buf[64], *pos = buf;
@@ -1094,6 +1098,7 @@ int32_t ReadEncoderInt(SPI_HandleTypeDef hspi)
 	  sprintf(buf, "%s\n", buf);
 	  HAL_UART_Transmit(&huart3, buf, sizeof(buf), HAL_MAX_DELAY);*/
 	uint32_t posi = 0;
+	// ****AKSIM 1 ONLY****
 	posi = ((uint32_t)SPI_Rx_Buf[2]) << 24 | ((uint32_t)SPI_Rx_Buf[3]) << 16 | ((uint32_t)SPI_Rx_Buf[4]) << 8;
 	posi &= 0xFFFFF000;	// Encoder is 20b resolution
 	//posi = ((uint32_t)SPI_Rx_Buf[2]) << 12 | ((uint32_t)SPI_Rx_Buf[3]) << 4 | ((uint32_t)SPI_Rx_Buf[4]) >> 4;
