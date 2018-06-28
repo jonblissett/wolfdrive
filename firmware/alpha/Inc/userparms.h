@@ -32,7 +32,7 @@
 */
 //**************  Oscillator **************
 
-#define dLoopTimeInSec  0.00010f         	// PWM Period - 40 uSec, 25Khz PWM
+#define dLoopTimeInSec  0.00004f         	// PWM Period - 40 uSec, 25Khz PWM
 #define dPWMfreq		(1/dLoopTimeInSec) 	// PWM frequency (Hz)
 #define dDeadTimeSec    0.0000005        	// Deadtime in seconds ## NOT IMPLEMENTED ##
 //#define	dDispLoopTime	0.100			// Display and button polling loop period in sec
